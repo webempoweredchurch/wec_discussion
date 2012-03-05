@@ -1,0 +1,49 @@
+plugin.tx_wecdiscussion_pi1 {
+	xml.rss {
+		icon 			= {$plugin.tx_wecdiscussion_pi1.xml.rss.icon}
+		link 			= {$plugin.tx_wecdiscussion_pi1.xml.rss.link}
+		image 			= {$plugin.tx_wecdiscussion_pi1.xml.rss.image}
+		generator 		= {$plugin.tx_wecdiscussion_pi1.xml.rss.generator}
+		channel_title 		= {$plugin.tx_wecdiscussion_pi1.xml.rss.channel_title}
+		channel_description = {$plugin.tx_wecdiscussion_pi1.xml.rss.channel_description}
+		channel_category 	= {$plugin.tx_wecdiscussion_pi1.xml.rss.channel_category}
+		copyright 		= {$plugin.tx_wecdiscussion_pi1.xml.rss.copyright}
+		language 		= {$plugin.tx_wecdiscussion_pi1.xml.rss.language}
+		owner_email 	= {$plugin.tx_wecdiscussion_pi1.xml.rss.owner_email}
+		owner_name 		= {$plugin.tx_wecdiscussion_pi1.xml.rss.owner_name}
+		ttl 			= {$plugin.tx_wecdiscussion_pi1.xml.rss.ttl}
+		source_url		= {$plugin.tx_wecdiscussion_pi1.xml.rss.source_url}
+	}
+	rssTemplateFile 		= {$plugin.tx_wecdiscussion_pi1.rssTemplateFile}
+	preview_backPID 		= {$plugin.tx_wecdiscussion_pi1.preview_backPID}
+
+  	# Re-use the RTE parseFunc configuration for normal content
+  	general_stdWrap {
+    	parseFunc < tt_content.text.20.parseFunc
+  	}
+	
+	rssFeedOn			= 1
+	isLoaded		    = yes
+}
+
+rssFeed = PAGE
+rssFeed {
+	typeNum = 224
+	10 < plugin.tx_wecdiscussion_pi1
+	10.pid_list > 
+	10.pid_list 	= {$plugin.tx_wecdiscussion_pi1.pid_list}
+	10.rssTemplateFile > 
+	10.rssTemplateFile = {$plugin.tx_wecdiscussion_pi1.rssTemplateFile}
+	10.preview_backPID > 
+	10.preview_backPID = {$plugin.tx_wecdiscussion_pi1.preview_backPID}
+	10.type = 6
+		
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:application/xml
+		xhtml_cleaning = 0
+		admPanel = 0
+		noPageTitle = 1
+		absRefPrefix = {$siteURL}
+	}
+}

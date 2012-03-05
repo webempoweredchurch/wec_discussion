@@ -1,0 +1,681 @@
+<!-- Templates For The WEC Discussion Extension:
+
+		###TEMPLATE_PAGE		 -- the main page
+		###TEMPLATE_DISPLAYENTRY -- for one posted message
+		###TEMPLATE_PREVIEW		 -- if want to have a preview view of your messages
+		###TEMPLATE_POSTFORM	 -- the form for posting a message
+		###TEMPLATE_COMMENTFORM	 -- the form for posting a comment
+		###TEMPLATE_SUBSCRIBEFORM -- the form for handling subscribe/unsubscribe
+		###TEMPLATE_SEARCH_RESULTS -- the form for showing an entry for search results
+		###TEMPLATE_ARCHIVE		 -- for viewing an archive as separate
+-->
+
+<!--
+=====================================================================================================
+###TEMPLATE_PAGE### begin
+=====================================================================================================
+-->
+<div class="tx_wecdiscussion_pi1 pluginContent">
+	<div class="pluginHeader">
+		<!-- ###SHOW_TITLE### begin-->
+			<h3>###TITLE###</h3>
+		<!-- ###SHOW_TITLE### end-->
+	    <!-- ###SHOW_RESPONSE_MSG### begin--> 
+	    	<div class="success">###RESPONSE_MSG_TEXT###</div>
+	    <!-- ###SHOW_RESPONSE_MSG### end-->		
+		<!-- ###SHOW_SEARCH### begin -->
+			<div class="searchBox">
+				<form class="selectForm" method="post" action="###SEARCHFORM_URL###">
+					<input size="20" maxlength="60" type="text" name="tx_wecdiscussion[searchwords]" value="###SEARCHWORDS###" />
+					<input type="submit" name="search" value="###SEARCH_BUTTON###" />
+				</form>
+			</div>
+		<!-- ###SHOW_SEARCH### end -->
+		<!-- ###SHOW_POST_BTN### begin -->
+			<a class="button" href="#" onclick="makeReply(-1,0);window.location.hash='typeYourMessage';return false;"><span class="label addIcon">###POST_YOUR_MESSAGE_BTN###</span></a>
+		<!-- ###SHOW_POST_BTN### end -->
+		<!-- ###SHOW_COMMENT_BTN### begin -->
+			<a class="button" href="#" onclick="makeComment(0,0);window.location.hash='typeYourComment';return false;"><span class="label addIcon">###POST_YOUR_COMMENT_BTN###</span></a>
+		<!-- ###SHOW_COMMENT_BTN### end -->
+		###DISPLAY_VIEW_ALL_BUTTON###	
+	</div>
+	
+	<!-- ###SHOW_NOBAR### begin -->
+	<div class="pluginNav clearBackground floatRight">
+		<!--###SHOW_SUBSCRIBE_BTN### begin--><div class="box">###SUBSCRIBE_BTN###</div><!--###SHOW_SUBSCRIBE_BTN### end-->
+		<!--###SHOW_MODERATE_BTN###  begin--><div class="box">###MODERATE_BTN###</div><!--###SHOW_MODERATE_BTN### end-->	
+	</div>
+	<!-- ###SHOW_NOBAR### end -->
+	
+	<!-- ###SHOW_ACTIONBAR### begin -->
+	<div class="pluginNav">
+		<div class="gutter">
+			<!--###SHOW_SUBSCRIBE_BTN### begin--><div class="box">###SUBSCRIBE_BTN###</div><!--###SHOW_SUBSCRIBE_BTN### end-->
+			<!--###SHOW_MODERATE_BTN###  begin--><div class="box">###MODERATE_BTN###</div><!--###SHOW_MODERATE_BTN### end-->
+			<div class="box">###CHOOSE_CATEGORY_DROPDOWN###</div>
+			<!--###SHOW_ARCHIVE_DROPDOWN### begin-->
+			<div class="box">
+				###ARCHIVE_HEADER###
+				###DISPLAY_ARCHIVE_DROPDOWN###
+			</div>
+			<!--###SHOW_ARCHIVE_DROPDOWN### end-->
+			<div class="box">###RSSFEED_ICON2###</div>
+		</div>
+	</div>
+	<!-- ###SHOW_ACTIONBAR### end -->	
+	
+	<div class="pluginSection" ###MAINCONTENT_SETWIDTH###>
+		<div id="ReplyForm-1" style="height:0;">&nbsp;</div>
+		###DISPLAY_HEADER###
+		###DISPLAY_SEARCH_RESULTS###
+		<ul class="entries">
+			###DISPLAY_POSTS###
+			###DISPLAY_COMMENTS###
+		</ul>
+
+		<!-- ###SHOW_PAGENUM### begin-->
+		<div class="pageLinkSection">###PAGE_PREV### ###PAGE_NUM_LIST### ###PAGE_NEXT###</div>
+		<!-- ###SHOW_PAGENUM### end-->
+		###DISPLAY_REPLYFORM###
+		###DISPLAY_COMMENTFORM###
+		###DISPLAY_CODE###
+	</div>
+	
+	<!-- ###SHOW_SIDEBAR### begin -->
+	<div class="aside">
+		<div class="gutter">
+			<!--###SHOW_SUBSCRIBE_BTN### begin-->###SUBSCRIBE_BTN###<!--###SHOW_SUBSCRIBE_BTN### end-->
+			<!--###SHOW_MODERATE_BTN### begin-->###MODERATE_BTN###<!--###SHOW_MODERATE_BTN### end-->
+			###CHOOSE_CATEGORY_VERTICAL###
+			<!--###SHOW_ARCHIVE### begin-->
+				<div class="archive">
+					<h4>###ARCHIVE_HEADER###</h4>
+					<ul>
+						###DISPLAY_ARCHIVE###
+					</ul>
+				</div>
+			<!--###SHOW_ARCHIVE### end-->
+			<div>###RSSFEED_ICON1###</div>
+		</div>
+	</div>
+	<!-- ###SHOW_SIDEBAR### end -->	
+</div>
+<!-- ###TEMPLATE_PAGE### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_DISPLAYENTRY### begin
+
+ Template for a single item. This is repeated for each item.
+=====================================================================================================
+-->
+	<!-- ###POST_ENTRY_START### begin-->
+	<li class="entry">
+		###START_POST_ENTRY###
+		###POST_ANCHOR###
+	<!-- ###POST_ENTRY_START### end-->
+
+	<!-- ###POST_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+		<!-- ###SHOW_SUBJECT### begin -->
+		<h3>###VIEW_SINGLE_LINKSTART### ###SUBJECT### ###VIEW_SINGLE_LINKEND### ###VIEW_COMMENTS_NUM###</h3> 
+		<!-- ###SHOW_SUBJECT### end -->
+	    <div class="message" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###
+		    <div class="entryInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### 
+				<!-- ###SHOW_IPADDRESS### start--> [###IP_ADDRESS###] <!-- ###SHOW_IPADDRESS### end-->
+				###ON_TEXT### ###POST_DATETIME### 
+	    		<!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end--> 
+				
+		    </div>
+	    	<div class="buttonRow">
+	    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###DELETEALL_BTN### ###VIEW_COMMENTS### ###VIEW_SINGLE### ###ABUSE_BTN###
+    		</div>		
+		</div>
+
+	<!-- ###POST_ENTRY### end-->
+
+	<!-- ###REPLY_ENTRY_START### begin-->
+		###START_REPLY_ENTRY###
+	<!-- ###REPLY_ENTRY_START### end-->
+
+	<!-- ###REPLY_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+	    <div class="messageReply" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###	
+		    <div class="replyInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+		    	<span class="buttonRow">
+		    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+	    		</span>
+		    </div>
+		</div>
+	<!-- ###REPLY_ENTRY### end-->
+
+	<!-- ###POST_ENTRY_END### begin-->
+		###END_REPLY_ENTRY###
+		###VIEW_REPLY_FORM###
+		###END_POST_ENTRY###
+		</li>
+	<!-- ###POST_ENTRY_END### end-->
+
+<!-- ###TEMPLATE_DISPLAYENTRY### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_DISPLAYENTRY2### begin
+
+ Template for a single item. This is repeated for each item.
+=====================================================================================================
+-->
+	<!-- ###POST_ENTRY_START### begin-->
+	<li class="entry">
+		###START_POST_ENTRY###
+		###POST_ANCHOR###
+	<!-- ###POST_ENTRY_START### end-->
+
+	<!-- ###POST_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+	<div class="postHeader" >
+		<div class="showComments">###VIEW_COMMENTS_NUM_ONLY###</div>
+		<div class="entryDate">###POST_DATETIME###</div>
+		<!-- ###SHOW_SUBJECT### begin -->
+		<h3>###VIEW_SINGLE_LINKSTART### ###SUBJECT### ###VIEW_SINGLE_LINKEND###</h3>
+		<!-- ###SHOW_SUBJECT### end -->
+	</div>
+    <div class="message" ###MARGIN_LEFT###>
+    	###MESSAGE###
+    	###IMAGE###
+    	###ATTACHMENT###
+	</div>
+    <div class="entryInfo">
+   		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK###
+		<!-- ###SHOW_IPADDRESS### start--> [###IP_ADDRESS###] <!-- ###SHOW_IPADDRESS### end-->
+   		<!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end-->
+    </div>
+   	<div class="buttonRow">
+   		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###DELETEALL_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+	</div>
+    <div class="vspacer"> </div>
+
+	<!-- ###POST_ENTRY### end-->
+
+	<!-- ###REPLY_ENTRY_START### begin-->
+		###START_REPLY_ENTRY###
+	<!-- ###REPLY_ENTRY_START### end-->
+
+	<!-- ###REPLY_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+    <div class="messageReply" ###MARGIN_LEFT###>
+    	###MESSAGE###
+    	###IMAGE###
+    	###ATTACHMENT###	
+	    <div class="replyInfo">
+    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+	    	<span class="buttonRow">
+	    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+    		</span>
+	    </div>
+	</div>
+	<!-- ###REPLY_ENTRY### end-->
+
+	<!-- ###POST_ENTRY_END### begin-->
+		###END_REPLY_ENTRY###
+		###VIEW_REPLY_FORM###
+		###END_POST_ENTRY###
+	</li>
+	<!-- ###POST_ENTRY_END### end-->
+
+<!-- ###TEMPLATE_DISPLAYENTRY2### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_DISPLAYENTRY3### begin
+
+ Template for a single item. This is repeated for each item.
+=====================================================================================================
+-->
+	<!-- ###POST_ENTRY_START### begin-->
+	  <li class="entry">
+	    ###START_POST_ENTRY###
+	    ###POST_ANCHOR###
+	<!-- ###POST_ENTRY_START### end-->
+
+	<!-- ###POST_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+	  <div class="postHeader" >
+		<!-- ###SHOW_SUBJECT### begin -->
+		<h3>###VIEW_SINGLE_LINKSTART### ###SUBJECT### ###VIEW_SINGLE_LINKEND###</h3>
+		<!-- ###SHOW_SUBJECT### end -->
+		<div class="entryDate">###POST_DATETIME###</div>
+	    <div class="entryBy">###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### <!-- ###SHOW_IPADDRESS### start--> [###IP_ADDRESS###] <!-- ###SHOW_IPADDRESS### end--></div>
+		<div class="entryCategory"><!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end--></div>
+		<div class="showComments">###VIEW_COMMENTS_NUM###</div>
+	  </div>
+      <div class="message" ###MARGIN_LEFT###>
+    	###MESSAGE###
+    	###IMAGE###
+    	###ATTACHMENT###
+	  </div>
+   	  <div class="buttonRow">
+   		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###DELETEALL_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+	  </div>
+	  <div class="vspacer"> </div>
+
+	<!-- ###POST_ENTRY### end-->
+
+	<!-- ###REPLY_ENTRY_START### begin-->
+		###START_REPLY_ENTRY###
+	<!-- ###REPLY_ENTRY_START### end-->
+
+	<!-- ###REPLY_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+	  <div class="messageReply" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###	
+		    <div class="replyInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+		    	<span class="buttonRow">
+		    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+	    		</span>
+		    </div>
+	  </div>
+	<!-- ###REPLY_ENTRY### end-->
+
+	<!-- ###POST_ENTRY_END### begin-->
+	    ###END_REPLY_ENTRY###
+	    ###VIEW_REPLY_FORM###
+	    ###END_POST_ENTRY###
+	  </li>
+	<!-- ###POST_ENTRY_END### end-->
+
+<!-- ###TEMPLATE_DISPLAYENTRY3### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_PREVIEW### begin
+
+ Template for the preview display.
+=====================================================================================================
+-->
+	<!-- ###PREVIEW_DISPLAY### begin-->
+	<div class="preview">
+		<ul class="entries">
+		###PREVIEW_ENTRIES###
+		</ul>
+	</div>
+	<!-- ###PREVIEW_DISPLAY### end-->
+
+	<!-- ###PREVIEW_ENTRY### begin-->
+    <li class="entry">
+     	<div class="header">
+    		###PREVIEW_LINK_BEGIN### ###SUBJECT### ###VIEW_COMMENTS_NUM### ###PREVIEW_LINK_END###
+    	</div>
+    	###MESSAGE###
+    	<!-- ###PREVIEW_SHOWIMAGE### begin
+			uncomment this below to show images in preview:
+		-->
+		<!--	###PREVIEW_LINK_BEGIN### ###IMAGE### ###PREVIEW_LINK_END### -->
+    	<!-- ###PREVIEW_SHOWIMAGE### end -->
+	    <div class="entryInfo">
+    		###POSTEDBY_TEXT### ###POST_NAME### ###ON_TEXT### ###POST_DATETIME###
+	    </div>
+	</li>
+	<!-- ###PREVIEW_ENTRY### end-->
+
+	<!-- ###PREVIEW_NOENTRY### begin-->
+    <li class="entry">
+		###NO_ENTRY_MESSAGE###
+	</li>
+	<!-- ###PREVIEW_NOENTRY### end-->
+
+<!-- ###TEMPLATE_PREVIEW### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_POSTFORM### begin
+=====================================================================================================
+   Form to post a message/reply
+
+-->
+<div id="ReplyForm0">
+ <div class="wecDiscussionForm">
+	###RTE_PRE_FORM###
+	<form class="pluginForm" name="forumReplyForm" method="post" action="###ACTION_URL###" onsubmit="###RTE_SUBMIT###" enctype="multipart/form-data">
+ <a name="typeYourMessage"></a>
+		<h3>###FORM_HEADER###</h3>
+		<!-- ###SHOW_REQUIRED_TEXT### begin--><div class="notice">###REQUIRED_TEXT###</div><!-- ###SHOW_REQUIRED_TEXT### end-->
+		<!-- ###SHOW_ERROR### begin--><div class="error">###FORM_ERROR###</div><!-- ###SHOW_ERROR### end-->
+    	<span style="display:none;"><input type="text" name="comment" size="30" value="" /></span>
+	   <fieldset>
+		###HIDDEN_VARS###
+		<ul>
+   	    <!-- ###SHOW_NAME### begin -->
+	    <li>
+	    	<label>###FORM_NAME###<em class="required">###FORM_NAME_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[name]" type="text" size="40" value="###VALUE_NAME###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;
+	    </li>
+	    <!-- ###SHOW_NAME### end -->
+	    <!-- ###SHOW_EMAIL### begin -->
+	    <li>
+	    	<label>###FORM_EMAIL###<em class="required">###FORM_EMAIL_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[email]" type="text" size="40" value="###VALUE_EMAIL###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;
+	    </li>
+	    <!-- ###SHOW_EMAIL### end -->
+	    <!-- ###SHOW_SUBJECT### begin -->
+	    <li>
+	    	<label><span id="subjTitle">###FORM_SUBJECT###<em class="required">###FORM_SUBJECT_REQUIRED###</em></label></span>
+	    	<input name="tx_wecdiscussion[subject]" id="subjValue" type="text" size="40" value="###VALUE_SUBJECT###" ###SUBJECT_CLASS### />
+	    </li>
+        <!-- ###SHOW_SUBJECT### end -->
+	    <li>
+	    	<label>###FORM_MESSAGE###<em class="required">###FORM_MESSAGE_REQUIRED###</em></label>
+	    	
+			<!-- ###SHOW_MESSAGE_RTE### begin -->
+          	    	###RTE_FORM_VARS###
+	          	    ###RTE_FORM_ENTRY###
+    	      	    ###RTE_FORM_BUTTONS###
+			<!-- ###SHOW_MESSAGE_RTE### end-->
+			<!-- ###SHOW_MESSAGE_TEXTAREA### begin-->
+				<textarea name="tx_wecdiscussion[message]" cols="40" rows="5" wrap="virtual" ###MESSAGE_STYLE###>###VALUE_MESSAGE###</textarea>
+			<!-- ###SHOW_MESSAGE_TEXTAREA### end-->
+	    </li>
+		<!-- ###SHOW_CATEGORY### begin -->
+	    <li>
+	    	<label>###FORM_CATEGORY###<em class="required">###FORM_CATEGORY_REQUIRED###</em></label>
+	    	###VALUE_CATEGORY### ###CREATE_NEW_CATEGORY###
+	    </li>
+	    <!-- ###SHOW_CATEGORY### end -->
+	    <!-- ###SHOW_IMAGE### begin -->
+	    <li>
+	    	<label>###FORM_IMAGE###<em class="required">###FORM_IMAGE_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[image]" type="file" size="35" value="###VALUE_IMAGE###" />
+	    	<!-- ###CLEAR_IMAGE### begin -->
+	    	<span id="edit_image">
+	    	###VIEW_IMAGE###
+	    	<input type="button" onclick="if (document.all) { document.all['edit_image'].innerHTML = ''; saved_image.value=0;} else { document.getElementById('edit_image').innerHTML=''; document.getElementById('saved_image').value=0; } return false;" name="clear_image" value="Clear Image" style="width:100px;" />
+			<input name="tx_wecdiscussion[save_image]" type="hidden" value="###VALUE_IMAGE###" />
+	    	</span>
+	    	<!-- ###CLEAR_IMAGE### end -->
+	    	<input id="saved_image" type="hidden" name="tx_wecdiscussion[saved_image_file]" value="###VALUE_IMAGE###" />
+	    	</span>
+	    </li>
+	    <!-- ###SHOW_IMAGE### end -->
+	    <!-- ###SHOW_ATTACHMENT### begin -->
+	    <li>
+	    	<label>###FORM_ATTACHMENT###<em class="required">###FORM_ATTACHMENT_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[attachment]" type="file" size="35" value="###VALUE_ATTACHMENT###" />
+			<input id="saved_attachment" type="hidden" name="tx_wecdiscussion[saved_attachment_file]" value="###VALUE_ATTACHMENT###" />
+	    </li>
+	    <!-- ###SHOW_ATTACHMENT### end -->
+	    <!-- ###SHOW_STARTTIME### begin -->
+	    <li>
+	    	<label><span id="subjTitle">###FORM_STARTTIME###<em class="required">###FORM_STARTTIME_REQUIRED###</em></span></label>
+			<input name="tx_wecdiscussion[starttime]"   type="text" size="10" value="###VALUE_STARTTIME###" />
+	    </li>
+        <!-- ###SHOW_STARTTIME### end -->	
+	    <!-- ###SHOW_ENDTIME### begin -->
+	    <li>
+	    	<label><span id="subjTitle">###FORM_ENDTIME###<em class="required">###FORM_ENDTIME_REQUIRED###</em></span></label>
+			<input name="tx_wecdiscussion[endtime]"   type="text" size="10" value="###VALUE_ENDTIME###" />
+	    </li>
+        <!-- ###SHOW_ENDTIME### end -->		
+		<!--###CAPTCHA_INSERT### subpart is removed if CAPTCHA is not enabled! -->
+	    <li>
+		    <br />###SR_FREECAP_NOTICE###<br />
+	    	<label><br />###SR_FREECAP_CANT_READ###<em class="required">*</em></label>
+	    	<input type="text" size="15" id="tx_wecdiscussion_pi1_captcha_response" name="tx_wecdiscussion[captcha_response]" title="###SR_FREECAP_NOTICE###" value="" />###SR_FREECAP_IMAGE###
+	    </li>
+		<!--###CAPTCHA_INSERT### end-->
+		<!-- ###SHOW_EASY_CAPTCHA### begin-->
+		<li>
+			<label for="captcha">###FORM_CAPTCHA_LABEL###</label>
+			###EASY_CAPTCHA_IMAGE###
+			<input type="text" size=10 name="tx_wecdiscussion[captcha_response]" value="">
+		</li>
+		<!-- ###SHOW_EASY_CAPTCHA### end-->		
+		<!-- ###SHOW_TEXT_CAPTCHA### begin-->
+	    <li>
+	    	<label>###TEXT_CAPTCHA_LABEL###<em class="required">*</em></label>
+	    	###TEXT_CAPTCHA_FIELD###
+	    </li>
+		<!-- ###SHOW_TEXT_CAPTCHA### end-->
+		<!-- ###SHOW_EMAIL_AUTHOR_REPLIES### begin-->
+	    <li>
+	    	<label>###FORM_EMAIL_AUTHOR_REPLIES###<em class="required">###FORM_EMAIL_AUTHOR_REPLIES_REQUIRED###</em></label>
+    		<input name="tx_wecdiscussion[email_author_replies]" type="checkbox" value="1" ###FORM_EMAIL_AUTHOR_CHECKED### />
+	    </li>
+		<!-- ###SHOW_EMAIL_AUTHOR_REPLIES### end-->
+		<!-- ###SHOW_IPADDRESS### begin-->
+	    <li>
+			<span class="fullRow">
+				###IP_ADDRESS_RECORDED###
+				<input type="hidden" name="tx_wecdiscussion[ipAddress]" value="###IP_ADDRESS###">
+			</span>
+	    </li>
+		<!-- ###SHOW_IPADDRESS### end-->		
+	    <li>
+	    	<span class="fullRow">
+				<input name="ForumReply" type="submit" value="###SUBMIT_BTN###" /> 
+				###PREVIEW_BEFORE_POST_BTN###
+				###CANCEL_BTN###
+			</span>
+	    </li>
+	    </ul>
+		<div class="vspacer">&nbsp;</div>
+	  </fieldset>
+	</form>
+  	###RTE_POST_FORM###
+ </div>
+</div>	
+<!-- ###TEMPLATE_POSTFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_COMMENTFORM### begin
+=====================================================================================================
+   Form to post a comment message/reply
+
+-->
+###COMMENTFORM_TOGGLE###
+<div id="CommentForm0"> 
+ <div class="wecDiscussionForm">
+	<form class="pluginForm" name="forumCommentForm" method="post" action="###ACTION_URL###"  enctype="multipart/form-data">
+ 	  <a name="typeYourComment"></a>
+      <div class="header">
+			<h3>###FORM_HEADER###</h3>
+    		<!-- ###SHOW_REQUIRED_TEXT### begin--><div class="notice">###REQUIRED_TEXT###</div><!-- ###SHOW_REQUIRED_TEXT### end-->
+    		<!-- ###SHOW_ERROR### begin--><div class="error">###FORM_ERROR###</div><!-- ###SHOW_ERROR### end-->
+      </div>
+	  <fieldset>
+		###HIDDEN_VARS###
+		<ul>
+   	    <!-- ###SHOW_NAME### begin -->
+	    <li>
+	    	<label>###FORM_NAME###<em class="required">###FORM_NAME_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[name]" type="text" size="40" value="###VALUE_NAME###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;
+	    </li>
+	    <!-- ###SHOW_NAME### end -->
+	    <!-- ###SHOW_SUBJECT### begin -->
+	    <li>
+	    	<label><div id="subjTitle">###FORM_SUBJECT###<em class="required">###FORM_SUBJECT_REQUIRED###</em></div></label>
+	    	<input name="tx_wecdiscussion[subject]" id="subjValue" type="text" size="40" value="###VALUE_SUBJECT###"/>
+	    </li>
+        <!-- ###SHOW_SUBJECT### begin -->
+	    <!-- ###SHOW_EMAIL### begin -->
+	    <li>
+	    	<label>###FORM_EMAIL###<em class="required">###FORM_EMAIL_REQUIRED###</em></label>
+	    	<input name="tx_wecdiscussion[email]" type="text" size="40" value="###VALUE_EMAIL###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;
+	    </li>
+	    <!-- ###SHOW_EMAIL### end -->
+	    <li>
+	    	<label>###FORM_MESSAGE###<em class="required">###FORM_MESSAGE_REQUIRED###</em></label>
+	    	<textarea name="tx_wecdiscussion[message]" cols="40" rows="5" wrap="virtual">###VALUE_MESSAGE###</textarea>
+	    </li>
+		<!--###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+	    <li>
+		    <br />###SR_FREECAP_NOTICE###<br />
+	    	<label><br />###SR_FREECAP_CANT_READ###<em class="required">*</em></label>
+	    	<input type="text" size="15" id="tx_wecdiscussion_pi1_captcha_response" name="tx_wecdiscussion[captcha_response]" title="###SR_FREECAP_NOTICE###" value="" />###SR_FREECAP_IMAGE###
+	    </li>
+		<!--###CAPTCHA_INSERT###-->
+		<!-- ###SHOW_TEXT_CAPTCHA### begin-->
+	    <li>
+	    	<label>###TEXT_CAPTCHA_LABEL###<em class="required">*</em></label>
+	    	###TEXT_CAPTCHA_FIELD###
+	    </li>
+		<!-- ###SHOW_TEXT_CAPTCHA### end-->
+	    <li>
+	    	<span class="fullRow"><input name="ForumComment" type="submit" value="###SUBMIT_COMMENT_BTN###"/></span>
+	    </li>
+		</ul>
+	    <div class="vspacer">&nbsp;</div>
+	  </fieldset>
+	</form>
+</div>
+ </div>	
+###COMMENTFORM_TOGGLE_END###
+<!-- ###TEMPLATE_COMMENTFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_SUBSCRIBEFORM### begin
+=====================================================================================================
+   Form to subscribe/unsubscribe
+
+-->
+<div class="wecDiscussionForm">
+  <form class="pluginForm narrowWidth" name="subscriberform" method="post" action="###ACTION_URL###">
+     <div class="header">
+		<h3>###SUBSCRIBE_HEADER###</h3>
+   		<!-- ###SHOW_SUBSCRIBE_INSTRUCTIONS### begin--><div class="notice">###SUBSCRIBE_INSTRUCTIONS###</div><!-- ###SHOW_SUBSCRIBE_INSTRUCTIONS### end-->
+   		<!-- ###SHOW_ERROR### begin--><div class="error">###FORM_ERROR###</div><!-- ###SHOW_ERROR### end-->
+     </div>
+	<fieldset>
+ 	###HIDDEN_VARS###
+	<ul>
+	<li>
+		<label>###FORM_EMAIL###</label>
+		<input type="text" name="tx_wecdiscussion[name]" value="###VALUE_NAME###"/>
+		<input type="text" name="tx_wecdiscussion[email]" value="###VALUE_EMAIL###"/>
+	</li>
+	<li>
+		<span class="fullRow">
+			<input type="hidden" name="id" value="###PID###"/>
+			<input type="submit" name="submitsubscribe" value="###FORM_SUBMIT_SUB###"/>
+			<input type="submit" name="submitunsubscribe" value="###FORM_SUBMIT_UNSUB###"/>
+			<input type="button" onclick="###CANCEL_URL###" value="###FORM_CANCEL###"/>
+		</span>
+	</li>
+	</ul>
+	</fieldset>
+	<div class="vspacer">&nbsp;</div>
+  </form>
+</div>
+<!-- ###TEMPLATE_SUBSCRIBEFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_SEARCH_RESULTS### begin
+
+ Template for showing an entry for the search results. If you have set different display_entries
+ then you may need to customize this here.
+=====================================================================================================
+-->
+	<!-- ###SHOW_SUBJECT### begin -->
+    <h3>###SUBJECT###</h3>
+    <!-- ###SHOW_SUBJECT### end -->
+    <div class="message" ###MARGIN_LEFT###>
+    	###MESSAGE###
+    	###IMAGE###
+    	###ATTACHMENT###
+	</div>
+	<div class="entryInfo">
+    	###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+    	<!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end-->
+	</div>
+	<div class="buttonRow">
+		###POST_LINK_START### <span class="smalltext label">###GOTO_POST_LABEL###</span> ###POST_LINK_END###
+	</div>
+	<div class="vspacer"> </div>
+<!-- ###TEMPLATE_SEARCH_RESULTS### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_ARCHIVE### begin
+
+ Template for showing an archive in its own view
+=====================================================================================================
+-->
+<div class="archive pluginContent">
+	<div class="header">###ARCHIVE_HEADER###</div>
+	<div class="showAll">###SHOW_ALL_ARCHIVE_LINK###</div>
+	<ul>
+		###DISPLAY_ARCHIVE###
+	</ul>
+	<div>###RSSFEED_ICON2### ###RSSFEED_TEXT###</div>
+</div>	
+<!-- ###ARCHIVE_ITEM### begin
+	for customizing each item displayed in the archive
+-->
+<li class="###ITEM_SEL_CLASS###">
+	<a href="###ITEM_URL###">###ITEM_TEXT###</a>
+</li>
+<!-- ###ARCHIVE_ITEM### end -->
+
+<!-- ###TEMPLATE_ARCHIVE### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_REPORTABUSEFORM### begin
+=====================================================================================================
+   Form to report abuse (i.e., an inappropriate post)
+
+-->
+<form class="pluginForm" name="reportabuseform" method="post" action="###ACTION_URL###">
+	<h3>###ABUSE_HEADER###</h3>
+	<div class="notice">###ABUSE_INSTRUCTIONS###</div>
+	<div class="messageBox"><p>###ABUSE_MESSAGE###</p></div>	
+ 	###HIDDEN_VARS###
+	<fieldset>
+	<ul>
+	<li>
+		<label>###FORM_NAME###</label>
+		<input type="text" name="tx_wecdiscussion[name]" value="###VALUE_NAME###"/>
+	</li>
+	<li>
+		<label>###FORM_EMAIL###</label>
+		<input type="text" name="tx_wecdiscussion[email]" value="###VALUE_EMAIL###"/>
+	</li>
+	<li>
+		<label>###FORM_TEXT###</label>
+		<input type="text" name="tx_wecdiscussion[text]" value="###VALUE_TEXT###"/>
+	</li>		
+	<li>
+		<span class="fullRow">
+			<input type="hidden" name="id" value="###PID###"/>
+			<input type="submit" name="submitabuse" value="###FORM_SUBMIT_ABUSE###"/>
+			<input type="button" onclick="###CANCEL_URL###" value="###FORM_CANCEL###"/>
+		</span>
+	</li>
+	</ul>
+	</fieldset>
+	<div class="vspacer">&nbsp;</div>
+ </form>
+<!-- ###TEMPLATE_REPORTABUSEFORM### end -->

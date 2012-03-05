@@ -1,0 +1,67 @@
+includeLibs.ts_wecdiscussion = EXT:wec_discussion/pi1/class.tx_wecdiscussion_pi1.php
+
+[userFunc = user_isDiscussionNotCached()] 
+plugin.tx_wecdiscussion_pi1 = USER_INT
+[global]
+
+plugin.tx_wecdiscussion_pi1 {
+	templateFile 		= {$plugin.tx_wecdiscussion_pi1.templateFile}
+	baseCSSFile 		= {$plugin.tx_wecdiscussion_pi1.baseCSSFile}
+	cssFile 			= {$plugin.tx_wecdiscussion_pi1.cssFile}
+		
+	imageWidth			= {$plugin.tx_wecdiscussion_pi1.imageWidth}
+	imageHeight			= {$plugin.tx_wecdiscussion_pi1.imageHeight}
+  	mainContentWidth	= {$plugin.tx_wecdiscussion_pi1.mainContentWidth}
+  	sidebarWidth  		= {$plugin.tx_wecdiscussion_pi1.sidebarWidth}
+
+	archiveLimit 		= {$plugin.tx_wecdiscussion_pi1.archiveLimit}
+	spamWords 			= {$plugin.tx_wecdiscussion_pi1.spamWords}
+	addSpamWords 		= {$plugin.tx_wecdiscussion_pi1.addSpamWords}
+
+	singleViewLink		= {$plugin.tx_wecdiscussion_pi1.singleViewLink}
+	pid_list			= {$plugin.tx_wecdiscussion_pi1.pid_list}
+	preview_backPID		= {$plugin.tx_wecdiscussion_pi1.preview_backPID}
+	more_tag			= {$plugin.tx_wecdiscussion_pi1.more_tag}
+	more_link			= {$plugin.tx_wecdiscussion_pi1.more_link}
+	duplicateCheckDelaySeconds = {$plugin.tx_wecdiscussion_pi1.duplicateCheckDelaySeconds}
+	
+	RTEenabled			= {$plugin.tx_wecdiscussion_pi1.RTEenabled}
+	RTEwidth			= {$plugin.tx_wecdiscussion_pi1.RTEwidth}
+	RTEheight			= {$plugin.tx_wecdiscussion_pi1.RTEheight}
+	
+	showBlankSubject	= {$plugin.tx_wecdiscussion_pi1.showBlankSubject}
+	sendOnlyPosts		= {$plugin.tx_wecdiscussion_pi1.sendOnlyPosts}
+	lockInNameEmail		= {$plugin.tx_wecdiscussion_pi1.lockInNameEmail}
+	namePrefill			= {$plugin.tx_wecdiscussion_pi1.namePrefill}
+	sortComments		= {$plugin.tx_wecdiscussion_pi1.sortComments}
+	showIpAddress		= {$plugin.tx_wecdiscussion_pi1.showIpAddress}
+	
+	loginPID			= {$loginPID}
+		
+	isLoaded		    = yes
+	isOldTemplate		= 0
+	
+  # Re-use the RTE parseFunc configuration for normal content
+  general_stdWrap {
+    parseFunc < tt_content.text.20.parseFunc
+  }
+
+  preview_stdWrap {
+  	parseFunc < tt_content.text.20.parseFunc
+    stripHtml = 1
+  	trim = 1
+  	crop = 150|...|1
+  }
+
+  single_view {
+	substitutePageTitle = 1
+  }
+
+  lib.parseFunc_RTE.allowTags := addToList(object,param,embed)
+}
+
+plugin.tx_wecdiscussion_pi1._CSS_DEFAULT_STYLE (
+
+
+)
+

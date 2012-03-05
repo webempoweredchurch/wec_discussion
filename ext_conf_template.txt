@@ -1,0 +1,5 @@
+# cat=basic/1; type=options[subject,name,post_datetime]; label= Forum Label in List-Module: Which field is displayed in the title column in the web/list module.
+label = subject
+
+# cat=basic/2; type=options[,post_datetime,subject,name,uid,category]; label= Alternative Label: Defines which field is displayed in the title column in lists if the field is empty, that is configured as label. If no alternative label is defined and the label field is empty the text [No title] will be shown.
+label_alt =

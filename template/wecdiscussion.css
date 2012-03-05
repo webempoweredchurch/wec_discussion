@@ -1,0 +1,288 @@
+
+/*-------------------------- MAIN DISCUSSION STYLES ---------------------------*/
+.tx_wecdiscussion_pi1 {
+	max-width:	850px;
+	min-width:  300px;
+}
+
+.pluginSection {
+	float:			left;
+	width:			100%;
+	margin:			0px;
+	padding:		0px;
+}
+
+.tx_wecdiscussion_pi1 .searchBox {
+	float:			right;
+	margin:			2px;
+	margin-right:	10px;
+}
+
+.tx_wecdiscussion_pi1 .button {
+	text-align:		center;
+	padding:		2px 4px;
+	text-decoration: none !important;	
+}
+
+.pluginNav {
+	background-color: #F0F0E0;
+    margin: 		0px;
+	padding:		6px 0px;
+}
+
+.pluginNav .gutter{
+	padding:		6px;
+}
+.pluginNav span {
+	vertical-align: bottom;
+}
+.pluginNav a.button, 
+.aside a.button {
+	padding: 2px 6px;
+	font-size: 12px;
+}
+.tx_wecdiscussion_pi1 .pageLinkSection {
+	display:		block;
+	text-align:		center;
+	margin:			0px auto;
+}
+.tx_wecdiscussion_pi1 .pageLink {
+	display:		inline;
+	padding-left:	6px;
+	padding-right:	6px;	
+}
+
+.tx_wecdiscussion_pi1 .pluginNav {
+	background-image: -moz-linear-gradient(top, #FFE, #DDC);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #FFE),color-stop(1.00, #DDC));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFEE, EndColorStr=#DDDDCC);
+}
+.tx_wecdiscussion_pi1 .aside {
+	background-image: -moz-linear-gradient(top, #DDC, #BBA);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #DDC),color-stop(1.00, #BBA));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#DDDDCC, EndColorStr=#BBBBAA);
+	-webkit-border-radius: 0px 0px 4px 4px;
+	-moz-border-radius: 0px 0px 4px 4px;
+	border-radius:0px 0px 4px 4px;	
+}
+.tx_wecdiscussion_pi1 .clearBackground {
+	background: 0;
+}
+/*-----------ARCHIVE and CATEGORY LISTS ------------*/
+.tx_wecdiscussion_pi1 .archive, 
+.tx_wecdiscussion_pi1 .categoryList {
+	margin:		0px;
+	margin-top: 4px;
+	padding:	6px;
+	font-size:	13px;
+	background-color: #FFF;
+	border: 3px solid #bba;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.archive h4, 
+.categoryList h4 {
+	font-size:		14px;
+	font-weight:	bold;
+	margin:		4px 0px;
+}
+.aside li,
+.archive li {
+	list-style-type: none;
+}
+.aside li a, 
+.archive li a {
+	display:		block;
+	color:			#320C0C;
+	font-size:		12px;
+	padding:		3px 0px 0px 3px;
+	margin:			0px;
+	white-space:	nowrap;
+	text-decoration: none !important;
+}
+.aside li a:hover,
+.archive li a:hover {
+	color:		#279838;
+}
+.isSelected a, 
+.isSelected a:visited, 
+.isSelected a:link  {
+	color: 		#C53434 !important;
+}
+.showarchive li {
+	margin-left:10px;
+}
+.archive li a {
+	display:	inline;
+}
+
+/*------------ POST ENTRY --------------*/
+
+.tx_wecdiscussion_pi1 .entries h3 {
+	font-weight: 	bold;
+	font-family: 	"Trebuchet MS", Tahoma, Arial;
+	font-size:		14px;
+	padding:		8px 6px;
+	margin:			4px 0px;
+}
+.tx_wecdiscussion_pi1 .entries h3 a, 
+.tx_wecdiscussion_pi1 .entries h3 a:link, 
+.tx_wecdiscussion_pi1 .entries h3 a:visited {
+	text-decoration: none !important;
+}
+
+.entries .messageCommentNum, 
+.entries .messageCommentNumOnly {
+	font-size:		11px;
+	font-weight:	normal;
+	padding-left:	4px;
+}
+
+.entries .message {
+	padding:		2px 8px 0px 8px;
+	line-height:	1.4em;
+}
+.entries .messageReply {
+	padding-left:	30px;
+	padding-right:	30px;
+	padding-top:	10px;
+	color:			#444;
+    background-color: #FFF;
+}
+
+.entries .entryInfo {
+	font-size: 		10px;
+	color:			#555;
+	padding-left:	10px;
+	padding-top:	3px;
+	padding-bottom: 6px;
+	border-top:		dotted 1px #888;
+    color: 			#404040;
+}
+
+.entries li .buttonRow {
+	margin: 2px 2px 8px 2px;
+}
+.entries li .buttonRow a {
+	font-size: 	11px;
+	padding: 	2px 6px;
+}
+.entries li .buttonRow a:hover {
+	background-color: #f44 !important;
+}
+
+.entries .replyInfo {
+	font-size: 	10px;
+	color:		#555;
+	padding-left:5px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top:	dotted 1px #888;
+}
+
+.tx_wecdiscussion_pi1 .messageBox {
+	margin:	5px;
+	border: 2px solid #111;
+	padding: 4px;
+	background-color: #444;
+	opacity: 0.6;
+}
+.tx_wecdiscussion_pi1 .messageBox p {
+	color: #fff;
+	opacity: 1.0;
+}
+
+/*----------- PREVIEW --------------*/
+.tx_wecdiscussion_pi1 .preview {
+	width:			300px;
+	padding:		4px;
+	border:			1px solid #ccc;
+}
+.preview .entryInfo {
+	color:			#555;
+	font-size: 		80%;
+    margin-bottom: 	6px;
+	border-top:		dotted 1px #ccc;
+}
+
+/*------- FORUM REPLY FORM -------*/
+.tx_wecdiscussion_pi1 .pluginForm {
+	float:		left;
+	clear:		both;
+	background-color: #F0F0E0;
+	border: 	1px solid #AA9;
+	margin:		0px auto;
+    margin-top:	4px;
+    margin-bottom:4px;
+	min-width: 350px;
+	max-width: 800px;
+}
+.tx_wecdiscussion_pi1 .pluginForm h3 {
+	font-size:		14px;
+	font-weight:	bold;
+}
+.tx_wecdiscussion_pi1 .pluginForm fieldset {
+	border: 0;
+	margin: 3px;
+	padding: 3px;
+}
+.tx_wecdiscussion_pi1 .pluginForm div.header {
+	display:block; 
+	width: 	100%;  
+	text-align: center; 
+	margin: 0px auto;
+}
+.tx_wecdiscussion_pi1 .pluginForm .required {
+	color: #CC0000;
+}
+
+.tx_wecdiscussion_pi1 .pluginForm .instructions {
+	font-weight:	normal;
+	font-size:		12px;
+	text-align:		center;
+	margin:			4px auto;
+}
+
+/*------ MODERATED FORM ---------*/
+.moderatedForm {
+	width: 600px;
+}
+.moderatedForm .btnColumn {
+	width: 60px;
+}
+.moderatedForm .msgColumn {
+}
+.moderatedForm .headerField {
+	background-color: #ccc;
+	font-weight:	bold;
+	color:			#000;
+	padding:		4px;
+}
+.moderatedForm .subjectLabel {
+	font-size:		12px;
+	font-weight:	bold;
+}
+.moderatedForm .textLabel {
+	font-weight:	normal;
+	font-size:		11px;
+}
+.moderatedForm .msgCell {
+	padding:		4px;
+}
+
+.error,
+.success,
+.notice {
+	margin-top:6px;
+}
+
+@media print { 
+	.wecDiscussionForm,
+	.tx_wecdiscussion_pi1 .entries li .buttonRow,
+	.tx_wecdiscussion_pi1 .pluginHeader
+	{
+		display: none;
+	}
+	.pluginSection { float: none;}
+}

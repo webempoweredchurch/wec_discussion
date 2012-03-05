@@ -1,0 +1,526 @@
+<!-- Templates For The WEC Discussion Extension:
+
+		###TEMPLATE_PAGE		 -- the main page
+		###TEMPLATE_DISPLAYENTRY -- for one posted message
+		###TEMPLATE_PREVIEW		 -- if want to have a preview view of your messages
+		###TEMPLATE_POSTFORM	 -- the form for posting a message
+		###TEMPLATE_COMMENTFORM	 -- the form for posting a comment
+		###TEMPLATE_SUBSCRIBEFORM -- the form for handling subscribe/unsubscribe
+		###TEMPLATE_SEARCH_RESULTS -- the form for showing an entry for search results
+		###TEMPLATE_ARCHIVE		 -- for viewing an archive as separate
+-->
+
+<!--
+=====================================================================================================
+###TEMPLATE_PAGE### begin
+=====================================================================================================
+-->
+<div class="tx-wecdiscussion-page">
+	<div>
+		<div class="tx-wecdiscussion-title">###TITLE###</div>
+		<div class="tx-wecdiscussion-responseMsg">###RESPONSE_MSG_TEXT###</div>
+		<!-- ###SHOW_SEARCH### begin -->
+			<div class="tx-wecdiscussion-search">
+				<form method="post" action="###SEARCHFORM_URL###">
+					<input size="20" maxlength="60" type="text" name="tx_wecdiscussion[searchwords]" value="###SEARCHWORDS###" />
+					<input type="submit" name="search" value="###SEARCH_BUTTON###" />
+				</form>
+			</div>
+		<!-- ###SHOW_SEARCH### end -->
+		<!-- ###SHOW_POST_BTN### begin -->
+			<div class="tx-wecdiscussion-button">
+				<a href="#" onclick="makeReply(-1,0);window.location.hash='typeYourMessage';return false;">###POST_YOUR_MESSAGE_BTN###</a>
+			</div>
+		<!-- ###SHOW_POST_BTN### end -->
+		<!-- ###SHOW_COMMENT_BTN### begin -->
+			<div class="tx-wecdiscussion-button">
+				<a href="#" onclick="makeComment(0,0);window.location.hash='typeYourComment';return false;">###POST_YOUR_COMMENT_BTN###</a>
+			</div>
+		<!-- ###SHOW_COMMENT_BTN### end -->
+		###DISPLAY_VIEW_ALL_BUTTON###
+	</div>
+	<!-- ###SHOW_ACTIONBAR### begin -->
+	<div class="tx-wecdiscussion-actionbar">
+		<div class="gutter">
+		<!--###SHOW_SUBSCRIBE_BTN### begin--><span class='tx-wecdiscussion-button'>###SUBSCRIBE_BTN###</span><!--###SHOW_SUBSCRIBE_BTN### end-->
+		<!--###SHOW_MODERATE_BTN###  begin--><span class='tx-wecdiscussion-button'>###MODERATE_BTN###</span><!--###SHOW_MODERATE_BTN### end-->
+		<span>###CHOOSE_CATEGORY_DROPDOWN###</span>
+		<!--###SHOW_ARCHIVE_DROPDOWN### begin-->
+			<span>
+				###ARCHIVE_HEADER###
+				###DISPLAY_ARCHIVE_DROPDOWN###
+			</span>
+		<!--###SHOW_ARCHIVE_DROPDOWN### end-->
+		<span>###RSSFEED_ICON2###</span>
+		</div>
+	</div>
+	<!-- ###SHOW_ACTIONBAR### end -->
+
+	<div class="tx-wecdiscussion-mainContent" style="width:###MAINCONTENT_WIDTH###">
+		<div id="ReplyForm-1" style="height:0;">&nbsp;</div>
+		###DISPLAY_HEADER###
+		###DISPLAY_SEARCH_RESULTS###
+		###DISPLAY_POSTS###
+		###DISPLAY_COMMENTS###
+		<!-- ###SHOW_PAGENUM### begin-->
+		<div class="tx-wecdiscussion-pagelink-section">###PAGE_PREV### ###PAGE_NUM_LIST### ###PAGE_NEXT###</div>
+		<!-- ###SHOW_PAGENUM### end-->
+		###DISPLAY_REPLYFORM###
+		###DISPLAY_COMMENTFORM###
+		###DISPLAY_CODE###
+	</div>
+	<!-- ###SHOW_SIDEBAR### begin -->
+	<div class="tx-wecdiscussion-sidebar">
+		<div class="gutter">
+			<!--###SHOW_SUBSCRIBE_BTN### begin--><div class='tx-wecdiscussion-button'>###SUBSCRIBE_BTN###</div><!--###SHOW_SUBSCRIBE_BTN### end-->
+			<!--###SHOW_MODERATE_BTN### begin--><div class='tx-wecdiscussion-button'>###MODERATE_BTN###</div><!--###SHOW_MODERATE_BTN### end-->
+			###CHOOSE_CATEGORY_VERTICAL###
+			<!--###SHOW_ARCHIVE### begin-->
+				<div class="archive">
+					<div class="header">###ARCHIVE_HEADER###</div>
+					<ul>
+						###DISPLAY_ARCHIVE###
+					</ul>
+				</div>
+			<!--###SHOW_ARCHIVE### end-->
+			<div>###RSSFEED_ICON1###</div>
+		</div>
+	</div>
+	<!-- ###SHOW_SIDEBAR### end -->
+
+</div>
+<div class="tx-wecdiscussion-spacer">
+</div>
+<!-- ###TEMPLATE_PAGE### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_DISPLAYENTRY### begin
+
+ Template for a single item. This is repeated for each item.
+=====================================================================================================
+-->
+	<!-- ###POST_ENTRY_START### begin-->
+		###START_POST_ENTRY###
+		###POST_ANCHOR###
+	<!-- ###POST_ENTRY_START### end-->
+
+	<!-- ###POST_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+		<!-- ###SHOW_SUBJECT### begin -->
+			<div class="tx-wecdiscussion-forumMessageSubject">###VIEW_SINGLE_LINKSTART### ###SUBJECT### ###VIEW_SINGLE_LINKEND### ###VIEW_COMMENTS_NUM###</div>
+		<!-- ###SHOW_SUBJECT### end -->
+	    <div class="tx-wecdiscussion-forumMessage" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###
+		    <div class="tx-wecdiscussion-forumMessageInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+	    		<!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end-->
+		    	<span class="tx-wecdiscussion-forumMessageReplyButton">
+		    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###DELETEALL_BTN### ###VIEW_COMMENTS### ###VIEW_SINGLE### ###ABUSE_BTN###
+	    		</span>
+		    </div>
+		</div>
+
+	<!-- ###POST_ENTRY### end-->
+
+	<!-- ###REPLY_ENTRY_START### begin-->
+		###START_REPLY_ENTRY###
+	<!-- ###REPLY_ENTRY_START### end-->
+
+	<!-- ###REPLY_ENTRY### begin
+		----------------------------------------------------------------------------------
+	-->
+	    <div class="tx-wecdiscussion-forumMessageReply" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###	
+		    <div class="tx-wecdiscussion-forumMessageReplyInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+		    	<span class="tx-wecdiscussion-forumMessageReplyButton">
+		    		###REPLY_BTN### ###EDIT_BTN### ###DELETE_BTN### ###VIEW_SINGLE### ###ABUSE_BTN###
+	    		</span>
+		    </div>
+		</div>
+	<!-- ###REPLY_ENTRY### end-->
+
+	<!-- ###POST_ENTRY_END### begin-->
+		###END_REPLY_ENTRY###
+		###VIEW_REPLY_FORM###
+		###END_POST_ENTRY###
+	<!-- ###POST_ENTRY_END### end-->
+
+<!-- ###TEMPLATE_DISPLAYENTRY### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_PREVIEW### begin
+
+ Template for the preview display.
+=====================================================================================================
+-->
+	<!-- ###PREVIEW_DISPLAY### begin-->
+	<div class="tx-wecdiscussion-forumPreview">
+		###PREVIEW_ENTRIES###
+	</div>
+	<!-- ###PREVIEW_DISPLAY### end-->
+
+	<!-- ###PREVIEW_ENTRY### begin-->
+    <div class="tx-wecdiscussion-forumPreviewEntry">
+     	<div class="tx-wecdiscussion-forumPreviewEntryHeader">
+    		###PREVIEW_LINK_BEGIN### ###SUBJECT### ###VIEW_COMMENTS_NUM### ###PREVIEW_LINK_END###
+    	</div>
+    	###MESSAGE###
+    	<!-- ###PREVIEW_SHOWIMAGE### begin
+			uncomment this below to show images in preview:
+		-->
+		<!--	###PREVIEW_LINK_BEGIN### ###IMAGE### ###PREVIEW_LINK_END### -->
+    	<!-- ###PREVIEW_SHOWIMAGE### end -->
+	    <div class="tx-wecdiscussion-forumPreviewInfo">
+    		###POSTEDBY_TEXT### ###POST_NAME### ###ON_TEXT### ###POST_DATETIME###
+	    </div>
+	</div>
+	<!-- ###PREVIEW_ENTRY### end-->
+
+	<!-- ###PREVIEW_NOENTRY### begin-->
+    <div class="tx-wecdiscussion-forumPreviewEntry">
+		###NO_ENTRY_MESSAGE###
+	</div>
+	<!-- ###PREVIEW_NOENTRY### end-->
+
+<!-- ###TEMPLATE_PREVIEW### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_POSTFORM### begin
+=====================================================================================================
+   Form to post a message/reply
+
+-->
+  <div id="ReplyForm0">
+	<a name="typeYourMessage"></a>
+	<div class="tx-wecdiscussion-form">
+		###RTE_PRE_FORM###
+		<form name="forumReplyForm" method="post" action="###ACTION_URL###" onsubmit="###RTE_SUBMIT###" enctype="multipart/form-data">
+		   <fieldset>
+			###HIDDEN_VARS###
+		    <div class="inputFormRow">
+				<div class="header">
+		    		<div class="tx-wecdiscussion-header">###FORM_HEADER###</div>
+		    		<div class="tx-wecdiscussion-headerSmall">###REQUIRED_TEXT###</div>
+		    		<div class="tx-wecdiscussion-error">###FORM_ERROR###</div>
+				</div>
+		    	<span style="display:none;"><input type="text" name="comment" size="30" value="" /></span>
+	    	</div>
+    	    <!-- ###SHOW_NAME### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_NAME###<span class="requiredMarker">###FORM_NAME_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[name]" type="text" size="40" value="###VALUE_NAME###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;</span>
+		    </div>
+		    <!-- ###SHOW_NAME### end -->
+		    <!-- ###SHOW_EMAIL### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_EMAIL###<span class="requiredMarker">###FORM_EMAIL_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[email]" type="text" size="40" value="###VALUE_EMAIL###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;</span>
+		    </div>
+		    <!-- ###SHOW_EMAIL### end -->
+		    <!-- ###SHOW_SUBJECT### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label"><span id="subjTitle">###FORM_SUBJECT###<span class="requiredMarker">###FORM_SUBJECT_REQUIRED###</span></span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[subject]" id="subjValue" type="text" size="40" value="###VALUE_SUBJECT###" ###SUBJECT_CLASS### /></span>
+		    </div>
+	        <!-- ###SHOW_SUBJECT### end -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_MESSAGE###<span class="requiredMarker">###FORM_MESSAGE_REQUIRED###</span></span>
+		    	<span class="inputBox">
+				<!-- ###SHOW_MESSAGE_RTE### begin -->
+	          	    	###RTE_FORM_VARS###
+		          	    ###RTE_FORM_ENTRY###
+	    	      	    ###RTE_FORM_BUTTONS###
+				<!-- ###SHOW_MESSAGE_RTE### end-->
+				<!-- ###SHOW_MESSAGE_TEXTAREA### begin-->
+					<textarea name="tx_wecdiscussion[message]" cols="40" rows="5" wrap="virtual" ###MESSAGE_STYLE###>###VALUE_MESSAGE###</textarea>
+				<!-- ###SHOW_MESSAGE_TEXTAREA### end-->
+				</span>
+		    </div>
+			<!-- ###SHOW_CATEGORY### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_CATEGORY###<span class="requiredMarker">###FORM_CATEGORY_REQUIRED###</span></span>
+		    	<span class="inputBox">###VALUE_CATEGORY### ###CREATE_NEW_CATEGORY###</span>
+		    </div>
+		    <!-- ###SHOW_CATEGORY### end -->
+		    <!-- ###SHOW_IMAGE### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_IMAGE###<span class="requiredMarker">###FORM_IMAGE_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[image]" type="file" size="35" value="###VALUE_IMAGE###" />
+		    	<!-- ###CLEAR_IMAGE### begin -->
+		    	<span id="edit_image">
+		    	###VIEW_IMAGE###
+		    	<input type="button" onclick="if (document.all) { document.all['edit_image'].innerHTML = ''; saved_image.value=0;} else { document.getElementById('edit_image').innerHTML=''; document.getElementById('saved_image').value=0; } return false;" name="clear_image" value="Clear Image" style="width:100px;" />
+				<input name="tx_wecdiscussion[save_image]" type="hidden" value="###VALUE_IMAGE###" />
+		    	</span>
+		    	<!-- ###CLEAR_IMAGE### end -->
+		    	<input id="saved_image" type="hidden" name="tx_wecdiscussion[saved_image_file]" value="###VALUE_IMAGE###" />
+		    	</span>
+		    </div>
+		    <!-- ###SHOW_IMAGE### end -->
+		    <!-- ###SHOW_ATTACHMENT### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_ATTACHMENT###<span class="requiredMarker">###FORM_ATTACHMENT_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[attachment]" type="file" size="35" value="###VALUE_ATTACHMENT###" />
+					<input id="saved_attachment" type="hidden" name="tx_wecdiscussion[saved_attachment_file]" value="###VALUE_ATTACHMENT###" />
+				</span>
+		    </div>
+		    <!-- ###SHOW_ATTACHMENT### end -->
+		    <!-- ###SHOW_STARTTIME### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label"><span id="subjTitle">###FORM_STARTTIME###<span class="requiredMarker">###FORM_STARTTIME_REQUIRED###</span></span></span>
+		    	<span class="inputBox">
+					<input name="tx_wecdiscussion[starttime]"   type="text" size="10" value="###VALUE_STARTTIME###" />
+				</span>
+		    </div>
+	        <!-- ###SHOW_STARTTIME### end -->	
+		    <!-- ###SHOW_ENDTIME### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label"><span id="subjTitle">###FORM_ENDTIME###<span class="requiredMarker">###FORM_ENDTIME_REQUIRED###</span></span></span>
+		    	<span class="inputBox">
+					<input name="tx_wecdiscussion[endtime]"   type="text" size="10" value="###VALUE_ENDTIME###" />
+				</span>
+		    </div>
+	        <!-- ###SHOW_ENDTIME### end -->		
+			<!--###CAPTCHA_INSERT### subpart is removed if CAPTCHA is not enabled! -->
+		    <div class="inputFormRow">
+			    <br />###SR_FREECAP_NOTICE###<br />
+		    	<span class="label"><br />###SR_FREECAP_CANT_READ###<span class="requiredMarker">*</span></span>
+		    	<span class="inputBox"><input type="text" size="15" id="tx_wecdiscussion_pi1_captcha_response" name="tx_wecdiscussion[captcha_response]" title="###SR_FREECAP_NOTICE###" value="" />###SR_FREECAP_IMAGE###</span>
+		    </div>
+			<!--###CAPTCHA_INSERT### end-->
+			<!-- ###SHOW_TEXT_CAPTCHA### begin-->
+		    <div class="inputFormRow">
+		    	<span class="label">###TEXT_CAPTCHA_LABEL###<span class="requiredMarker">*</span></span>
+		    	<span class="inputBox">###TEXT_CAPTCHA_FIELD###</span>
+		    </div>
+			<!-- ###SHOW_TEXT_CAPTCHA### end-->
+			<!-- ###SHOW_EMAIL_AUTHOR_REPLIES### begin-->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_EMAIL_AUTHOR_REPLIES###<span class="requiredMarker">###FORM_EMAIL_AUTHOR_REPLIES_REQUIRED###</span></span>
+		    	<span class="inputBox">
+		    		<input name="tx_wecdiscussion[email_author_replies]" type="checkbox" value="1" ###FORM_EMAIL_AUTHOR_CHECKED### />
+		    	</span>
+		    </div>
+			<!-- ###SHOW_EMAIL_AUTHOR_REPLIES### end-->
+		    <div class="inputFormRow">
+		    	<span class="textacross">
+					<input name="ForumReply" type="submit" value="###SUBMIT_BTN###" /> 
+					###PREVIEW_BEFORE_POST_BTN###
+					###CANCEL_BTN###
+				</span>
+		    </div>
+			<div class="tx-wecdiscussion-spacer">&nbsp;</div>
+		  </fieldset>
+		</form>
+   	    ###RTE_POST_FORM###
+	</div>
+  </div>	
+<!-- ###TEMPLATE_POSTFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_COMMENTFORM### begin
+=====================================================================================================
+   Form to post a comment message/reply
+
+-->
+###COMMENTFORM_TOGGLE###
+  <div id="CommentForm0"> 
+	<a name="typeYourComment"></a>
+	<div class="tx-wecdiscussion-form">
+		<form name="forumCommentForm" method="post" action="###ACTION_URL###"  enctype="multipart/form-data">
+		  <fieldset>
+			###HIDDEN_VARS###
+		    <div class="inputFormRow">
+		    	<div class="header">
+		    		<div class="tx-wecdiscussion-header">###FORM_HEADER###</div>
+		    		<div class="tx-wecdiscussion-requiredText">###REQUIRED_TEXT###</div>
+		    		<div class="tx-wecdiscussion-error">###FORM_ERROR###</div>
+		    	</div>
+	    	</div>
+    	    <!-- ###SHOW_NAME### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_NAME###<span class="requiredMarker">###FORM_NAME_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[name]" type="text" size="40" value="###VALUE_NAME###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;</span>
+		    </div>
+		    <!-- ###SHOW_NAME### end -->
+		    <!-- ###SHOW_SUBJECT### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label"><div id="subjTitle">###FORM_SUBJECT###<span class="requiredMarker">###FORM_SUBJECT_REQUIRED###</span></div></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[subject]" id="subjValue" type="text" size="40" value="###VALUE_SUBJECT###"/></span>
+		    </div>
+	        <!-- ###SHOW_SUBJECT### begin -->
+		    <!-- ###SHOW_EMAIL### begin -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_EMAIL###<span class="requiredMarker">###FORM_EMAIL_REQUIRED###</span></span>
+		    	<span class="inputBox"><input name="tx_wecdiscussion[email]" type="text" size="40" value="###VALUE_EMAIL###" ###FORM_FIELD_DISABLED###/>&nbsp;&nbsp;</span>
+		    </div>
+		    <!-- ###SHOW_EMAIL### end -->
+		    <div class="inputFormRow">
+		    	<span class="label">###FORM_MESSAGE###<span class="requiredMarker">###FORM_MESSAGE_REQUIRED###</span></span>
+		    	<span class="inputBox"><textarea name="tx_wecdiscussion[message]" cols="40" rows="5" wrap="virtual">###VALUE_MESSAGE###</textarea></span>
+		    </div>
+			<!--###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+		    <div class="inputFormRow">
+			    <br />###SR_FREECAP_NOTICE###<br />
+		    	<span class="label"><br />###SR_FREECAP_CANT_READ###<span class="requiredMarker">*</span></span>
+		    	<span class="inputBox"><input type="text" size="15" id="tx_wecdiscussion_pi1_captcha_response" name="tx_wecdiscussion[captcha_response]" title="###SR_FREECAP_NOTICE###" value="" />###SR_FREECAP_IMAGE###</span>
+		    </div>
+			<!--###CAPTCHA_INSERT###-->
+			<!-- ###SHOW_TEXT_CAPTCHA### begin-->
+		    <div class="inputFormRow">
+		    	<span class="label">###TEXT_CAPTCHA_LABEL###<span class="requiredMarker">*</span></span>
+		    	<span class="inputBox">###TEXT_CAPTCHA_FIELD###</span>
+		    </div>
+			<!-- ###SHOW_TEXT_CAPTCHA### end-->
+		    <div class="inputFormRow">
+		    	<span class="textacross"><input name="ForumComment" type="submit" value="###SUBMIT_COMMENT_BTN###"/></span>
+		    </div>
+		    <div class="tx-wecdiscussion-spacer">&nbsp;</div>
+		  </fieldset>
+		</form>
+	</div>
+  </div>	
+###COMMENTFORM_TOGGLE_END###
+<!-- ###TEMPLATE_COMMENTFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_SUBSCRIBEFORM### begin
+=====================================================================================================
+   Form to subscribe/unsubscribe
+
+-->
+  <div class="tx-wecdiscussion-form">
+	 <div class="tx-wecdiscussion-title">###SUBSCRIBE_HEADER###</div>
+	 <div class="tx-wecdiscussion-form-instructions">###SUBSCRIBE_INSTRUCTIONS###</div>
+	 <div class="tx-wecdiscussion-responseMsg">###FORM_ERROR###</div>
+	 <form name="subscriberform" method="post" action="###ACTION_URL###">
+	 	###HIDDEN_VARS###
+		<div class="inputFormRow">
+			<span class="label">###FORM_EMAIL###</span>
+			<span class="inputBox">
+				<input type="text" name="tx_wecdiscussion[email]" value="###VALUE_EMAIL###"/>
+			</span>
+		</div>
+		<div class="inputFormRow">
+			<span class="textacross">
+				<input type="hidden" name="id" value="###PID###"/>
+				<input type="submit" name="submitsubscribe" value="###FORM_SUBMIT_SUB###"/>
+				<input type="submit" name="submitunsubscribe" value="###FORM_SUBMIT_UNSUB###"/>
+				<input type="button" onclick="###CANCEL_URL###" value="###FORM_CANCEL###"/>
+			</span>
+		</div>
+
+		<div class="tx-wecdiscussion-spacer">&nbsp;</div>
+	 </form>
+  </div>
+<!-- ###TEMPLATE_SUBSCRIBEFORM### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_SEARCH_RESULTS### begin
+
+ Template for showing an entry for the search results.
+=====================================================================================================
+-->
+		<!-- ###SHOW_SUBJECT### begin -->
+	    <div class="subject">###SUBJECT###</div>
+	    <!-- ###SHOW_SUBJECT### end -->
+	    <div class="message" ###MARGIN_LEFT###>
+	    	###MESSAGE###
+	    	###IMAGE###
+	    	###ATTACHMENT###
+		    <div class="entryInfo">
+	    		###POSTEDBY_TEXT### ###POST_NAME_EMAILLINK### ###ON_TEXT### ###POST_DATETIME###
+	    		<!-- ###SHOW_CATEGORY### start--> ###CATEGORY### <!-- ###SHOW_CATEGORY### end-->
+		    </div>
+		    ###POST_LINK_START### <span class="tx-wecdiscussion-smalltext">###GOTO_POST_LABEL###</span> ###POST_LINK_END###
+		</div>
+<!-- ###TEMPLATE_SEARCH_RESULTS### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_ARCHIVE### begin
+
+ Template for showing an archive in its own view
+=====================================================================================================
+-->
+<div class="tx-wecdiscussion-list">
+	<div class="header">###ARCHIVE_HEADER###</div>
+	<div class="showAll">
+		###SHOW_ALL_ARCHIVE_LINK###
+	</div>
+	###DISPLAY_ARCHIVE###
+</div>
+<div class="tx-wecdiscussion-list" style="border:0;">
+	###RSSFEED_ICON2### ###RSSFEED_TEXT###
+</div>
+<!-- ###ARCHIVE_ITEM### begin
+	for customizing each item displayed in the archive
+-->
+	<div class="listElement ###ITEM_SEL_CLASS###">
+		<li>
+			<a href="###ITEM_URL###">###ITEM_TEXT###</a>
+		</li>
+	</div>
+<!-- ###ARCHIVE_ITEM### end -->
+<!-- ###TEMPLATE_ARCHIVE### end -->
+
+
+<!--
+=====================================================================================================
+###TEMPLATE_REPORTABUSEFORM### begin
+=====================================================================================================
+   Form to report abuse (i.e., an inappropriate post)
+
+-->
+  <div class="tx-wecdiscussion-form formSmall">
+	 <div class="tx-wecdiscussion-title">###ABUSE_HEADER###</div>
+	 <div class="tx-wecdiscussion-form-instructions">
+			###ABUSE_INSTRUCTIONS###	
+	 		<div class="tx-wecdiscussion-box"><p>###ABUSE_MESSAGE###</p></div>	
+	 </div>		
+	 <form name="reportabuseform" method="post" action="###ACTION_URL###">
+	 	###HIDDEN_VARS###
+		<div class="inputFormRow">
+			<span class="label">###FORM_NAME###</span>
+			<span class="inputBox">
+				<input type="text" name="tx_wecdiscussion[name]" value="###VALUE_NAME###"/>
+			</span>
+		</div>
+		<div class="inputFormRow">
+			<span class="label">###FORM_EMAIL###</span>
+			<span class="inputBox">
+				<input type="text" name="tx_wecdiscussion[email]" value="###VALUE_EMAIL###"/>
+			</span>
+		</div>
+		<div class="inputFormRow">
+			<span class="label">###FORM_TEXT###</span>
+			<span class="inputBox">
+				<input type="text" name="tx_wecdiscussion[text]" value="###VALUE_TEXT###"/>
+			</span>
+		</div>		
+		<div class="inputFormRow">
+			<span class="textacross">
+				<input type="hidden" name="id" value="###PID###"/>
+				<input type="submit" name="submitabuse" value="###FORM_SUBMIT_ABUSE###"/>
+				<input type="button" onclick="###CANCEL_URL###" value="###FORM_CANCEL###"/>
+			</span>
+		</div>
+
+		<div class="tx-wecdiscussion-spacer">&nbsp;</div>
+	 </form>
+  </div>
+<!-- ###TEMPLATE_REPORTABUSEFORM### end -->

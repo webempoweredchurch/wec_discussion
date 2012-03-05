@@ -1,0 +1,357 @@
+/**************************************************************/
+/************  generic CSS for all WEC plugins   **************/
+/**************************************************************/
+.pluginContent {
+	margin:		0px;
+	padding:	0px;
+}
+
+.pluginNav {
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 0px;
+}
+.pluginNav .box {
+	display: inline-block;
+	margin: 0px 8px 0px;
+}
+
+.pluginHeader {
+	clear:	both;
+	margin: 4px 0px;
+}
+
+.pluginSection {
+	margin:		0px;
+	padding:	0px;	
+}
+
+.pluginFooter {
+	margin-top:	16px;
+	text-align:	center;
+}
+
+.pluginSection .entry, 
+.pluginSection .entries {
+	margin: 0px;
+	padding: 2px 0px;
+	list-style:none;
+}
+.pluginSection .entries {
+	float:  left;
+	width:	100%;
+}
+.pluginSection .entry {
+	margin-bottom: 4px;
+}
+.pluginSection .entry .entryInfo {
+	padding:2px 6px;
+	margin: 4px 0px;
+}
+
+/*---- SIDEBAR ----*/
+.pluginContent .aside {
+	float:			right;
+	width:			25%;
+	padding:		0px;
+	margin:			0px;
+	background-color: #F0F0E0;
+}
+.pluginContent .aside .gutter{
+	padding:		6px;
+}
+.pluginContent .aside .gutter div {
+	margin: 8px 4px;
+}
+
+.pluginContentWithAside {
+	width:			74%;
+	margin:			0px;
+}
+
+/*----- FORMS -----*/
+.pluginForm {
+	background:#eee;
+	border: 	1px solid #ccc;
+	padding:	8px;
+	margin:		12px 0;
+}
+.pluginForm ol, 
+.pluginForm ul,
+.pluginContent .aside ul {
+	list-style-type: none;
+	margin:		0;
+	padding:	0px 4px;
+}
+.pluginForm input[type=text], 
+.pluginForm textarea, 
+.pluginForm select { 
+	background-color:#fff; 
+	border:1px solid #bbb; 
+	margin:5px 0 0 0;
+}
+.pluginForm input[type=text]:focus,  
+.pluginForm textarea:focus, 
+.pluginForm select:focus { 
+	border-color:#666; 
+}
+.pluginForm input[type=text] {
+	width: 80%; 
+	padding:3px; 
+}
+.pluginForm textarea { 
+	width: 80%; 
+	height: 280px; 
+	padding:3px; 
+}
+.pluginForm input[type=checkbox], 
+.pluginForm input[type=radio] { 
+	position:relative; 
+	top:.25em; 
+}
+
+.pluginForm .fullRow {
+	display: block; 
+	float: left;  
+	width: 100%;  
+	text-align: center; 
+	margin: 0px auto;
+	padding: 12px 0px 4px;
+}
+.pluginForm .fullRow input {
+	font-size: 105%;
+}
+.pluginForm.narrowWidth {
+	width: 400px;
+}
+.pluginForm.mediumWidth {
+	width: 550px;
+}
+.pluginForm.largeWidth {
+	width: 700px;
+}
+
+.pluginForm label,
+.pluginContent form label {
+	display:	block;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+/*-- forms within plugin that are not full forms --*/
+.pluginContent form.selectForm {
+	padding:	0;
+	margin:		4px;
+	width:		auto;
+	background: 0;
+	border:		0;
+}
+
+.pluginContent .results {
+	font-style:italic;
+}
+
+.entryBy, 
+.entryLocation, 
+.entryDate, 
+.entryWebsite,
+.entryCategory {
+}
+
+.pluginContent .image {
+	float: left;
+	margin: 0 8px 8px 0;
+}
+
+/*---- Alerts & Notices ----*/
+.error,
+.notice,
+.success {
+	border:2px solid #DDDDDD;
+	margin-bottom:6px;
+	padding:4px 8px;
+}
+.error {
+	background:#FBE3E4 none repeat scroll 0 0;
+	border-color:#FBC2C4;
+	color:#8A1F11;
+}
+.success {
+	background:#E6EFC2 none repeat scroll 0 0;
+	border-color:#C6D880;
+	color:#264409;
+}
+.notice {
+	background:#FFF6BF none repeat scroll 0 0;
+	border-color:#FFD324;
+	color:#514721;
+}
+
+/*-- GENERAL Positioning / Sizing Classes --*/
+.floatLeft {
+	float:		left;
+	text-align: left;
+}
+.floatRight{
+	float:		right;
+	text-align: right;
+}
+.alignRight{
+	text-align:	right;
+}
+.hidden {
+	display:	none;
+}
+.showBlock {
+	display:	block;
+}
+.showInline {
+	display:	inline;
+}
+.vspacer {
+	clear:		both;	
+	height:		0.1em; 
+	width:		100%;
+}
+.hspacer {
+	display: 	inline;  
+	width: 		4px;  
+	line-height: 1px;  
+	margin: 	0px 2px;  
+	padding: 	0px; 
+}
+.centered {
+	margin: 	0px auto;
+	text-align:	center;
+}
+.smallText {
+	font-size:	9px;
+}
+.fullWidth {
+	width: 		100%;
+}
+
+/*------ PREVIEW STYLES -----*/
+.preview  {
+	font-size: 	95%;
+	line-height:150%;	
+}
+.preview ul {
+	list-style: none;
+	margin:	0;
+	padding:0;
+}
+.preview .entryInfo {
+	border-top:1px dotted #ccc;
+}
+.preview .header {
+	font-size:		105%;
+	font-weight:	bold;
+}
+
+/*-------- BUTTON LINK STYLES -------*/
+.pluginContent .button {
+	display: inline-block;
+
+	background-color: #E6E6E6;
+	padding: 4px 6px;
+	margin: 2px 4px 2px 0px;
+
+	text-decoration: none !important;
+	color: #444;
+
+	border: solid 1px #B3B3B3;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 1px 1px 3px #CCC;
+	-moz-box-shadow: 1px 1px 3px #CCC;
+
+	background-image: -moz-linear-gradient(top, #FFF, #CCC);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #FFF),color-stop(1.00, #CCC));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#CCCCCC)
+	       progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#E6E6E6, Positive='true');
+}
+
+.pluginContent .button .label {
+	color: #444;
+}
+.pluginContent .button .text {
+	vertical-align: bottom;
+}
+
+.pluginContent .button .addIcon {
+	background: url(images/add-icon.png) no-repeat;
+}
+.pluginContent .button .deleteIcon {
+	background: url(images/delete-icon.png) no-repeat;
+}
+.pluginContent .button .prevIcon {
+	background: url(images/previous-icon.png) no-repeat;
+}
+.pluginContent .button .nextIcon {
+	background: url(images/next-icon.png) no-repeat;
+}
+.pluginContent .button .hideIcon {
+	background: url(images/hide-icon.png) no-repeat;
+}
+.pluginContent .button .replyIcon {
+	background: url(images/reply-icon.png) no-repeat;
+}
+.pluginContent .button .viewIcon {
+	background: url(images/view-icon.png) no-repeat; 
+}
+.pluginContent .button .editIcon {
+	background: url(images/edit-icon.png) no-repeat; 
+}
+.pluginContent .button .adminIcon {
+	background: url(images/admin-icon.png) no-repeat; 
+}
+.pluginContent .button .subscribeIcon {
+	background: url(images/subscribe-icon.png) no-repeat;
+}
+
+.pluginContent .button .addIcon,
+.pluginContent .button .deleteIcon,
+.pluginContent .button .prevIcon,
+.pluginContent .button .nextIcon,
+.pluginContent .button .hideIcon,
+.pluginContent .button .replyIcon,
+.pluginContent .button .viewIcon,
+.pluginContent .button .editIcon,
+.pluginContent .button .adminIcon,
+.pluginContent .button .subscribeIcon {
+	display:		inline-block;
+	height:			16px;
+	padding-left: 	20px;
+}
+
+
+.pluginContent .button:hover {
+	color: black;
+	background-image: -moz-linear-gradient(top, #EEE, #BBB);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #EEE),color-stop(1.00, #BBB));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#EEEEEE, EndColorStr=#BBBBBB)
+	       progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#E6E6E6, Positive='true');
+}
+
+.pluginContent .button:active {
+	color: black;
+	background-image: -moz-linear-gradient(top, #FFF, #B3B3B3);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #FFF),color-stop(1.00, #B3B3B3));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#B3B3B3);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.pluginContent .smallButton  {
+	font-size:	85% !important;
+	font-weight: normal !important;
+	padding: 2px 6px !important;
+}
+.pluginContent .xsmallButton  {
+	font-size:	75% !important;
+	padding: 0px 3px !important;
+}

@@ -1,0 +1,111 @@
+plugin.tx_wecdiscussion_pi1 {
+# cat=plugin.tx_wecdiscussion_pi1/file/1; type=file[html,htm,tmpl,txt]; label= Template File: HTML template file for display of the Discussion Forum.
+  templateFile 		= EXT:wec_discussion/template/wecdiscussion-old.tmpl
+# cat=plugin.tx_wecdiscussion_pi1/file/3; type=file[css]; label= Discussion CSS File
+  cssFile 			= 
+
+#cat=plugin.tx_wecdiscussion_pi1/dims/3a; type=string; label= Image Width
+  imageWidth		= 500
+#cat=plugin.tx_wecdiscussion_pi1/dims/3b; type=string; label= Image Height
+  imageHeight		= 300
+
+#cat=plugin.tx_wecdiscussion_pi1/dims/2a; type=string; label= Total Width Of Discussion Plugin
+  totalWidth 		= 100%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2a; type=string; label= Total Maximum Width Of Discussion Plugin
+  totalMaxWidth 	= 700px
+#cat=plugin.tx_wecdiscussion_pi1/dims/2b; type=string; label= Main Content Width
+  mainContentWidth	= 75%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2c; type=string; label= Sidebar Width
+  sidebarWidth		= 25%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2d; type=string; label= Entry Form Width
+  entryFormWidth 	= 98%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2e; type=string; label= Entry Form Label Width
+  entryFormLabelWidth  = 25%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2f; type=string; label= Entry Form Input Field Width
+  entryFormInputWidth  = 73%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2g; type=string; label= Entry Form Text Area Height
+  entryFormTextAreaHeight  = 85px
+#cat=plugin.tx_wecdiscussion_pi1/dims/2h; type=string; label= Preview Width
+  previewWidth		= 300px
+
+#cat=plugin.tx_wecdiscussion_pi1/color/1a; type=color; label= Form Background Color
+  formBackColor 	= #F0F0E0
+#cat=plugin.tx_wecdiscussion_pi1/color/1b; type=color; label= Subject Background Color
+  subjectBackColor  = #AAAA77
+#cat=plugin.tx_wecdiscussion_pi1/color/1b; type=color; label= Subject Text Color
+  subjectColor  	= #FFFFFF
+#cat=plugin.tx_wecdiscussion_pi1/color/1c; type=color; label= Sidebar Background Color
+  sidebarBackColor  = #F0F0E0
+#cat=plugin.tx_wecdiscussion_pi1/color/1c; type=color; label= Action bar Background Color
+  actionbarBackColor  = #F0F0E0
+#cat=plugin.tx_wecdiscussion_pi1/color/1d; type=color; label= Message Background Color
+  msgBackColor 		= #FFFFFF
+#cat=plugin.tx_wecdiscussion_pi1/color/1e; type=color; label= Message Reply Background Color
+  msgReplyBackColor = #FFFFFF
+#cat=plugin.tx_wecdiscussion_pi1/color/1f; type=color; label= "Message Info" Color
+  msgInfoColor 		= #404040
+
+#cat=plugin.tx_wecdiscussion_pi1/color/2a; type=color; label= Button Background Color
+  btnBackColor 		= #777777
+#cat=plugin.tx_wecdiscussion_pi1/color/2b; type=color; label= Button Text Color
+  btnColor 			= #FFFFFF
+#cat=plugin.tx_wecdiscussion_pi1/color/2c; type=color; label= Button Hover Background Color
+  btnHoverBackColor = #AC0000
+#cat=plugin.tx_wecdiscussion_pi1/color/2d; type=color; label= Button Hover Color
+  btnHoverColor 	= #FFFFFF
+
+#cat=plugin.tx_wecdiscussion_pi1/color/3a; type=color; label= List Background Color
+  listBackColor 	= #FFFFFF
+#cat=plugin.tx_wecdiscussion_pi1/color/3b; type=color; label= List Item Color
+  listItemColor 	= #320C0C
+#cat=plugin.tx_wecdiscussion_pi1/color/3c; type=color; label= List Item Select Color
+  listItemSelColor  = #C53434
+#cat=plugin.tx_wecdiscussion_pi1/color/3d; type=color; label= List Item Hover Color
+  listItemHoverColor = #279838
+
+#cat=plugin.tx_wecdiscussion_pi1/enable/1a; type=int; label= Archive Limit
+  archiveLimit	= 300
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1; type=string; label= Spam Words To Filter (reverse order)
+  spamWords	= argai,nimretnehp,lisimal,lodamar,lacirex,xepida,nirtub,lifaladat,lirtnob,teciroif,navita,nidociv,aidirem,artivel,muilav,ardehpe,lodamart,xanax,xertlav,enimretnehpma,lixap,enilcyc,xarivoz,dimolc,lirtovir,lytpirtima,livale,cazorp,nemes,names,kcil ssa,yag toh,neet toh,ttub,citore,rekcil,naibsel,brutsam,dlokcuc,nrop,yssup,edun,tihs,kcuf,tnuc,kcufrehtom,erohw,kcoc,nmad,hctib,stit,selamehs,boj-wolb,boj wolb,bojwolb,tsecni,tnemegralne,sinep,enihcam tols,tolseerf,medloh,rekop,sparc,etteluor,kcajkcalb,gnilbmag enilno,gnilbmag,onisac,enotgnir,eerf ytud,gnidart yad,xelor
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2; type=string; label= Additional Spam Words To Filter (non-reverse)
+  addSpamWords	=
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1a; type=options[subject,view_link,subject_and_view,none]; label= Link to Single View?
+  singleViewLink = subject
+
+#cat=plugin.tx_wecdiscussion_pi1/links/1; type=text; label= Starting Point (pid_list): The PID of the page (or comma separated list pf PIDs) where your entries are located.
+  pid_list =
+
+#cat=plugin.tx_wecdiscussion_pi1/links/1b; type=text; label= Preview/RSS Back PId: The PID of the page to go back to from Preview or RSS
+  preview_backPID =
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2a; type=string; label= More HTML Tag: Tag to look for to signify a stop for "more" when message too large. Can be real/rare HTML tag -- needs to work with RTE. XHTML may need to add / so is = <hr />
+  more_tag = <hr>
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/6a; type=string; label= Delay Time in seconds to check for a duplicate post
+  duplicateCheckDelaySeconds = 15
+
+#cat=plugin.tx_wecdiscussion_pi1/etc/2a; type=string; label= RTE Is Enabled for Frontend Posts
+  RTEenabled		= 1
+#cat=plugin.tx_wecdiscussion_pi1/etc/2b; type=string; label= RTE Width (in px or %)
+  RTEwidth 			= 480px
+#cat=plugin.tx_wecdiscussion_pi1/etc/2c; type=string; label= RTE Height (in px or %)
+  RTEheight			= 320px
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/9a; type=boolean; label= Show blank subjects? (when off, no subjects will be printed)
+  showBlankSubject = 1
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1z; type=boolean; label= Only send out new posts (not comments) to subscribers
+  sendOnlyPosts = 0
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1y; type=boolean; label= Lock in user name and email on reply form if user logged in
+  lockInNameEmail = 0
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1z; type=options[first_name, last_name, first_last, last_first]; label= What name to use when pre-fill fields
+  namePrefill = first_last
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2z; type=boolean label= Show IP Address on entries/comments
+  showIpAddress = false
+}

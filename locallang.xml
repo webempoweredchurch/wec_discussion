@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'wec_discussion'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">WEC Discussion Forum</label>
+			<label index="pi1_plus_wiz_description">Add a discussion forum. Supports forum, blog, and comments.</label>
+		</languageKey>
+	    <languageKey index="de" type="array">
+	  	</languageKey>		
+		<languageKey index="dk" type="array">
+		</languageKey>
+	    <languageKey index="no" type="array">
+	  	</languageKey>
+	    <languageKey index="it" type="array">
+	  	</languageKey>
+	    <languageKey index="fr" type="array">
+	  	</languageKey>
+	    <languageKey index="nl" type="array">
+	  	</languageKey>
+	    <languageKey index="cz" type="array">
+	  	</languageKey>
+	    <languageKey index="pl" type="array">
+	  	</languageKey>
+	    <languageKey index="si" type="array">
+	  	</languageKey>
+	    <languageKey index="fi" type="array">
+	  	</languageKey>
+	    <languageKey index="tr" type="array">
+	  	</languageKey>
+	    <languageKey index="se" type="array">
+	  	</languageKey>
+	    <languageKey index="pt" type="array">
+	  	</languageKey>	
+	    <languageKey index="ru" type="array">
+	  	</languageKey>
+	    <languageKey index="hr" type="array">
+	  	</languageKey>
+	    <languageKey index="gl" type="array">
+	  	</languageKey>			
+	    <languageKey index="br" type="array">
+	  	</languageKey>		
+	</data>
+</T3locallang>

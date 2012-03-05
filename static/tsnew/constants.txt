@@ -1,0 +1,72 @@
+plugin.tx_wecdiscussion_pi1 {
+# cat=plugin.tx_wecdiscussion_pi1/file/1; type=file[html,htm,tmpl,txt]; label= Template File: HTML template file for display of the Discussion Forum.
+  templateFile 		= EXT:wec_discussion/template/wecdiscussion.tmpl
+
+# cat=plugin.tx_wecdiscussion_pi1/file/2; type=file[css]; label= base plugin CSS File
+  baseCSSFile 		= EXT:wec_discussion/template/pluginstyles.css
+
+# cat=plugin.tx_wecdiscussion_pi1/file/3; type=file[css]; label= Discussion CSS File
+  cssFile 			= EXT:wec_discussion/template/wecdiscussion.css
+
+#cat=plugin.tx_wecdiscussion_pi1/dims/3a; type=string; label= Image Width
+  imageWidth		= 500
+#cat=plugin.tx_wecdiscussion_pi1/dims/3b; type=string; label= Image Height
+  imageHeight		= 350
+
+#cat=plugin.tx_wecdiscussion_pi1/dims/2b; type=string; label= Main Content Width
+  mainContentWidth	= 75%
+#cat=plugin.tx_wecdiscussion_pi1/dims/2c; type=string; label= Sidebar Width
+  sidebarWidth		= 25%
+
+#cat=plugin.tx_wecdiscussion_pi1/enable/1a; type=int; label= Archive Limit
+  archiveLimit	= 300
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1; type=string; label= Spam Words To Filter (reverse order)
+  spamWords	= argai,nimretnehp,lisimal,lodamar,lacirex,xepida,nirtub,lifaladat,lirtnob,teciroif,navita,nidociv,aidirem,artivel,muilav,ardehpe,lodamart,xanax,xertlav,enimretnehpma,lixap,enilcyc,xarivoz,dimolc,lirtovir,lytpirtima,livale,cazorp,nemes,names,kcil ssa,yag toh,neet toh,ttub,citore,rekcil,naibsel,brutsam,dlokcuc,nrop,yssup,edun,tihs,kcuf,tnuc,kcufrehtom,erohw,kcoc,nmad,hctib,stit,selamehs,boj-wolb,boj wolb,bojwolb,tsecni,tnemegralne,sinep,enihcam tols,tolseerf,medloh,rekop,sparc,etteluor,kcajkcalb,gnilbmag enilno,gnilbmag,onisac,enotgnir,eerf ytud,gnidart yad,xelor
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2; type=string; label= Additional Spam Words To Filter (non-reverse)
+  addSpamWords	=
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1a; type=options[subject,view_link,subject_and_view,none]; label= Link to Single View?
+  singleViewLink = subject
+
+#cat=plugin.tx_wecdiscussion_pi1/links/1; type=text; label= Starting Point (pid_list): The PID of the page (or comma separated list pf PIDs) where your entries are located.
+  pid_list =
+
+#cat=plugin.tx_wecdiscussion_pi1/links/1b; type=text; label= Preview/RSS Back PId: The PID of the page to go back to from Preview or RSS
+  preview_backPID =
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2a; type=string; label= More HTML Tag: Tag to look for to signify a stop for "more" when message too large. Can be real/rare HTML tag -- needs to work with RTE. XHTML may need to add / so is = <hr />
+  more_tag = <hr>
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2b; type=options[show_additional,single_view]; label= What does More link do?
+  more_link = show_additional
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/6a; type=string; label= Delay Time in seconds to check for a duplicate post
+  duplicateCheckDelaySeconds = 15
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/3a; type=string; label= RTE Is Enabled for Frontend Posts
+  RTEenabled		= 1
+#cat=plugin.tx_wecdiscussion_pi1/misc/3b; type=string; label= RTE Width (in px or %)
+  RTEwidth 			= 480px
+#cat=plugin.tx_wecdiscussion_pi1/misc/3c; type=string; label= RTE Height (in px or %)
+  RTEheight			= 320px
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/9a; type=boolean; label= Show blank subjects? (when off, no subjects will be printed)
+  showBlankSubject = 1
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1w; type=boolean; label= Only send out new posts (not comments) to subscribers
+  sendOnlyPosts = 0
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1x; type=boolean; label= Lock in user name and email on reply form if user logged in
+  lockInNameEmail = 0
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1y; type=options[first_name, last_name, first_last, last_first]; label= What name to use when pre-fill fields
+  namePrefill = first_last
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/1z; type=options[earliest_first, latest_first]; label= How to sort comments? (earliest first or latest first)
+  sortComments = earliest_first
+
+#cat=plugin.tx_wecdiscussion_pi1/misc/2z; type=boolean label= Show IP Address on entries/comments
+  showIpAddress = false
+}

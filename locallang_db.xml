@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>language labels for wec_discussion BE forms</description>
+        <type>database</type>
+        <csh_table></csh_table>
+		<fileId>EXT:wec_discussion/locallang_db.xml</fileId>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.list_type_pi1">WEC Discussion Forum</label>
+            <label index="tx_wecdiscussion_post">Discussion Message Posts</label>
+            <label index="tx_wecdiscussion_post.useruid">User UID Who Posted</label>
+            <label index="tx_wecdiscussion_post.name">User Name Who Posted</label>
+            <label index="tx_wecdiscussion_post.email">Email Of User Who Posted</label>
+            <label index="tx_wecdiscussion_post.post_datetime">Post Created DateTime</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time">Last Edited DateTime</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid">Top Post Record UID (0=root)</label>
+            <label index="tx_wecdiscussion_post.reply_uid">Reply Post Record UID (0=none)</label>
+            <label index="tx_wecdiscussion_post.subject">Subject Of Post</label>
+            <label index="tx_wecdiscussion_post.message">Message Content Of Post</label>
+            <label index="tx_wecdiscussion_post.category">Category For Post</label>
+            <label index="tx_wecdiscussion_post.image">Image With Post</label>
+            <label index="tx_wecdiscussion_post.image_caption">Image Caption Text</label>
+            <label index="tx_wecdiscussion_post.attachment">Attached File</label>
+            <label index="tx_wecdiscussion_post.starttime">Start Time</label>
+            <label index="tx_wecdiscussion_post.endtime">End Time</label>
+            <label index="tx_wecdiscussion_post.moderationQueue">Moderation Queue</label>
+            <label index="tx_wecdiscussion_post.ipAddress">IP Address</label>
+            <label index="tx_wecdiscussion_category">Discussion Category</label>
+            <label index="tx_wecdiscussion_category.parent_uid">Parent Category UID (0=root)</label>
+            <label index="tx_wecdiscussion_category.name">Category Name</label>
+            <label index="tx_wecdiscussion_category.description">Category Description</label>
+            <label index="tx_wecdiscussion_category.sort_order">Sort Order</label>
+            <label index="tx_wecdiscussion_category.private_group">Private Group UID For This Category (0=public)</label>
+            <label index="tx_wecdiscussion_group">Discussion/Forum Group</label>
+            <label index="tx_wecdiscussion_group.name">Group Name</label>
+            <label index="tx_wecdiscussion_group.description">Group Description[optional]</label>
+            <label index="tx_wecdiscussion_group.userlist">List of Emails For Group</label>
+            <label index="tx_wecdiscussion_group.user_uid">user uid</label>
+            <label index="tx_wecdiscussion_group.user_email">user email</label>
+            <label index="tx_wecdiscussion_group.user_name">user name</label>
+            <label index="tx_wecdiscussion_user">Discussion/Forum User</label>
+            <label index="tx_wecdiscussion_user.user_uid">FE User Typo3 UID</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date">Last Login DateTime</label>
+            <label index="tx_wecdiscussion_user.name">User's Name</label>
+            <label index="tx_wecdiscussion_user.email">User's Email</label>
+            <label index="tx_wecdiscussion_user.preferences">User's Preferences (separated by |)</label>
+            <label index="tx_wecdiscussion_user.avatar_image">Image For Avatar</label>
+            <label index="wec_discussion.pi_flexform.sheet_main">Main</label>
+            <label index="wec_discussion.pi_flexform.title">Title of discussion/forum/blog:</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist">Frontend Users who can post: UID/username(comma sep.):</label>
+            <label index="wec_discussion.pi_flexform.restricted_usergroup">Frontend Usergroup(s) who can post:</label>
+            <label index="wec_discussion.pi_flexform.template_file">Template file</label>
+            <label index="wec_discussion.pi_flexform.sheet_options">Options</label>
+            <label index="wec_discussion.pi_flexform.type">Type: </label>
+            <label index="wec_discussion.pi_flexform.isDiscussion">Discussion</label>
+            <label index="wec_discussion.pi_flexform.isBlog">Blog</label>
+            <label index="wec_discussion.pi_flexform.isComments">Comments</label>
+            <label index="wec_discussion.pi_flexform.isPreview">Preview</label>
+            <label index="wec_discussion.pi_flexform.isRSS">RSS Feed</label>
+            <label index="wec_discussion.pi_flexform.isArchive">Archive</label>
+            <label index="wec_discussion.pi_flexform.isCustom">Custom</label>
+            <label index="wec_discussion.pi_flexform.display_amount">Amount to display: </label>
+            <label index="wec_discussion.pi_flexform.weekly">Weekly</label>
+            <label index="wec_discussion.pi_flexform.monthly">Monthly</label>
+            <label index="wec_discussion.pi_flexform.last10">Last 10</label>
+            <label index="wec_discussion.pi_flexform.last20">Last 20</label>
+            <label index="wec_discussion.pi_flexform.last30">Last 30</label>
+            <label index="wec_discussion.pi_flexform.last7days">Last 7 Days</label>
+            <label index="wec_discussion.pi_flexform.show_all">Show All</label>
+            <label index="wec_discussion.pi_flexform.show_sidebar_actionbar">Show sidebar and/or actionbar?</label>
+            <label index="wec_discussion.pi_flexform.sidebar_only">Sidebar only</label>
+            <label index="wec_discussion.pi_flexform.actionbar_only">Actionbar only</label>
+            <label index="wec_discussion.pi_flexform.entry_look">Post Entry Look (with NEW Template)</label>
+            <label index="wec_discussion.pi_flexform.entry_look_1">Default</label>
+            <label index="wec_discussion.pi_flexform.entry_look_2">Styled Look 2</label>
+            <label index="wec_discussion.pi_flexform.entry_look_3">Styled Look 3</label>
+            <label index="wec_discussion.pi_flexform.entry_look_none">None</label>
+            <label index="wec_discussion.pi_flexform.sidebar_and_actionbar">Sidebar and Actionbar</label>
+            <label index="wec_discussion.pi_flexform.show_none">Show none</label>
+            <label index="wec_discussion.pi_flexform.allow_search">Show search?</label>
+            <label index="wec_discussion.pi_flexform.show_archive">Show archive?</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat">Show &quot;Choose Category&quot; (only if categories)?</label>
+            <label index="wec_discussion.pi_flexform.only_comments">Only comments allowed?</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment">Reply is a comment?</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply">Can toggle view of replies/comments</label>
+            <label index="wec_discussion.pi_flexform.reply_level">How many levels of replies to a post (0-3)?</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none">None</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one">1</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two">2</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three">3</label>
+            <label index="wec_discussion.pi_flexform.can_create_category">Create new category by user who can post?</label>
+            <label index="wec_discussion.pi_flexform.display_characters_limit"># characters to limit for display</label>
+            <label index="wec_discussion.pi_flexform.previewRSS_backPID">Discussion page to link back to</label>
+            <label index="wec_discussion.pi_flexform.num_previewRSS_items">Number of items to show</label>
+            <label index="wec_discussion.pi_flexform.preview_length">Character length for a preview item</label>
+            <label index="wec_discussion.pi_flexform.preview_allow_replies">Allow replies to be shown in preview</label>
+            <label index="wec_discussion.pi_flexform.num_per_page">Number to show per page (0=all)</label>
+            <label index="wec_discussion.pi_flexform.sheet_control">Control</label>
+            <label index="wec_discussion.pi_flexform.is_moderated">Moderate posts by administrator(s)?</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude">Exclude from moderation</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_none">None</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_user">Logged in user</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_admin">Admin only</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting">Require login for posting new message?</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply">Require login for reply/comment?</label>
+            <label index="wec_discussion.pi_flexform.email_author_replies">Allow author of post to receive email replies (if they choose)?</label>
+            <label index="wec_discussion.pi_flexform.show_report_abuse_button">Show 'report abuse' button on posts?</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_none">No</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_comments">Only for comments</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_all">For all posts</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe">Can subscribe to this forum?</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing">Require login for subscribing?</label>
+            <label index="wec_discussion.pi_flexform.allow_preview_before_post">Allow preview before posts?</label>
+            <label index="wec_discussion.pi_flexform.allow_single_view">Allow single view?</label>
+            <label index="wec_discussion.pi_flexform.sheet_antispam">Spam</label>
+            <label index="wec_discussion.pi_flexform.html_tags_allowed">HTML tags allowed (0=none, 1=all, or list- &lt;b&gt;&lt;i&gt;)</label>
+            <label index="wec_discussion.pi_flexform.use_captcha">Use image captcha? (need sr_freecap installed)</label>
+            <label index="wec_discussion.pi_flexform.use_text_captcha">Use text captcha? (field: &quot;Are you a person?&quot;)</label>
+            <label index="wec_discussion.pi_flexform.numlinks_allowed">Number of links allowed in post? (0 = none)</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist">Word filter list (comma-delimited; use * for default)</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling">What to do if filter words are found?</label>
+            <label index="wec_discussion.pi_flexform.wordFilter">Filter (ie. ****)</label>
+            <label index="wec_discussion.pi_flexform.wordModerate">Send to administrator</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard">Discard the post</label>
+            <label index="wec_discussion.pi_flexform.only_check_comments">Only do spam checks on comments or not logged in</label>
+            <label index="wec_discussion.pi_flexform.captcha_only_once">Only show captcha once (remember if successful)</label>
+            <label index="wec_discussion.pi_flexform.sheet_fields">Fields</label>
+            <label index="wec_discussion.pi_flexform.display_fields">Display fields for POST form: </label>
+            <label index="wec_discussion.pi_flexform.required_fields">Required fields for POST form: </label>
+            <label index="wec_discussion.pi_flexform.display_fields_comment">Display fields for COMMENT form: </label>
+            <label index="wec_discussion.pi_flexform.required_fields_comment">Required fields for COMMENT form: </label>
+            <label index="wec_discussion.pi_flexform.sheet_admin">Administrator</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist">Administrator UIDs or usernames (sep. by comma)</label>
+            <label index="wec_discussion.pi_flexform.administrator_usergroup">Administrator usergroup(s)</label>
+            <label index="wec_discussion.pi_flexform.contact_name">Contact name for all outgoing email</label>
+            <label index="wec_discussion.pi_flexform.contact_email">Contact email for all outgoing email (ie. admin@web.com)</label>
+            <label index="wec_discussion.pi_flexform.email_admin_posts">Email admin all posts (not moderated)</label>
+            <label index="wec_discussion.pi_flexform.notify_email">Email to send all posts</label>
+            <label index="wec_discussion.pi_flexform.sheet_text">Text</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header">Subscribe/Unsubscribe form header text [HTML ok]</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader">New post email: header text (optional)</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter">New post email: footer text (optional)</label>
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="tt_content.list_type_pi1">WEC discussieforum</label>
+            <label index="tx_wecdiscussion_post">Discussie postings</label>
+            <label index="tx_wecdiscussion_post.useruid">Gebruikers UID van de poster</label>
+            <label index="tx_wecdiscussion_post.name">Gebruikersnaam van de poster</label>
+            <label index="tx_wecdiscussion_post.email">Emailadres van de poster</label>
+            <label index="tx_wecdiscussion_post.post_datetime">Aanmaak datum en tijd van het bericht</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time">Laatste wijzigingsdatum en tijd van het bericht</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid">Top niveau bericht UID (0=root)</label>
+            <label index="tx_wecdiscussion_post.reply_uid">Beantwoord aan bericht UID (0=geen)</label>
+            <label index="tx_wecdiscussion_post.subject">Onderwerp van het bericht</label>
+            <label index="tx_wecdiscussion_post.message">Inhoud van het bericht</label>
+            <label index="tx_wecdiscussion_post.category">Categorie van het bericht</label>
+            <label index="tx_wecdiscussion_post.image">Afbeelding bij het bericht</label>
+            <label index="tx_wecdiscussion_post.image_caption">Afbeelding onderschrift</label>
+            <label index="tx_wecdiscussion_post.attachment">Bijgevoegd bestand</label>
+            <label index="tx_wecdiscussion_post.moderationQueue">Moderatie rij</label>
+            <label index="tx_wecdiscussion_category">Categorie van de discussie</label>
+            <label index="tx_wecdiscussion_category.parent_uid">UID van de bovenliggende categorie (0=root)</label>
+            <label index="tx_wecdiscussion_category.name">Naam van deze categorie</label>
+            <label index="tx_wecdiscussion_category.description">Omschrijving van de categorie</label>
+            <label index="tx_wecdiscussion_category.sort_order">Sorteervolgorde (kan aangepast worden)</label>
+            <label index="tx_wecdiscussion_category.private_group">Privé groep UID van de categorie (0=publiek)</label>
+            <label index="tx_wecdiscussion_group">Discussie/Forum groep</label>
+            <label index="tx_wecdiscussion_group.name">Naam van de groep</label>
+            <label index="tx_wecdiscussion_group.description">Omschrijving van de groep (optioneel)</label>
+            <label index="tx_wecdiscussion_group.userlist">Lijst van emailadressen voor deze groep</label>
+            <label index="tx_wecdiscussion_user">Discussie/Forum gebruiker</label>
+            <label index="tx_wecdiscussion_user.user_uid">FE gebruiker TYPO3 UID</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date">Laatste login datum en tijd</label>
+            <label index="tx_wecdiscussion_user.name">Gebruikersnaam</label>
+            <label index="tx_wecdiscussion_user.email">Gebruikers emailadres</label>
+            <label index="tx_wecdiscussion_user.preferences">Gebruikers voorkeuren (gescheiden door |)</label>
+            <label index="tx_wecdiscussion_user.avatar_image">Afbeelding voor avatar</label>
+            <label index="wec_discussion.pi_flexform.sheet_main">Hoofd</label>
+            <label index="wec_discussion.pi_flexform.title">Titel van de discussiepagina:</label>
+            <label index="wec_discussion.pi_flexform.type">Paginatype:</label>
+            <label index="wec_discussion.pi_flexform.isDiscussion">Discussie</label>
+            <label index="wec_discussion.pi_flexform.isBlog">Blog</label>
+            <label index="wec_discussion.pi_flexform.isComments">Opmerkingen</label>
+            <label index="wec_discussion.pi_flexform.isPreview">Voorbeeld</label>
+            <label index="wec_discussion.pi_flexform.isCustom">Aanpassen</label>
+            <label index="wec_discussion.pi_flexform.display_amount">Te tonen hoeveelheid:</label>
+            <label index="wec_discussion.pi_flexform.weekly">Wekelijks</label>
+            <label index="wec_discussion.pi_flexform.monthly">Maandelijks</label>
+            <label index="wec_discussion.pi_flexform.last10">Laatste 10</label>
+            <label index="wec_discussion.pi_flexform.last20">Laatste 20</label>
+            <label index="wec_discussion.pi_flexform.last30">Laatste 30</label>
+            <label index="wec_discussion.pi_flexform.last7days">Laatste 7 dagen</label>
+            <label index="wec_discussion.pi_flexform.show_all">Toon alles</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist">Gebruikers die mogen posten: UID/gebruikersnaam (komma gesch.):</label>
+            <label index="wec_discussion.pi_flexform.template_file">Sjabloonbestand</label>
+            <label index="wec_discussion.pi_flexform.sheet_custom">Aanpassen</label>
+            <label index="wec_discussion.pi_flexform.only_comments">Alleen opmerkingen toegestaan?</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment">Antwoord is een opmerking?</label>
+            <label index="wec_discussion.pi_flexform.reply_level">Hoeveel antwoord niveaus voor een posting (0-3)?</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none">Geen</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one">1</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two">2</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three">3</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting">Inloggen nodig om te posten?</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply">Inloggen nodig om te antwoorden?</label>
+            <label index="wec_discussion.pi_flexform.num_preview_items">(ALLEEN VOORBEELD) Aantal te tonen items</label>
+            <label index="wec_discussion.pi_flexform.preview_length">(ALLEEN VOORBEELD) Tekenlengte voor een voorbeeld item </label>
+            <label index="wec_discussion.pi_flexform.preview_PID">(ALLEEN VOORBEELD) PID van de data pagina  </label>
+            <label index="wec_discussion.pi_flexform.sheet_options">Opties</label>
+            <label index="wec_discussion.pi_flexform.display_fields">Te tonen velden van een posting</label>
+            <label index="wec_discussion.pi_flexform.required_fields">Verplichte velden van een posting</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe">Kan inschrijven op dit forum</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing">Inlog verplicht om in te schrijven</label>
+            <label index="wec_discussion.pi_flexform.show_archive">Archief tonen?</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat">Toon &quot;Kies categorie&quot; (alleen bij categoriën)?</label>
+            <label index="wec_discussion.pi_flexform.show_blank_subject">Toon leeg onderwerp van berichten? </label>
+            <label index="wec_discussion.pi_flexform.allow_private_groups">Privé groepen toegestaan?</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist">Woordfilterlijst (komma-gescheiden; gebruik * voor standaard lijst)</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling">Wat doen als er een filterwoord gevonden is?</label>
+            <label index="wec_discussion.pi_flexform.wordFilter">Filter (bijv. ****)</label>
+            <label index="wec_discussion.pi_flexform.wordModerate">Stuur naar administrator</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard">Verwijder de posting</label>
+            <label index="wec_discussion.pi_flexform.sheet_group">Administrator</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist">Administrator(s) UID of gebruikersnaam (komma-gesch.)</label>
+            <label index="wec_discussion.pi_flexform.is_moderated">Alle postings door administrator(s) modereren?</label>
+            <label index="wec_discussion.pi_flexform.contact_name">Contactnaam voor alle uitgaande email</label>
+            <label index="wec_discussion.pi_flexform.contact_email">Contactemailadres voor alle uitgaande email (bijv. admin@web.com)</label>
+            <label index="wec_discussion.pi_flexform.notify_email">Emailadres voor melding van alle postings en antwoorden</label>
+            <label index="wec_discussion.pi_flexform.sheet_text">Tekst</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header">Koptekst voor inschrijf/uitschrijf bericht (HTML ok)</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader">Email nieuwe post: koptekst (optioneel)</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter">Email nieuwe post: voettekst (optioneel)</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply">***Can toggle view of replies/comments</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tx_wecdiscussion_post">Diskussionsbeiträge</label>
+            <label index="tx_wecdiscussion_post.useruid">User UID des Eintragenden</label>
+            <label index="tx_wecdiscussion_post.name">User Name des Eintragenden</label>
+            <label index="tx_wecdiscussion_post.email">Emailadresse des Eintragenden</label>
+            <label index="tx_wecdiscussion_post.post_datetime">Datum und Zeit der Erzeugung des Eintrags</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time">Datum und Zeit der letzten Änderung des Eintrags</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid">Top Level Post Record UID (0=root)</label>
+            <label index="tx_wecdiscussion_post.reply_uid">Replied To Post Record UID (0=none)</label>
+            <label index="tx_wecdiscussion_post.subject">Betreff des Eintrags</label>
+            <label index="tx_wecdiscussion_post.message">Inhalt des Eintrags</label>
+            <label index="tx_wecdiscussion_post.category">Kategorie für Eintrag</label>
+            <label index="tx_wecdiscussion_post.image">Bild das mit Eintrag gezeigt werden soll</label>
+            <label index="tx_wecdiscussion_post.image_caption">Bildunterschrift</label>
+            <label index="tx_wecdiscussion_post.attachment">Dateianhang</label>
+            <label index="tx_wecdiscussion_post.moderationQueue">Moderations-Queue</label>
+            <label index="tx_wecdiscussion_category">Diskussionskategorie</label>
+            <label index="tx_wecdiscussion_category.parent_uid">Parent Category UID (0=root)</label>
+            <label index="tx_wecdiscussion_category.name">Name dieser Kategorie</label>
+            <label index="tx_wecdiscussion_category.description">Beschreibung der Kategorie</label>
+            <label index="tx_wecdiscussion_category.sort_order">Sortierreihenfolge (falls gewünscht)</label>
+            <label index="tx_wecdiscussion_category.private_group">Private Group UID für diese Kategorie (0=public)</label>
+            <label index="tx_wecdiscussion_group">Diskussions/Forum Gruppe</label>
+            <label index="tx_wecdiscussion_group.name">Name der Gruppe</label>
+            <label index="tx_wecdiscussion_group.description">Beschreibung der Gruppe [optional]</label>
+            <label index="tx_wecdiscussion_group.userlist">Liste der Emails dieser Gruppe</label>
+            <label index="tx_wecdiscussion_user">Diskussions/Forum User</label>
+            <label index="tx_wecdiscussion_user.user_uid">FE User Typo3 UID</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date">Letzter Login DatumZeit</label>
+            <label index="tx_wecdiscussion_user.name">User Name</label>
+            <label index="tx_wecdiscussion_user.email">User Email</label>
+            <label index="tx_wecdiscussion_user.preferences">Usereinstellungen (getrennt durch |)</label>
+            <label index="tx_wecdiscussion_user.avatar_image">Bild für Avatar</label>
+            <label index="tt_content.list_type_pi1">WEC Diskussionsforum</label>
+            <label index="wec_discussion.pi_flexform.sheet_main">Allgemein</label>
+            <label index="wec_discussion.pi_flexform.title">Titel der Diskussionsseite:</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist">Benutzer die Posten dürfen: UID/username(komma sep.):</label>
+			<label index="wec_discussion.pi_flexform.restricted_usergroup">Benutzergruppe(n) die Posten dürfen:</label>
+            <label index="wec_discussion.pi_flexform.type">Seitentyp: </label>
+            <label index="wec_discussion.pi_flexform.isDiscussion">Diskussion</label>
+            <label index="wec_discussion.pi_flexform.isBlog">Blog</label>
+            <label index="wec_discussion.pi_flexform.isComments">Kommentare</label>
+            <label index="wec_discussion.pi_flexform.isPreview">Vorschau</label>
+            <label index="wec_discussion.pi_flexform.isCustom">Benutzerdefiniert</label>
+            <label index="wec_discussion.pi_flexform.display_amount">Wieviel angezeigen: </label>
+            <label index="wec_discussion.pi_flexform.weekly">Wöchentlich</label>
+            <label index="wec_discussion.pi_flexform.monthly">Monatlich</label>
+            <label index="wec_discussion.pi_flexform.last10">Letzten 10</label>
+            <label index="wec_discussion.pi_flexform.last20">Letzten 20</label>
+            <label index="wec_discussion.pi_flexform.last30">Letzten 30</label>
+            <label index="wec_discussion.pi_flexform.last7days">Letzten 7 Tage</label>
+            <label index="wec_discussion.pi_flexform.show_all">Zeige alle</label>
+            <label index="wec_discussion.pi_flexform.show_sidebar_actionbar">Anzeige von Sidebar und/oder Actionbar?</label>
+            <label index="wec_discussion.pi_flexform.sidebar_only">Nur Sidebar</label>
+            <label index="wec_discussion.pi_flexform.actionbar_only">Nur Actionbar</label>
+            <label index="wec_discussion.pi_flexform.entry_look">Post Eintrag Aussehen (mit neuem Template)</label>
+            <label index="wec_discussion.pi_flexform.entry_look_1">Standard</label>
+            <label index="wec_discussion.pi_flexform.entry_look_2">Styled Look 2</label>
+            <label index="wec_discussion.pi_flexform.entry_look_3">Styled Look 3</label>
+            <label index="wec_discussion.pi_flexform.entry_look_none">Keiner</label>
+            <label index="wec_discussion.pi_flexform.sidebar_and_actionbar">Sidebar und Actionbar</label>
+            <label index="wec_discussion.pi_flexform.show_none">Nichts anzeigen</label>
+            <label index="wec_discussion.pi_flexform.allow_search">Suche anzeigen?</label>
+            <label index="wec_discussion.pi_flexform.restricted_usergroup">Benutzergruppe(n) die Posten dürfen:</label>
+            <label index="wec_discussion.pi_flexform.template_file">Templatedatei</label>
+            <label index="wec_discussion.pi_flexform.sheet_custom">Benutzerdefiniert</label>
+            <label index="wec_discussion.pi_flexform.only_comments">Nur Kommentare erlaubt?</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment">Ist Antwort ein Kommentar?</label>
+            <label index="wec_discussion.pi_flexform.reply_level">Wieviele Antwortlevel zu einem Post (0-3)?</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none">Keiner</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one">1</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two">2</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three">3</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting">Login nötig für Post?</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply">Login nötig für Antwort?</label>
+            <label index="wec_discussion.pi_flexform.email_author_replies">Autor per E-Mail über Antworten benachrichtigen (wenn Sie wollen)?</label>
+            <label index="wec_discussion.pi_flexform.show_report_abuse_button">Anzeigen 'Missbrauch melden' am Fuss der Einträge?</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_none">Nein</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_comments">Nur für Kommentare</label>
+            <label index="wec_discussion.pi_flexform.report_abuse_all">Für alle Einträge</label>
+            <label index="wec_discussion.pi_flexform.num_preview_items">(NUR VORSCHAU) Zahl der anzuzeigenden Einträgt</label>
+            <label index="wec_discussion.pi_flexform.preview_length">(NUR VORSCHAU) Zeichenlänge fur einen Vorschaueintrag</label>
+            <label index="wec_discussion.pi_flexform.preview_PID">(NUR VORSCHAU) PageID des Daten-SysFolders</label>
+            <label index="wec_discussion.pi_flexform.sheet_options">Optionen</label>
+            <label index="wec_discussion.pi_flexform.display_fields">Anzuzeigende Felder für Post-Form</label>
+            <label index="wec_discussion.pi_flexform.required_fields">Nötige Felder für Post-Form</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe">Forum kann abonniert werden</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing">Login nötige für Abonnement</label>
+            <label index="wec_discussion.pi_flexform.show_archive">Archiv anzeigen?</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat">Zeige &quot;Kategorieauswahl&quot; (nur falls Kategorien)?</label>
+            <label index="wec_discussion.pi_flexform.show_blank_subject">Zeige leeren Betreff für einen Eintrag?</label>
+            <label index="wec_discussion.pi_flexform.allow_private_groups">Erlaube private Gruppen?</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist">Wortfilterliste (kommagetrennt; * für Default)</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling">Was machen wenn Filterworte gefunden werden?</label>
+            <label index="wec_discussion.pi_flexform.wordFilter">Filter (dh. ****)</label>
+            <label index="wec_discussion.pi_flexform.wordModerate">Zum Administrator schicken</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard">Post verwerfen</label>
+            <label index="wec_discussion.pi_flexform.sheet_group">Administrator</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist">Administrator(s) UID oder Username (kommagetrennt)</label>
+			<label index="wec_discussion.pi_flexform.sheet_control">Kontrolle</label>
+            <label index="wec_discussion.pi_flexform.is_moderated">Alle Posts von Administrator(en) moderiert?</label>
+            <label index="wec_discussion.pi_flexform.contact_name">Kontaktname für alle ausgehenden Mails</label>
+            <label index="wec_discussion.pi_flexform.contact_email">Kontakt-Email für alle eingehenden Mails (dh. admin@web.com)</label>
+            <label index="wec_discussion.pi_flexform.notify_email">Benachrichtigungs-Email für alle Posts &amp; Antworten</label>
+            <label index="wec_discussion.pi_flexform.sheet_text">Text</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header">Abonniere/Kündige Formkopftext [HTML ok]</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader">Neue Post Email: Kopftext (optional)</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter">Neue Post Email: Fusstext (optional)</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply">Kommentere/Antworten auf-/einklappen</label>
+            <label index="wec_discussion.pi_flexform.display_characters_limit">Anzahl der maximal anzuzeigenden Buchstaben</label>
+            <label index="wec_discussion.pi_flexform.num_per_page">Anzahl pro Seite (0=alle)</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude">Moderations ausnahmen</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_none">Keine</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_user">Eingelogte Benutzer</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_admin">Administratoren</label>
+            <label index="wec_discussion.pi_flexform.allow_preview_before_post">Erlauben einer Vorschau?</label>
+            <label index="wec_discussion.pi_flexform.allow_single_view">Erlauben eines Einzeleintrages?</label>
+            <label index="wec_discussion.pi_flexform.use_captcha">Bild captcha benutzen? (benötigt sr_freecap)</label>
+            <label index="wec_discussion.pi_flexform.use_text_captcha">Text captcha benutzen? (feld: &quot;Sind Sie eine Person ?&quot;)</label>
+            <label index="wec_discussion.pi_flexform.numlinks_allowed">Anzahl erlaubter Links im Post? (0 = keine)</label>
+            <label index="wec_discussion.pi_flexform.only_check_comments">Nur auf Spam prüfen bei Kommentaren oder nicht Eingeloggten benutzern</label>
+			<label index="wec_discussion.pi_flexform.sheet_fields">Felder</label>
+            <label index="wec_discussion.pi_flexform.captcha_only_once">Nur Capchta anzeigen (nur wenn verfügbar)</label>
+            <label index="wec_discussion.pi_flexform.email_admin_posts">Email an Adimistrator (nur wenn nicht moderiert)</label>
+        </languageKey>
+        <languageKey index="es" type="array">
+            <label index="pi1_title">WEC Discussion Forum</label>
+            <label index="pi1_plus_wiz_description">Agregar foro de discusi&amp;oacute;n.</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.list_type_pi1" type="integer">124877153</label>
+            <label index="tx_wecdiscussion_post" type="integer">159398420</label>
+            <label index="tx_wecdiscussion_post.useruid" type="integer">154513386</label>
+            <label index="tx_wecdiscussion_post.name" type="integer">15411671</label>
+            <label index="tx_wecdiscussion_post.email" type="integer">208185277</label>
+            <label index="tx_wecdiscussion_post.post_datetime" type="integer">238281582</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time" type="integer">116546983</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid" type="integer">138891274</label>
+            <label index="tx_wecdiscussion_post.reply_uid" type="integer">66378844</label>
+            <label index="tx_wecdiscussion_post.subject" type="integer">104729635</label>
+            <label index="tx_wecdiscussion_post.message" type="integer">151363877</label>
+            <label index="tx_wecdiscussion_post.category" type="integer">196109838</label>
+            <label index="tx_wecdiscussion_post.image" type="integer">154336136</label>
+            <label index="tx_wecdiscussion_post.image_caption" type="integer">163577157</label>
+            <label index="tx_wecdiscussion_post.attachment" type="integer">252048011</label>
+            <label index="tx_wecdiscussion_post.starttime" type="integer">45860933</label>
+            <label index="tx_wecdiscussion_post.endtime" type="integer">210871671</label>
+            <label index="tx_wecdiscussion_post.moderationQueue" type="integer">260958637</label>
+            <label index="tx_wecdiscussion_category" type="integer">123490993</label>
+            <label index="tx_wecdiscussion_category.parent_uid" type="integer">129945021</label>
+            <label index="tx_wecdiscussion_category.name" type="integer">160506283</label>
+            <label index="tx_wecdiscussion_category.description" type="integer">59424315</label>
+            <label index="tx_wecdiscussion_category.sort_order" type="integer">203476111</label>
+            <label index="tx_wecdiscussion_category.private_group" type="integer">85982137</label>
+            <label index="tx_wecdiscussion_group" type="integer">156046842</label>
+            <label index="tx_wecdiscussion_group.name" type="integer">42562754</label>
+            <label index="tx_wecdiscussion_group.description" type="integer">6913485</label>
+            <label index="tx_wecdiscussion_group.userlist" type="integer">140488168</label>
+            <label index="tx_wecdiscussion_group.user_uid" type="integer">110211196</label>
+            <label index="tx_wecdiscussion_group.user_email" type="integer">47532365</label>
+            <label index="tx_wecdiscussion_group.user_name" type="integer">254301772</label>
+            <label index="tx_wecdiscussion_user" type="integer">47771643</label>
+            <label index="tx_wecdiscussion_user.user_uid" type="integer">86361385</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date" type="integer">170110719</label>
+            <label index="tx_wecdiscussion_user.name" type="integer">68389147</label>
+            <label index="tx_wecdiscussion_user.email" type="integer">12989369</label>
+            <label index="tx_wecdiscussion_user.preferences" type="integer">129386362</label>
+            <label index="tx_wecdiscussion_user.avatar_image" type="integer">46264339</label>
+            <label index="wec_discussion.pi_flexform.sheet_main" type="integer">167954490</label>
+            <label index="wec_discussion.pi_flexform.title" type="integer">150443877</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist" type="integer">2550618</label>
+            <label index="wec_discussion.pi_flexform.restricted_usergroup" type="integer">237102782</label>
+            <label index="wec_discussion.pi_flexform.template_file" type="integer">169140391</label>
+            <label index="wec_discussion.pi_flexform.sheet_options" type="integer">229542606</label>
+            <label index="wec_discussion.pi_flexform.type" type="integer">227118586</label>
+            <label index="wec_discussion.pi_flexform.isDiscussion" type="integer">250451060</label>
+            <label index="wec_discussion.pi_flexform.isBlog" type="integer">199810847</label>
+            <label index="wec_discussion.pi_flexform.isComments" type="integer">138493032</label>
+            <label index="wec_discussion.pi_flexform.isPreview" type="integer">52420219</label>
+            <label index="wec_discussion.pi_flexform.isRSS" type="integer">132948893</label>
+            <label index="wec_discussion.pi_flexform.isArchive" type="integer">242383616</label>
+            <label index="wec_discussion.pi_flexform.isCustom" type="integer">151357892</label>
+            <label index="wec_discussion.pi_flexform.display_amount" type="integer">100809916</label>
+            <label index="wec_discussion.pi_flexform.weekly" type="integer">113401450</label>
+            <label index="wec_discussion.pi_flexform.monthly" type="integer">151195193</label>
+            <label index="wec_discussion.pi_flexform.last10" type="integer">49064232</label>
+            <label index="wec_discussion.pi_flexform.last20" type="integer">122547261</label>
+            <label index="wec_discussion.pi_flexform.last30" type="integer">99767318</label>
+            <label index="wec_discussion.pi_flexform.last7days" type="integer">78813507</label>
+            <label index="wec_discussion.pi_flexform.show_all" type="integer">147655948</label>
+            <label index="wec_discussion.pi_flexform.show_sidebar_actionbar" type="integer">182808015</label>
+            <label index="wec_discussion.pi_flexform.sidebar_only" type="integer">19980766</label>
+            <label index="wec_discussion.pi_flexform.actionbar_only" type="integer">8483381</label>
+            <label index="wec_discussion.pi_flexform.sidebar_and_actionbar" type="integer">23809199</label>
+            <label index="wec_discussion.pi_flexform.show_none" type="integer">109069998</label>
+            <label index="wec_discussion.pi_flexform.allow_search" type="integer">256055241</label>
+            <label index="wec_discussion.pi_flexform.show_archive" type="integer">261768902</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat" type="integer">64456506</label>
+            <label index="wec_discussion.pi_flexform.only_comments" type="integer">4967276</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment" type="integer">225914327</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply" type="integer">37981810</label>
+            <label index="wec_discussion.pi_flexform.reply_level" type="integer">12461563</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none" type="integer">112064895</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one" type="integer">206349347</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two" type="integer">209839912</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three" type="integer">248298631</label>
+            <label index="wec_discussion.pi_flexform.can_create_category" type="integer">266723209</label>
+            <label index="wec_discussion.pi_flexform.display_characters_limit" type="integer">256194429</label>
+            <label index="wec_discussion.pi_flexform.previewRSS_backPID" type="integer">193178152</label>
+            <label index="wec_discussion.pi_flexform.num_previewRSS_items" type="integer">65106971</label>
+            <label index="wec_discussion.pi_flexform.preview_length" type="integer">220959986</label>
+            <label index="wec_discussion.pi_flexform.preview_allow_replies" type="integer">6819983</label>
+            <label index="wec_discussion.pi_flexform.num_per_page" type="integer">232794073</label>
+            <label index="wec_discussion.pi_flexform.sheet_control" type="integer">169186731</label>
+            <label index="wec_discussion.pi_flexform.is_moderated" type="integer">6621858</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude" type="integer">147382343</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_none" type="integer">112064895</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_user" type="integer">56252868</label>
+            <label index="wec_discussion.pi_flexform.moderate_exclude_admin" type="integer">139106601</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting" type="integer">120238929</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply" type="integer">172183369</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe" type="integer">254147818</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing" type="integer">247877876</label>
+            <label index="wec_discussion.pi_flexform.allow_preview_before_post" type="integer">195352594</label>
+            <label index="wec_discussion.pi_flexform.allow_single_view" type="integer">202506235</label>
+            <label index="wec_discussion.pi_flexform.sheet_antispam" type="integer">245234993</label>
+            <label index="wec_discussion.pi_flexform.html_tags_allowed" type="integer">48409485</label>
+            <label index="wec_discussion.pi_flexform.use_captcha" type="integer">182997549</label>
+            <label index="wec_discussion.pi_flexform.use_text_captcha" type="integer">165485925</label>
+            <label index="wec_discussion.pi_flexform.numlinks_allowed" type="integer">152540901</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist" type="integer">161449750</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling" type="integer">78485384</label>
+            <label index="wec_discussion.pi_flexform.wordFilter" type="integer">237039992</label>
+            <label index="wec_discussion.pi_flexform.wordModerate" type="integer">231661027</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard" type="integer">140674237</label>
+            <label index="wec_discussion.pi_flexform.only_check_comments" type="integer">86212251</label>
+            <label index="wec_discussion.pi_flexform.captcha_only_once" type="integer">230449351</label>
+            <label index="wec_discussion.pi_flexform.sheet_fields" type="integer">172795373</label>
+            <label index="wec_discussion.pi_flexform.display_fields" type="integer">148089455</label>
+            <label index="wec_discussion.pi_flexform.required_fields" type="integer">61689982</label>
+            <label index="wec_discussion.pi_flexform.display_fields_comment" type="integer">190468444</label>
+            <label index="wec_discussion.pi_flexform.required_fields_comment" type="integer">130320508</label>
+            <label index="wec_discussion.pi_flexform.sheet_admin" type="integer">129481765</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist" type="integer">115017268</label>
+            <label index="wec_discussion.pi_flexform.contact_name" type="integer">169083897</label>
+            <label index="wec_discussion.pi_flexform.contact_email" type="integer">8826405</label>
+            <label index="wec_discussion.pi_flexform.email_admin_posts" type="integer">144141240</label>
+            <label index="wec_discussion.pi_flexform.notify_email" type="integer">71002072</label>
+            <label index="wec_discussion.pi_flexform.sheet_text" type="integer">165673974</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header" type="integer">66963887</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader" type="integer">106842471</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter" type="integer">131751887</label>
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="tt_content.list_type_pi1" type="integer">124877153</label>
+            <label index="tx_wecdiscussion_post" type="integer">159398420</label>
+            <label index="tx_wecdiscussion_post.useruid" type="integer">154513386</label>
+            <label index="tx_wecdiscussion_post.name" type="integer">15411671</label>
+            <label index="tx_wecdiscussion_post.email" type="integer">208185277</label>
+            <label index="tx_wecdiscussion_post.post_datetime" type="integer">238281582</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time" type="integer">116546983</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid" type="integer">138891274</label>
+            <label index="tx_wecdiscussion_post.reply_uid" type="integer">66378844</label>
+            <label index="tx_wecdiscussion_post.subject" type="integer">104729635</label>
+            <label index="tx_wecdiscussion_post.message" type="integer">151363877</label>
+            <label index="tx_wecdiscussion_post.category" type="integer">196109838</label>
+            <label index="tx_wecdiscussion_post.image" type="integer">154336136</label>
+            <label index="tx_wecdiscussion_post.image_caption" type="integer">163577157</label>
+            <label index="tx_wecdiscussion_post.attachment" type="integer">252048011</label>
+            <label index="tx_wecdiscussion_post.moderationQueue" type="integer">260958637</label>
+            <label index="tx_wecdiscussion_category" type="integer">123490993</label>
+            <label index="tx_wecdiscussion_category.parent_uid" type="integer">129945021</label>
+            <label index="tx_wecdiscussion_category.name" type="integer">160506283</label>
+            <label index="tx_wecdiscussion_category.description" type="integer">59424315</label>
+            <label index="tx_wecdiscussion_category.sort_order" type="integer">203476111</label>
+            <label index="tx_wecdiscussion_category.private_group" type="integer">85982137</label>
+            <label index="tx_wecdiscussion_group" type="integer">156046842</label>
+            <label index="tx_wecdiscussion_group.name" type="integer">42562754</label>
+            <label index="tx_wecdiscussion_group.description" type="integer">6913485</label>
+            <label index="tx_wecdiscussion_group.userlist" type="integer">140488168</label>
+            <label index="tx_wecdiscussion_user" type="integer">47771643</label>
+            <label index="tx_wecdiscussion_user.user_uid" type="integer">86361385</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date" type="integer">170110719</label>
+            <label index="tx_wecdiscussion_user.name" type="integer">68389147</label>
+            <label index="tx_wecdiscussion_user.email" type="integer">12989369</label>
+            <label index="tx_wecdiscussion_user.preferences" type="integer">129386362</label>
+            <label index="tx_wecdiscussion_user.avatar_image" type="integer">46264339</label>
+            <label index="wec_discussion.pi_flexform.sheet_main" type="integer">167954490</label>
+            <label index="wec_discussion.pi_flexform.title" type="integer">150443877</label>
+            <label index="wec_discussion.pi_flexform.type" type="integer">227118586</label>
+            <label index="wec_discussion.pi_flexform.isDiscussion" type="integer">250451060</label>
+            <label index="wec_discussion.pi_flexform.isBlog" type="integer">199810847</label>
+            <label index="wec_discussion.pi_flexform.isComments" type="integer">138493032</label>
+            <label index="wec_discussion.pi_flexform.isPreview" type="integer">52420219</label>
+            <label index="wec_discussion.pi_flexform.isCustom" type="integer">151357892</label>
+            <label index="wec_discussion.pi_flexform.display_amount" type="integer">100809916</label>
+            <label index="wec_discussion.pi_flexform.weekly" type="integer">113401450</label>
+            <label index="wec_discussion.pi_flexform.monthly" type="integer">151195193</label>
+            <label index="wec_discussion.pi_flexform.last10" type="integer">49064232</label>
+            <label index="wec_discussion.pi_flexform.last20" type="integer">122547261</label>
+            <label index="wec_discussion.pi_flexform.last30" type="integer">99767318</label>
+            <label index="wec_discussion.pi_flexform.last7days" type="integer">78813507</label>
+            <label index="wec_discussion.pi_flexform.show_all" type="integer">147655948</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist" type="integer">2550618</label>
+            <label index="wec_discussion.pi_flexform.template_file" type="integer">169140391</label>
+            <label index="wec_discussion.pi_flexform.sheet_custom" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.only_comments" type="integer">4967276</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment" type="integer">225914327</label>
+            <label index="wec_discussion.pi_flexform.reply_level" type="integer">12461563</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none" type="integer">112064895</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one" type="integer">206349347</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two" type="integer">209839912</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three" type="integer">248298631</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting" type="integer">120238929</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply" type="integer">172183369</label>
+            <label index="wec_discussion.pi_flexform.num_preview_items" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.preview_length" type="integer">220959986</label>
+            <label index="wec_discussion.pi_flexform.preview_PID" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.sheet_options" type="integer">229542606</label>
+            <label index="wec_discussion.pi_flexform.display_fields" type="integer">148089455</label>
+            <label index="wec_discussion.pi_flexform.required_fields" type="integer">61689982</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe" type="integer">254147818</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing" type="integer">247877876</label>
+            <label index="wec_discussion.pi_flexform.show_archive" type="integer">261768902</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat" type="integer">64456506</label>
+            <label index="wec_discussion.pi_flexform.show_blank_subject" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.allow_private_groups" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist" type="integer">161449750</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling" type="integer">78485384</label>
+            <label index="wec_discussion.pi_flexform.wordFilter" type="integer">237039992</label>
+            <label index="wec_discussion.pi_flexform.wordModerate" type="integer">231661027</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard" type="integer">140674237</label>
+            <label index="wec_discussion.pi_flexform.sheet_group" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist" type="integer">115017268</label>
+            <label index="wec_discussion.pi_flexform.is_moderated" type="integer">6621858</label>
+            <label index="wec_discussion.pi_flexform.contact_name" type="integer">169083897</label>
+            <label index="wec_discussion.pi_flexform.contact_email" type="integer">8826405</label>
+            <label index="wec_discussion.pi_flexform.notify_email" type="integer">71002072</label>
+            <label index="wec_discussion.pi_flexform.sheet_text" type="integer">165673974</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header" type="integer">66963887</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader" type="integer">106842471</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter" type="integer">131751887</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply" type="integer">37981810</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tx_wecdiscussion_post" type="integer">159398420</label>
+            <label index="tx_wecdiscussion_post.useruid" type="integer">154513386</label>
+            <label index="tx_wecdiscussion_post.name" type="integer">15411671</label>
+            <label index="tx_wecdiscussion_post.email" type="integer">208185277</label>
+            <label index="tx_wecdiscussion_post.post_datetime" type="integer">238281582</label>
+            <label index="tx_wecdiscussion_post.post_lastedit_time" type="integer">116546983</label>
+            <label index="tx_wecdiscussion_post.toplevel_uid" type="integer">138891274</label>
+            <label index="tx_wecdiscussion_post.reply_uid" type="integer">66378844</label>
+            <label index="tx_wecdiscussion_post.subject" type="integer">104729635</label>
+            <label index="tx_wecdiscussion_post.message" type="integer">151363877</label>
+            <label index="tx_wecdiscussion_post.category" type="integer">196109838</label>
+            <label index="tx_wecdiscussion_post.image" type="integer">154336136</label>
+            <label index="tx_wecdiscussion_post.image_caption" type="integer">163577157</label>
+            <label index="tx_wecdiscussion_post.attachment" type="integer">252048011</label>
+            <label index="tx_wecdiscussion_post.moderationQueue" type="integer">260958637</label>
+            <label index="tx_wecdiscussion_category" type="integer">123490993</label>
+            <label index="tx_wecdiscussion_category.parent_uid" type="integer">129945021</label>
+            <label index="tx_wecdiscussion_category.name" type="integer">160506283</label>
+            <label index="tx_wecdiscussion_category.description" type="integer">59424315</label>
+            <label index="tx_wecdiscussion_category.sort_order" type="integer">203476111</label>
+            <label index="tx_wecdiscussion_category.private_group" type="integer">85982137</label>
+            <label index="tx_wecdiscussion_group" type="integer">156046842</label>
+            <label index="tx_wecdiscussion_group.name" type="integer">42562754</label>
+            <label index="tx_wecdiscussion_group.description" type="integer">6913485</label>
+            <label index="tx_wecdiscussion_group.userlist" type="integer">140488168</label>
+            <label index="tx_wecdiscussion_user" type="integer">47771643</label>
+            <label index="tx_wecdiscussion_user.user_uid" type="integer">86361385</label>
+            <label index="tx_wecdiscussion_user.lastlogin_date" type="integer">170110719</label>
+            <label index="tx_wecdiscussion_user.name" type="integer">68389147</label>
+            <label index="tx_wecdiscussion_user.email" type="integer">12989369</label>
+            <label index="tx_wecdiscussion_user.preferences" type="integer">129386362</label>
+            <label index="tx_wecdiscussion_user.avatar_image" type="integer">46264339</label>
+            <label index="tt_content.list_type_pi1" type="integer">124877153</label>
+            <label index="wec_discussion.pi_flexform.sheet_main" type="integer">167954490</label>
+            <label index="wec_discussion.pi_flexform.title" type="integer">150443877</label>
+            <label index="wec_discussion.pi_flexform.type" type="integer">227118586</label>
+            <label index="wec_discussion.pi_flexform.isDiscussion" type="integer">250451060</label>
+            <label index="wec_discussion.pi_flexform.isBlog" type="integer">199810847</label>
+            <label index="wec_discussion.pi_flexform.isComments" type="integer">138493032</label>
+            <label index="wec_discussion.pi_flexform.isPreview" type="integer">52420219</label>
+            <label index="wec_discussion.pi_flexform.isCustom" type="integer">151357892</label>
+            <label index="wec_discussion.pi_flexform.display_amount" type="integer">100809916</label>
+            <label index="wec_discussion.pi_flexform.weekly" type="integer">113401450</label>
+            <label index="wec_discussion.pi_flexform.monthly" type="integer">151195193</label>
+            <label index="wec_discussion.pi_flexform.last10" type="integer">49064232</label>
+            <label index="wec_discussion.pi_flexform.last20" type="integer">122547261</label>
+            <label index="wec_discussion.pi_flexform.last30" type="integer">99767318</label>
+            <label index="wec_discussion.pi_flexform.last7days" type="integer">78813507</label>
+            <label index="wec_discussion.pi_flexform.show_all" type="integer">147655948</label>
+            <label index="wec_discussion.pi_flexform.restricted_userlist" type="integer">2550618</label>
+            <label index="wec_discussion.pi_flexform.template_file" type="integer">169140391</label>
+            <label index="wec_discussion.pi_flexform.sheet_custom" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.only_comments" type="integer">4967276</label>
+            <label index="wec_discussion.pi_flexform.reply_is_comment" type="integer">225914327</label>
+            <label index="wec_discussion.pi_flexform.reply_level" type="integer">12461563</label>
+            <label index="wec_discussion.pi_flexform.reply_level_none" type="integer">112064895</label>
+            <label index="wec_discussion.pi_flexform.reply_level_one" type="integer">206349347</label>
+            <label index="wec_discussion.pi_flexform.reply_level_two" type="integer">209839912</label>
+            <label index="wec_discussion.pi_flexform.reply_level_three" type="integer">248298631</label>
+            <label index="wec_discussion.pi_flexform.login_for_posting" type="integer">120238929</label>
+            <label index="wec_discussion.pi_flexform.login_for_reply" type="integer">172183369</label>
+            <label index="wec_discussion.pi_flexform.num_preview_items" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.preview_length" type="integer">220959986</label>
+            <label index="wec_discussion.pi_flexform.preview_PID" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.sheet_options" type="integer">229542606</label>
+            <label index="wec_discussion.pi_flexform.display_fields" type="integer">148089455</label>
+            <label index="wec_discussion.pi_flexform.required_fields" type="integer">61689982</label>
+            <label index="wec_discussion.pi_flexform.can_subscribe" type="integer">254147818</label>
+            <label index="wec_discussion.pi_flexform.login_for_subscribing" type="integer">247877876</label>
+            <label index="wec_discussion.pi_flexform.show_archive" type="integer">261768902</label>
+            <label index="wec_discussion.pi_flexform.show_chooseCat" type="integer">64456506</label>
+            <label index="wec_discussion.pi_flexform.show_blank_subject" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.allow_private_groups" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.filter_wordlist" type="integer">161449750</label>
+            <label index="wec_discussion.pi_flexform.filter_word_handling" type="integer">78485384</label>
+            <label index="wec_discussion.pi_flexform.wordFilter" type="integer">237039992</label>
+            <label index="wec_discussion.pi_flexform.wordModerate" type="integer">231661027</label>
+            <label index="wec_discussion.pi_flexform.wordDiscard" type="integer">140674237</label>
+            <label index="wec_discussion.pi_flexform.sheet_group" type="integer">222419149</label>
+            <label index="wec_discussion.pi_flexform.administrator_userlist" type="integer">115017268</label>
+            <label index="wec_discussion.pi_flexform.is_moderated" type="integer">6621858</label>
+            <label index="wec_discussion.pi_flexform.contact_name" type="integer">169083897</label>
+            <label index="wec_discussion.pi_flexform.contact_email" type="integer">8826405</label>
+            <label index="wec_discussion.pi_flexform.notify_email" type="integer">71002072</label>
+            <label index="wec_discussion.pi_flexform.sheet_text" type="integer">165673974</label>
+            <label index="wec_discussion.pi_flexform.subscribe_header" type="integer">66963887</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailHeader" type="integer">106842471</label>
+            <label index="wec_discussion.pi_flexform.subscriber_emailFooter" type="integer">131751887</label>
+            <label index="wec_discussion.pi_flexform.allow_toggle_commentsreply" type="integer">37981810</label>
+        </languageKey>
+        <languageKey index="es" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="nl" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+        <languageKey index="es" type="array">
+        </languageKey>
+	</orig_text>
+</T3locallang>

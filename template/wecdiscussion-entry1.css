@@ -1,0 +1,14 @@
+.entries h3 {
+	color: #444;
+	background-color:#ccb;
+	background-image: -moz-linear-gradient(top, #DDC, #AA9);
+	background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #DDC ),color-stop(1.00, #AA9));
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#BBBBBB)
+	       progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#E6E6E6, Positive='true');	
+}
+.entries h3 a, .entries h3 a:link, .entries h3 a:visited {
+	color:			#442 !important;
+}
+.entries h3 a:hover {
+	color:			#C33 !important;
+}

@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type>module</type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title">WEC Discussion Forum</label>
+            <label index="pi1_plus_wiz_description">Add a discussion forum.</label>
+            <label index="submit_btn">Post Message</label>
+            <label index="submit_comment_btn">Add Comment</label>
+            <label index="submit_edit_btn">Save</label>
+            <label index="subscribe_btn">Subscribe</label>
+            <label index="moderate_btn">Moderate</label>
+            <label index="bad_words">Your post had inappropriate words in it and was discarded.</label>
+            <label index="reply_btn">Reply</label>
+            <label index="comment_btn">Add Comment</label>
+            <label index="edit_btn">Edit</label>
+            <label index="delete_btn">Delete</label>
+            <label index="deleteall_btn">Delete All</label>
+            <label index="cancel_btn">Cancel</label>
+            <label index="subject_field">Subject</label>
+            <label index="reply_field">&lt;b&gt;Reply&lt;/b&gt;</label>
+            <label index="category_header">Categories: </label>
+            <label index="viewall_category">[View All]</label>
+            <label index="attached_file">Attached File:</label>
+            <label index="archive_header">Archive:</label>
+            <label index="form_header">Please enter your message:</label>
+            <label index="form_comment_header">Please enter your comments:</label>
+            <label index="form_edit_header">Edit This Post</label>
+            <label index="form_name">Your Name</label>
+            <label index="form_subject">Subject</label>
+            <label index="form_email">Your Email</label>
+            <label index="form_message">Message</label>
+            <label index="form_category">Select Category</label>
+            <label index="form_image">Image:</label>
+            <label index="form_attachment">Attached file:</label>
+            <label index="form_starttime">Start Time (MM-DD-YY):</label>
+            <label index="form_endtime">End Time (MM-DD-YY):</label>
+            <label index="form_email_author_replies">Receive any replies by email?</label>
+            <label index="form_invalid_email">Invalid email format -- i.e., name@example.com</label>
+            <label index="form_required_blank">field must be filled in</label>
+            <label index="form_toggleOn">Add Comment</label>
+            <label index="form_toggleOff">Hide Comment Form</label>
+            <label index="form_error_header">ERROR IN FORM:&lt;br/&gt;</label>
+            <label index="form_error_unknown">There was an error in your message</label>
+            <label index="subscribe_success">You are now subscribed to this group.</label>
+            <label index="subscribe_error1">Please provide your email address.</label>
+            <label index="subscribe_error2">Please provide a valid email in the form name@example.com</label>
+            <label index="subscribe_error3">You are already subscribed to this group.</label>
+            <label index="unsubscribe_error">We could not find your email -- you do not appear to be subscribed to this.</label>
+            <label index="subscribeform_name">Your Name</label>
+            <label index="subscribeform_email">Your Email</label>
+            <label index="subscribeform_submit_sub">Subscribe</label>
+            <label index="subscribeform_submit_unsub">Unsubscribe</label>
+            <label index="subscribeform_cancel">Cancel</label>
+            <label index="subscribeform_header">Subscribe/Unsubscribe</label>
+            <label index="subscribeform_instructions">Please enter your email to receive updates whenever a new message is posted. If you are already subscribed, you can unsubscribe here.</label>
+            <label index="filter_delete">Your post had unacceptable words in it and could not be posted.</label>
+            <label index="filter_moderate">Your post has been sent to the moderator.</label>
+            <label index="show_required_text">* = required field</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">No recent messages have been posted.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">There are no recent messages posted.</label>
+            <label index="no_archive">None yet.</label>
+            <label index="preview_header">What Is Being Discussed In The Forum...</label>
+            <label index="preview_link">Click here to go to the forum</label>
+            <label index="email_title">Discussion Board</label>
+            <label index="email_subject">New Message Posted</label>
+            <label index="email_subjectText">Subject: </label>
+            <label index="email_messageText">Message: </label>
+            <label index="email_categoryText">Category: </label>
+            <label index="email_postedbyText">Posted By: </label>
+            <label index="email_unsubscribeText1">--------------------------------------------------</label>
+            <label index="email_unsubscribeText2">To be unsubscribed from this list and not receive these emails anymore, please click </label>
+            <label index="email_unsubscribeText3">here</label>
+            <label index="email_gotolink">Go to link: </label>
+            <label index="email_moderateMsg">Moderate Discussion Board Message </label>
+            <label index="email_notify">Notify:</label>
+			<label index="email_subject_author_comment">Your Message Was Replied To</label>
+            <label index="clear_subject">clear</label>
+            <label index="view_comments">View Comments</label>
+            <label index="view_replies">View Replies</label>
+            <label index="post_your_message">Post Your Message</label>
+            <label index="on_text">on</label>
+            <label index="category_title">Category: </label>
+            <label index="date_format">%b %d, %Y</label>
+            <label index="datetime_format">%b %d, %Y %I:%M%p</label>
+            <label index="posted_by">Posted By:</label>
+            <label index="no_user">Anonymous</label>
+            <label index="captcha_bad">Please try entering the text for the image check again.</label>
+            <label index="textcaptcha_field">Are you a person?</label>
+            <label index="textcaptcha_bad">You need to fill out the &quot;Are you a person?&quot; field</label>
+			<label index="form_captcha_label">Enter words you see in the image</label>
+            <label index="too_many_links">Too many links found -- only allowed </label>
+            <label index="email_none">noreply@example.com</label>
+            <label index="archive_select">Select...</label>
+            <label index="archive_date_format">%B %Y</label>
+            <label index="no_search_results">No results found for your search.</label>
+            <label index="search_btn">Search</label>
+            <label index="goto_post">Go to this message</label>
+            <label index="no_messages_for_category">No messages have been posted yet for this category.</label>
+            <label index="viewall_button">View All Messages</label>
+            <label index="no_links_allowed">No links are allowed to be posted here.</label>
+            <label index="more">More...</label>
+            <label index="more_bridge">...</label>
+            <label index="preview_bridge">...</label>
+            <label index="add_comments">Add Your Comment</label>
+            <label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;You must login to post a message.&lt;/span&gt;</label>
+            <label index="archive_view_all">[View current]</label>
+            <label index="action_separator">|</label>
+            <label index="msgbutton_separator"></label>
+            <label index="mod_approve">Approve</label>
+            <label index="mod_delete">Delete</label>
+            <label index="mod_messages">MODERATE MESSAGES</label>
+            <label index="mod_subject">SUBJECT</label>
+            <label index="mod_from">FROM</label>
+            <label index="mod_message">MESSAGE</label>
+            <label index="mod_approve_all">Approve all</label>
+            <label index="mod_delete_all">Delete all</label>
+            <label index="mod_process">Process</label>
+            <label index="mod_cancel">Cancel</label>
+            <label index="mod_no_messages">No message to moderate</label>
+            <label index="mod_go_back">Go Back</label>
+            <label index="header_archive">Archive for </label>
+            <label index="header_category">category</label>
+            <label index="header_tag_start">&lt;h2&gt;</label>
+            <label index="header_tag_end">&lt;/h2&gt;</label>
+            <label index="header_separator"> / </label>
+            <label index="edit_message_class">class=&quot;large&quot;</label>
+            <label index="post_message_class"></label>
+            <label index="viewcommentnum_start"></label>
+            <label index="viewcommentnum_end"> comment</label>
+            <label index="viewcommentnum_end_plural">s</label>
+            <label index="viewcommentnum_preview_start">[</label>
+            <label index="viewcommentnum_preview_end">]</label>
+            <label index="viewcommentnum_preview_end_plural"></label>
+            <label index="duplicate_entry">This appears to be a duplicate post.</label>
+            <label index="errorIncludeStatic">You must include static &quot;WEC Discussion Forum template&quot; for any output</label>
+            <label index="email_subject_multiple">New Messages Posted</label>
+            <label index="email_msgSeparator">-------------------------------------------------</label>
+            <label index="submit_preview_btn">Preview Before Post</label>
+            <label index="submit_reply_btn">Post Reply</label>
+            <label index="single_view_title_separator">: </label>
+            <label index="view_single">View</label>
+            <label index="no_category">none available</label>
+            <label index="select_category">Select category...</label>
+            <label index="new_category">New category:</label>
+            <label index="attached_file_type_error">The attached file type is not allowed to be uploaded.</label>
+            <label index="attached_image_type_error">The attached image type is not allowed to be uploaded.</label>
+            <label index="page_name">Page #</label>
+            <label index="next_page">Next &gt;</label>
+            <label index="prev_page">&lt; Prev</label>
+            <label index="deleteall_confirm">Are you sure you want to delete this post and all related comments?</label>
+            <label index="quote_char">&amp;quot;</label>
+            <label index="starttime_format_error">Start Time needs to be formatted in MM-DD-YY format. Include '-' in date.</label>
+            <label index="endtime_format_error">End Time needs to be formatted in MM-DD-YY format. Include '-' in date.</label>
+			<label index="date_format_startendtime">%m-%d-%y</label>
+			<label index="ip_address_field">IP:</label>
+			<label index="archive_view_year">+ </label>
+			<label index="archive_hide_year">- </label>
+			<label index="abuseform_name">Your Name </label>
+			<label index="abuseform_email">Email </label>
+			<label index="abuseform_text">Any Comments About Message </label>
+			<label index="abuseform_submit_abuse">Notify</label>
+			<label index="abuseform_cancel">Cancel </label>
+			<label index="abuseform_header">Report Abuse </label>
+			<label index="abuse_message_label">Message to report: </label>
+			<label index="abuseform_instructions">Please fill out this form and we will report this message to the moderator(s)</label>
+			<label index="email_moderateMsgHeader">Need to Moderate New Message:"</label>
+			<label index="email_abuseMsgHeader">Reported Message On Forum:</label>
+			<label index="email_reportAbuseMsg">Reported Abuse on Discussion Board</label>
+			<label index="abuse_email_name_label">Reporter's Name: </label>
+			<label index="abuse_email_email_label">Reporter's Email: </label>
+			<label index="abuse_email_unknown">Reporter Name Not Given</label>
+			<label index="abuse_email_message">Reporter's Message: </label>
+			<label index="abuse_email_link">View message in forum</label>
+			<label index="login_to_moderate">You need to be logged in to moderate.</label>
+			<label index="goto_login"> Goto Login </label>
+			
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="pi1_title">WEC Diskussionsforum</label>
+            <label index="pi1_plus_wiz_description">Diskussionsforum hinzufügen.</label>
+            <label index="submit_btn">Beitrag hinzufügen</label>
+            <label index="submit_comment_btn">Kommententar hinzufügen</label>
+            <label index="submit_edit_btn">Beitrag bearbeiten</label>
+            <label index="subscribe_btn">Abonnieren</label>
+            <label index="moderate_btn">Moderieren</label>
+            <label index="bad_words">Ihr Beitrag enthielt unangebrachte Worte und wurde entfernt.</label>
+            <label index="reply_btn">Antwort</label>
+            <label index="comment_btn">Kommentar hinzufügen</label>
+            <label index="edit_btn">Editieren</label>
+            <label index="delete_btn">Löschen</label>
+            <label index="cancel_btn">Abbrechen</label>
+            <label index="subject_field">Betreff</label>
+            <label index="reply_field">&lt;b&gt;Antwort&lt;/b&gt;</label>
+            <label index="category_header">Kategorien: </label>
+            <label index="viewall_category">Alle betrachten</label>
+            <label index="attached_file">Angefügte Datei:</label>
+            <label index="archive_header">Archiv:</label>
+            <label index="form_header">Bitte Beitrag eingeben:</label>
+            <label index="form_comment_header">Bitte Kommentare eingeben:</label>
+            <label index="form_edit_header">Beitrag bearbeiten</label>
+            <label index="form_name">Ihr Name</label>
+            <label index="form_subject">Betreff</label>
+            <label index="form_email">Ihre Email</label>
+            <label index="form_message">Beitrag</label>
+            <label index="form_category">Kategorie auswählen</label>
+            <label index="form_image">Bild:</label>
+            <label index="form_attachment">Angefügte Datei:</label>
+            <label index="form_invalid_field">Ungültiges Feld</label>
+            <label index="form_invalid_email">Ungültige Email</label>
+            <label index="form_required_blank">Feld muss ausgefüllt werden</label>
+            <label index="form_toggleOn">Kommentar hinzufügen</label>
+            <label index="form_toggleOff">Kommentar ausblenden</label>
+            <label index="form_error_header">Fehler im Formular:&lt;br/&gt;</label>
+            <label index="form_starttime">Start Zeit (MM-DD-YY):</label>
+            <label index="form_endtime">Ende Zeit (MM-DD-YY):</label>
+            <label index="subscribe_success">Sie haben diese Gruppe jetzt abonniert.</label>
+            <label index="subscribe_error1">Bitte geben Sie Ihre Email-Adresse an.</label>
+            <label index="subscribe_error2">Bitte geben Sie eine gültige Email-Adresse an der Form name@example.com</label>
+            <label index="subscribe_error3">Sie sind bereits Abonnent dieser Gruppe.</label>
+            <label index="unsubscribe_error">Wir konnten Ihre Email nicht finden -- wahrscheinlich sind Sie kein Abonnent dafür.</label>
+            <label index="subscribeform_name">Ihr Name</label>
+            <label index="subscribeform_email">Ihre Email</label>
+            <label index="subscribeform_submit_sub">Abonnieren</label>
+            <label index="subscribeform_submit_unsub">Kündigen</label>
+            <label index="subscribeform_cancel">Abbrechen</label>
+            <label index="subscribeform_header">Abonnieren/Kündigen</label>
+            <label index="filter_delete">Ihr Beitrag enthielt inakzeptable Worte und konnte nicht veröffentlicht werden.</label>
+            <label index="filter_moderate">Ihr Beitrag wurde zum Moderator gesendet.</label>
+            <label index="show_required_text">* = Pflichtfelder</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">Noch keine Beiträge vorhanden.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Keine Beiträge vorhanden.</label>
+            <label index="no_archive">Noch keines.</label>
+            <label index="preview_header">Was in diesem Forum diskutiert wird...</label>
+            <label index="preview_link">Hier klicken um zum Forum zu gelangen</label>
+            <label index="email_title">Diskussionsforum</label>
+            <label index="email_subject">Neuer Beitrag gesendet</label>
+            <label index="email_subjectText">Betreff: </label>
+            <label index="email_messageText">Beitrag: </label>
+            <label index="email_categoryText">Kategorie: </label>
+            <label index="email_postedbyText">Beitrag von: </label>
+            <label index="email_unsubscribeText1">-------------------------------------------</label>
+            <label index="email_unsubscribeText2">Um dieses Abonnement zu beenden und keine Email mehr zu erhalten, bitte auf diese URL klicken oder URL in Browsersuchzeile eingeben: </label>
+            <label index="email_gotolink">Gehe zu Link: </label>
+            <label index="email_moderateMsg">Moderiere Diskussionsbeitrag </label>
+            <label index="email_notify">Benachrichtigung:</label>
+            <label index="clear_subject">Löschen</label>
+            <label index="view_comments">Kommentare ansehen</label>
+            <label index="view_replies">Antworten ansehen</label>
+            <label index="post_your_message">Beitrag verfassen</label>
+            <label index="on_text">am</label>
+            <label index="category_title">Kategorie:</label>
+            <label index="date_format">%d.%m.%Y</label>
+            <label index="datetime_format">%d.%m.%Y %H:%M</label>
+            <label index="posted_by">Erstellt von:</label>
+            <label index="no_user">Anonym</label>
+            <label index="captcha_bad">Bitte versuchen Sie, den im Bild gezeigt Text erneut einzugeben.</label>
+            <label index="textcaptcha_field">Sind Sie eine Person?</label>
+            <label index="textcaptcha_bad">Sie müssen das Feld &quot;Sind Sie eine Person?&quot; markieren</label>
+            <label index="too_many_links">Der Beitrg enthält zu viele Links - erlaubt sind nur </label>
+            <label index="email_none">noreply@example.com</label>
+            <label index="archive_select">Auswählen ...</label>
+            <label index="archive_date_format">%B %Y</label>
+            <label index="no_search_results">No results found for your search.</label>
+            <label index="search_btn">Suche</label>
+            <label index="goto_post">Gehe zu diesem Beitrag</label>
+            <label index="no_messages_for_category">In dieser Kategorie gibt es noch keine Beiträge.</label>
+            <label index="viewall_button">Alle Beiträge anschauen</label>
+            <label index="no_links_allowed">Links sind in diesem Beitrag nicht erlaubt.</label>
+            <label index="more">Mehr ...</label>
+            <label index="more_bridge">...</label>
+            <label index="add_comments">Kommentar hinzufügen</label>
+            <label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;Sie müssen sich einloggen, um einen Beitrag verfassen zu dürfen.&lt;/span&gt;</label>
+            <label index="archive_view_all">Alle anschauen</label>
+            <label index="action_separator">|</label>
+            <label index="mod_approve">Bestätigen</label>
+            <label index="mod_delete">Löschen</label>
+            <label index="mod_messages">Zu moderierende Nachrichten</label>
+            <label index="mod_subject">Betreff</label>
+            <label index="mod_from">Von</label>
+            <label index="mod_message">Nachricht</label>
+            <label index="mod_approve_all">alle Bestätigen</label>
+            <label index="mod_delete_all">alle Löschen</label>
+            <label index="mod_process">Fortfahren</label>
+            <label index="mod_cancel">Abbrechen</label>
+            <label index="mod_no_messages">Keine Nachricht vorhanden</label>
+            <label index="mod_go_back">Zurück</label>
+            <label index="header_archive">Archiv für </label>
+            <label index="header_category">Kategorie</label>
+            <label index="header_tag_start">&lt;h2&gt;</label>
+            <label index="header_tag_end">&lt;/h2&gt;</label>
+            <label index="header_separator"> / </label>
+            <label index="edit_message_class">class=&quot;large&quot;</label>
+            <label index="post_message_class"></label>
+            <label index="viewcommentnum_start"></label>
+            <label index="viewcommentnum_end"> Antwort</label>
+            <label index="viewcommentnum_end_plural">en</label>
+            <label index="viewcommentnum_preview_start">[</label>
+            <label index="viewcommentnum_preview_end">]</label>
+            <label index="viewcommentnum_preview_end_plural"></label>
+            <label index="duplicate_entry">Dies scheint ein doppelter Eintrag zu sein..</label>
+            <label index="errorIncludeStatic">Um eine Ausgabe zu erhalten, muss das statische &quot;WEC Discussion Forum template&quot; eingebunden sein.</label>
+            <label index="email_subject_multiple">Neue Beiträge</label>
+            <label index="email_msgSeparator">-------------------------------------------------</label>
+            <label index="submit_preview_btn">Vorschau des Beitrags </label>
+            <label index="submit_reply_btn">Antwort absenden</label>
+            <label index="view_single">Ansehen</label>
+            <label index="no_category">keine vorhanden</label>
+            <label index="select_category">Kategorie auswählen...</label>
+            <label index="attached_file_type_error">Der angehängte Dateiformat darf nicht hochgeladen werden.</label>
+            <label index="attached_image_type_error">Der angehängte Bildformat darf nicht hochgeladen werden.</label>
+            <label index="page_name">Seite #</label>
+            <label index="next_page">Nächste Seite &gt;</label>
+            <label index="prev_page">&lt; Vorherige Seite</label>
+            <label index="deleteall_confirm">Sind Sie sicher das Sie den Eintrag und alle Kommentare Löschen möchten?</label>
+            <label index="quote_char">&quot;</label>
+            <label index="starttime_format_error">Start Zeit wird im MM-DD-YY Format benötigt. Inklusive '-' im Datum.</label>
+            <label index="endtime_format_error">Ende Zeit wird im MM-DD-YY Format benötigt. Inklusive '-' im Datum.</label>
+			<label index="date_format_startendtime">%m-%d-%y</label>
+			<label index="ip_address_field">IP:</label>
+			<label index="archive_view_year">+ </label>
+			<label index="archive_hide_year">- </label>
+			<label index="abuse_button">Missbrauch melden </label>
+			<label index="abuseform_name">Ihr Name </label>
+			<label index="abuseform_email">Email </label>
+			<label index="abuseform_text">Kommentare zur Nachricht ?</label>
+			<label index="abuseform_submit_abuse">Melden</label>
+			<label index="abuseform_cancel">Abbruch </label>
+			<label index="abuseform_header">Missbrauch melden </label>
+			<label index="abuse_message_label">Eintrag zur Meldung: </label>
+			<label index="abuseform_instructions">Bitte das Formular ausfüllen wir werden es an die Moderatoren weiterleiten</label>
+			<label index="email_moderateMsgHeader">Benötigen neu Moderierte Nachricht:"</label>
+			<label index="email_abuseMsgHeader">Gemeldeter Missbrauch am Diskussionsforum:</label>
+			<label index="email_reportAbuseMsg">Gemeldeter Missbrauch am Diskussionsboard:</label>
+			<label index="abuse_email_name_label">Reporter's Name: </label>
+			<label index="abuse_email_email_label">Reporter's Email: </label>
+			<label index="abuse_email_unknown">Reporter Name nicht bekannt </label>
+			<label index="abuse_email_message">Reporter's Nachricht: </label>
+			<label index="abuse_email_link">Nachricht im Forum ansehen</label>
+			<label index="login_to_moderate">Sie müssen eingeloggt Sein um zu moderieren.</label>
+			<label index="goto_login"> Bitte Einloggen </label>
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="pi1_title">WEC Diskusjons forum</label>
+            <label index="pi1_plus_wiz_description">Legg til et diskusjonsforum.</label>
+            <label index="submit_btn">Post meldingen</label>
+            <label index="submit_comment_btn">Legg til kommentar</label>
+            <label index="submit_edit_btn">Rediger meldingen</label>
+            <label index="subscribe_btn">Abonner</label>
+            <label index="moderate_btn">Rediger</label>
+            <label index="bad_words">Your post had inappropriate words in it and was discarded.</label>
+            <label index="reply_btn">Skriv kommentar</label>
+            <label index="comment_btn">Legg til kommentar</label>
+            <label index="edit_btn">Rediger</label>
+            <label index="delete_btn">Slett</label>
+            <label index="cancel_btn">Avbryt</label>
+            <label index="subject_field">Emne</label>
+            <label index="reply_field">&lt;b&gt;Svar&lt;/b&gt;</label>
+            <label index="category_header">Kategorier: </label>
+            <label index="viewall_category">Vis alle</label>
+            <label index="attached_file">Filvedlegg:</label>
+            <label index="archive_header">Arkiv:</label>
+            <label index="form_header">Skriv din melding:</label>
+            <label index="form_comment_header">Skriv kommentar:</label>
+            <label index="form_edit_header">Rediger denne posten</label>
+            <label index="form_name">Navn</label>
+            <label index="form_subject">Tittel</label>
+            <label index="form_email">E-post</label>
+            <label index="form_message">Melding</label>
+            <label index="form_category">Velg kategori</label>
+            <label index="form_image">Bilde:</label>
+            <label index="form_attachment">Filvedlegg:</label>
+            <label index="form_invalid_email">Feil med e-post formatet -- Eksempel:, ola@example.com</label>
+            <label index="form_required_blank">Disse feltene mÃ¥ fylles ut</label>
+            <label index="form_toggleOn">Vis kommentarfelt</label>
+            <label index="form_toggleOff">Skjul kommentarfelt</label>
+            <label index="form_error_header">FEIL I SKJEMAET:&lt;br/&gt;</label>
+            <label index="subscribe_success">You are now subscribed to this group.</label>
+            <label index="subscribe_error1">Please provide your email address.</label>
+            <label index="subscribe_error2">Please provide a valid email in the form name@example.com</label>
+            <label index="subscribe_error3">You are already subscribed to this group.</label>
+            <label index="unsubscribe_success">You were successfully unsubscribed from this discussion forum.</label>
+            <label index="unsubscribe_error">We could not find your email -- you do not appear to be subscribed to this.</label>
+            <label index="subscribeform_name">Your Name</label>
+            <label index="subscribeform_email">Your Email</label>
+            <label index="subscribeform_submit_sub">Subscribe</label>
+            <label index="subscribeform_submit_unsub">Unsubscribe</label>
+            <label index="subscribeform_cancel">Cancel</label>
+            <label index="subscribeform_header">Subscribe/Unsubscribe</label>
+            <label index="filter_delete">Your post had unacceptable words in it and could not be posted.</label>
+            <label index="filter_moderate">Your post has been sent to the moderator.</label>
+            <label index="show_required_text">* = PÃ¥krevd felt</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">Det er ingen meldinger i denne kategorien.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Ingen meldinger.</label>
+            <label index="no_archive">None yet.</label>
+            <label index="preview_header">Siste fra forum</label>
+            <label index="preview_link">GÃ¥ til forumet</label>
+            <label index="email_title">Discussion Board</label>
+            <label index="email_subject">New Message Posted</label>
+            <label index="email_subjectText">Subject: </label>
+            <label index="email_messageText">Message: </label>
+            <label index="email_categoryText">Category: </label>
+            <label index="email_postedbyText">Posted By: </label>
+            <label index="email_unsubscribeText1">-------------------------------------------</label>
+            <label index="email_unsubscribeText2">To be unsubscribed from this list and not receive these emails anymore, please click or go to this URL: </label>
+            <label index="email_gotolink">Go to link: </label>
+            <label index="email_moderateMsg">Moderate Discussion Board Message </label>
+            <label index="email_notify">Notify:</label>
+            <label index="clear_subject">Slett</label>
+            <label index="view_comments">Vis kommentarer</label>
+            <label index="post_your_message">Skriv nytt innlegg</label>
+            <label index="on_text">on</label>
+            <label index="category_title">Kategori:</label>
+            <label index="date_format">%d %b, %Y</label>
+            <label index="datetime_format">%d %b, %Y %H:%M</label>
+            <label index="posted_by">Skrevet av:</label>
+            <label index="no_user">Anonym</label>
+        </languageKey>
+        <languageKey index="fr" type="array">
+            <label index="pi1_title">Forum de discussion WEC</label>
+            <label index="pi1_plus_wiz_description">Ajouter un forum de discussion.</label>
+            <label index="submit_btn">Publier un message</label>
+            <label index="submit_comment_btn">Ajouter un commentaire</label>
+            <label index="submit_edit_btn">Ã?diter ce message</label>
+            <label index="subscribe_btn">S'abonner</label>
+            <label index="moderate_btn">ModÃ©rer</label>
+            <label index="bad_words">Votre message comporte des mots inappropriÃ©s et a Ã©tÃ© rejetÃ©.</label>
+            <label index="reply_btn">RÃ©pondre</label>
+            <label index="comment_btn">Ajouter un commentaire</label>
+            <label index="edit_btn">Ã?diter</label>
+            <label index="delete_btn">Supprimer</label>
+            <label index="cancel_btn">Annuler</label>
+            <label index="subject_field">Sujet</label>
+            <label index="reply_field">&lt;b&gt;RÃ©ponse&lt;/b&gt;</label>
+            <label index="category_header">CatÃ©gories: </label>
+            <label index="viewall_category">Tout voir</label>
+            <label index="attached_file">Fichier joint:</label>
+            <label index="archive_header">Archives:</label>
+            <label index="form_header">Veuillez entrer votre message:</label>
+            <label index="form_comment_header">Veuillez entrer vos commentaires:</label>
+            <label index="form_edit_header">Ã?diter ce message</label>
+            <label index="form_name">Votre nom</label>
+            <label index="form_subject">Sujet</label>
+            <label index="form_email">Courriel</label>
+            <label index="form_message">Message</label>
+            <label index="form_category">Choisir la categorie</label>
+            <label index="form_image">Image:</label>
+            <label index="form_attachment">Fichier joint:</label>
+            <label index="form_invalid_email">Format d'adresse courriel invalide -- i.e., nom@example.com</label>
+            <label index="form_required_blank">tous les champs doivent Ãªtre remplis</label>
+            <label index="form_toggleOn">Ajouter un commentaire</label>
+            <label index="form_toggleOff">Cacher le formulaire de commentaire</label>
+            <label index="form_error_header">ERREUR DANS LE FORMULAIRE:&lt;br/&gt;</label>
+            <label index="subscribe_success">Vous Ãªtes maintenant membre de ce groupe.</label>
+            <label index="subscribe_error1">Veuillez fournir votre adresse courriel.</label>
+            <label index="subscribe_error2">Veuillez fournir un adresse courriel valide de la frome nom@example.com</label>
+            <label index="subscribe_error3">Vous Ãªtes dÃ©jÃ  inscrit a ce groupe.</label>
+            <label index="unsubscribe_error">Nous ne pouvons pas trouver votre adresse -- vous ne semblez pas Ãªtres membres.</label>
+            <label index="subscribeform_name">Votre nom</label>
+            <label index="subscribeform_email">Votre adresse courriel</label>
+            <label index="subscribeform_submit_sub">S'abonner</label>
+            <label index="subscribeform_submit_unsub">Se dÃ©sabonner</label>
+            <label index="subscribeform_cancel">Annuler</label>
+            <label index="subscribeform_header">S'abonner / Se dÃ©sabonner</label>
+            <label index="filter_delete">Votre message contient des mots inappropriÃ©s et ne pourra Ãªtre publiÃ©.</label>
+            <label index="filter_moderate">Votre message a Ã©tÃ© envoyÃ© au modÃ©rateur.</label>
+            <label index="show_required_text">* = Champs requis</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">Aucun message n'a Ã©tÃ© publiÃ© jusqu'Ã  prÃ©sent.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Il n'y a pas de messages.</label>
+            <label index="no_archive">Aucune archives.</label>
+            <label index="preview_header">Ce dont discute le forum...</label>
+            <label index="preview_link">Cliquez ici pour aller au forum</label>
+            <label index="email_title">Babillard de discussion</label>
+            <label index="email_subject">Nouveau message publiÃ©</label>
+            <label index="email_subjectText">Sujet: </label>
+            <label index="email_messageText">Message: </label>
+            <label index="email_categoryText">CatÃ©gorie: </label>
+            <label index="email_postedbyText">PubliÃ© par: </label>
+            <label index="email_unsubscribeText1">-------------------------------------------</label>
+            <label index="email_unsubscribeText2">Pour se dÃ©sabonner de cette liste et ne plus recevoir ces courriels, cliquez ou dirigez vous vers ce lien</label>
+            <label index="email_gotolink">Lien: </label>
+            <label index="email_moderateMsg">ModÃ©rer le forum de discussion</label>
+            <label index="email_notify">Notifier:</label>
+            <label index="clear_subject">Vider</label>
+            <label index="view_comments">Voir les commentaires</label>
+            <label index="post_your_message">Publier un message</label>
+            <label index="on_text">le</label>
+            <label index="category_title">CatÃ©gorie:</label>
+            <label index="date_format">%d %b, %Y</label>
+            <label index="datetime_format">%d %b, %Y %I:%M%p</label>
+            <label index="posted_by">PubliÃ© par:</label>
+            <label index="no_user">Anonyme</label>
+            <label index="captcha_bad">Veuillez essayer de nouveau d'entrer le texte de l'image.</label>
+            <label index="textcaptcha_field">Ã?tes vous une personne?</label>
+            <label index="textcaptcha_bad">Vous devez remplir le champ: Ã?tes vous une personne?&quot;</label>
+            <label index="too_many_links">Trop de liens -- seulement allouÃ©s </label>
+            <label index="email_none">sansreponse@example.com</label>
+            <label index="archive_select">SÃ©lectionner...</label>
+            <label index="archive_date_format">%B %Y</label>
+            <label index="no_search_results">Aucun rÃ©sultat trouvÃ© pour votre recherche.</label>
+            <label index="search_btn">Rechercher</label>
+            <label index="goto_post">Aller Ã  ce message</label>
+            <label index="no_messages_for_category">Aucun messages ont Ã©tÃ©s publies dans cette catÃ©gorie.</label>
+            <label index="viewall_button">Voir tous les messages</label>
+            <label index="no_links_allowed">Vous ne pouvez pas publier de liens ici.</label>
+            <label index="more">Plus...</label>
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="pi1_title">WEC discussie forum</label>
+            <label index="pi1_plus_wiz_description">Voeg een discussie forum toe</label>
+            <label index="submit_btn">Plaats bericht</label>
+            <label index="submit_comment_btn">Commentaar toevoegen</label>
+            <label index="submit_edit_btn">Bericht bewerken</label>
+            <label index="subscribe_btn">Aanmelden</label>
+            <label index="moderate_btn">Beheren</label>
+            <label index="bad_words">Je bericht bevatte onwelvoegelijke woorden en is verwijderd.</label>
+            <label index="reply_btn">Beantwoorden</label>
+            <label index="comment_btn">Commentaar toevoegen</label>
+            <label index="edit_btn">Bewerken</label>
+            <label index="delete_btn">Verwijderen</label>
+            <label index="cancel_btn">Annuleren</label>
+            <label index="subject_field">Onderwerp</label>
+            <label index="reply_field">&lt;b&gt;Antwoord&lt;/b&gt;</label>
+            <label index="category_header">Categorieën: </label>
+            <label index="viewall_category">Alles bekijken</label>
+            <label index="attached_file">Bijgevoegd bestand:</label>
+            <label index="archive_header">Archief:</label>
+            <label index="form_header">Voer een bericht in:</label>
+            <label index="form_comment_header">Voer commentaar in:</label>
+            <label index="form_edit_header">Bewerk dit bericht</label>
+            <label index="form_name">Naam</label>
+            <label index="form_subject">Onderwerp</label>
+            <label index="form_email">Email</label>
+            <label index="form_message">Bericht</label>
+            <label index="form_category">Selecteer categorie</label>
+            <label index="form_image">Afbeelding:</label>
+            <label index="form_attachment">Toegevoegd bestand:</label>
+            <label index="form_invalid_email">***Ongeldig emailadres</label>
+            <label index="form_required_blank">veld moet ingevuld zijn</label>
+            <label index="form_toggleOn">Voeg commentaar toe</label>
+            <label index="form_toggleOff">Verberg commentaar formulier</label>
+            <label index="form_error_header">***ERROR IN FORM:&lt;br/&gt;</label>
+            <label index="subscribe_success">Je bent nu lid van deze groep.</label>
+            <label index="subscribe_error1">Vul s.v.p. een email-adres in.</label>
+            <label index="subscribe_error2">Vul s.v.p. een gelding email-adres in, met de vorm naam@example.com</label>
+            <label index="subscribe_error3">Je bent al lid van deze groep.</label>
+            <label index="unsubscribe_error">Je email-adres is niet teruggevonden -- het lijkt er op alsof je geen lid bent.</label>
+            <label index="subscribeform_name">Naam</label>
+            <label index="subscribeform_email">Email</label>
+            <label index="subscribeform_submit_sub">Inschrijven als lid</label>
+            <label index="subscribeform_submit_unsub">Uitschrijven als lid</label>
+            <label index="subscribeform_cancel">Annuleren</label>
+            <label index="subscribeform_header">Inschrijven/uitschrijven</label>
+            <label index="filter_delete">Je bericht bevatte onwelvoegelijke woorden en kon niet worden geplaatst.</label>
+            <label index="filter_moderate">Je bericht is naar de beheerder verzonden.</label>
+            <label index="show_required_text">* = verplicht veld</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">Er zijn nog geen berichten geplaatst.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Er zijn geen berichten geplaatst.</label>
+            <label index="no_archive">Nog niets gearchiveerd.</label>
+            <label index="preview_header">Wat er wordt besproken in het forum...</label>
+            <label index="preview_link">Klik hier om naar het forum te gaan</label>
+            <label index="email_title">Discussie bord</label>
+            <label index="email_subject">Nieuw bericht geplaatst</label>
+            <label index="email_subjectText">Onderwerp: </label>
+            <label index="email_messageText">Bericht: </label>
+            <label index="email_categoryText">Categorie: </label>
+            <label index="email_postedbyText">Geplaatst door: </label>
+            <label index="email_unsubscribeText1">-------------------------------------------</label>
+            <label index="email_unsubscribeText2">Klik op de volgende url om uitgeschreven te worden als lid van deze lijst en geen emails meer te ontvangen: </label>
+            <label index="email_gotolink">Ga naar link: </label>
+            <label index="email_moderateMsg">Beheer discussie bord bericht </label>
+            <label index="email_notify">Melding:</label>
+            <label index="clear_subject">wis</label>
+            <label index="view_comments">Commentaar</label>
+            <label index="post_your_message">Plaats nieuw bericht</label>
+            <label index="on_text">op</label>
+            <label index="category_title">Categorie:</label>
+            <label index="date_format">%d %b, %Y</label>
+            <label index="datetime_format">%d %b, %Y %I:%M%p</label>
+            <label index="posted_by">***Posted by</label>
+            <label index="no_user">***Anonymous</label>
+            <label index="add_comments">Voeg jouw commentaar toe</label>
+            <label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;Je moet ingelogd zijn om een bericht te kunnen plaatsen.&lt;/span&gt;</label>
+            <label index="archive_view_all">Toon alles</label>
+            <label index="action_separator">|</label>
+            <label index="mod_approve">Keur goed</label>
+            <label index="mod_delete">Wis</label>
+            <label index="mod_messages">BEOORDEEL BERICHTEN</label>
+            <label index="mod_subject">ONDERWERP</label>
+            <label index="mod_from">VAN</label>
+            <label index="mod_message">BERICHT</label>
+            <label index="mod_approve_all">Keur alles goed</label>
+            <label index="mod_delete_all">Wis alles</label>
+            <label index="mod_process">Proces</label>
+            <label index="mod_cancel">Afbreken</label>
+            <label index="mod_no_messages">Geen berichten te beoordelen</label>
+            <label index="mod_go_back">Ga terug</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="pi1_title">WEC-keskustelualue</label>
+            <label index="pi1_plus_wiz_description">LisÃ¤Ã¤ keskustelualue.</label>
+            <label index="submit_btn">LÃ¤hetÃ¤</label>
+            <label index="submit_comment_btn">LÃ¤hetÃ¤</label>
+            <label index="submit_edit_btn">Tallenna</label>
+            <label index="subscribe_btn">Tilaa</label>
+            <label index="moderate_btn">Muokkaa</label>
+            <label index="bad_words">ViestissÃ¤si oli sopimattomia sanoja. Se hylÃ¤ttiin.</label>
+            <label index="reply_btn">Vastaa</label>
+            <label index="comment_btn">Kommentoi</label>
+            <label index="edit_btn">Muokkaa</label>
+            <label index="delete_btn">Poista</label>
+            <label index="cancel_btn">Peruuta</label>
+            <label index="subject_field">Aihe</label>
+            <label index="reply_field">&lt;b&gt;Vastaus&lt;/b&gt;</label>
+            <label index="category_header">Luokat</label>
+            <label index="viewall_category">[nÃ¤ytÃ¤ kaikki]</label>
+            <label index="attached_file">LiitÃ¤ tiedosto</label>
+            <label index="archive_header">Arkisto</label>
+            <label index="form_header">Uusi viesti</label>
+            <label index="form_comment_header">Kirjoita kommenttisi</label>
+            <label index="form_edit_header">Muokkaa tekstiÃ¤</label>
+            <label index="form_name">Nimesi</label>
+            <label index="form_subject">Aiheesi</label>
+            <label index="form_email">SÃ¤hkÃ¶postiosoitteesi</label>
+            <label index="form_message">Viesti</label>
+            <label index="form_category">Valitse luokka</label>
+            <label index="form_image">Kuva</label>
+            <label index="form_attachment">LiitÃ¤ tiedosto</label>
+            <label index="form_invalid_email">Virheellinen sÃ¤hkÃ¶postiosoitteen muoto</label>
+            <label index="form_required_blank">kenttÃ¤ on pakollinen</label>
+            <label index="form_toggleOn">Kommentoi</label>
+            <label index="form_toggleOff">Piilota kommentit</label>
+            <label index="form_error_header">VIRHE LOMAKKEESSA&lt;br/&gt;</label>
+            <label index="form_error_unknown">ViestissÃ¤si oli virhe</label>
+            <label index="subscribe_success">Olet nyt ryhmÃ¤n tilaaja.</label>
+            <label index="subscribe_error1">Anna sÃ¤hkÃ¶postiosoitteesi.</label>
+            <label index="subscribe_error2">Anna sÃ¤hkÃ¶postiosoite muodossa name@example.com.</label>
+            <label index="subscribe_error3">Olet jo ryhmÃ¤n tilaaja.</label>
+            <label index="unsubscribe_error">SÃ¤hkÃ¶postiosoitettasi ei lÃ¶ytynyt. Et ole ryhmÃ¤n tilaaja.</label>
+            <label index="subscribeform_name">Nimesi</label>
+            <label index="subscribeform_email">SÃ¤hkÃ¶postiosoitteesi</label>
+            <label index="subscribeform_submit_sub">Tilaa</label>
+            <label index="subscribeform_submit_unsub">Peruuta tilaus</label>
+            <label index="subscribeform_cancel">Peruuta</label>
+            <label index="subscribeform_header">Tilaa tai peruuta tilaus</label>
+            <label index="filter_delete">ViestissÃ¤si oli sopimattomia sanoja. SitÃ¤ ei lÃ¤hetetty.</label>
+            <label index="filter_moderate">Viestisi lÃ¤hetettiin yllÃ¤pitÃ¤jille.</label>
+            <label index="show_required_text">*-merkityt ovat pakollisia</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">ViestejÃ¤ ei ole lÃ¤hetetty hiljattain.</label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Ei viimeaikaisia viestejÃ¤.</label>
+            <label index="no_archive">Ei ole vielÃ¤</label>
+            <label index="preview_header">MistÃ¤ keskustelualuueella puhutaan</label>
+            <label index="preview_link">Napsauta tÃ¤ssÃ¤ niin pÃ¤Ã¤set keskustelualueelle</label>
+            <label index="email_title">Keskustelualue</label>
+            <label index="email_subject">Uusi viesti</label>
+            <label index="email_subjectText">Aihe: </label>
+            <label index="email_messageText">Viesti: </label>
+            <label index="email_categoryText">Luokka: </label>
+            <label index="email_postedbyText">LÃ¤hettÃ¤jÃ¤: </label>
+            <label index="email_unsubscribeText1">--------------------------------------------------</label>
+            <label index="email_unsubscribeText2">Peruuta tilaus ja lopeta nÃ¤iden viestien tulo napsauttamalla  </label>
+            <label index="email_unsubscribeText3">tÃ¤ssÃ¤</label>
+            <label index="email_gotolink">Siirry: </label>
+            <label index="email_moderateMsg">Hallinnoi viestejÃ¤</label>
+            <label index="email_notify">Notify:</label>
+            <label index="clear_subject">TyhjennÃ¤</label>
+            <label index="view_comments">NÃ¤ytÃ¤ kommentit</label>
+            <label index="view_replies">NÃ¤ytÃ¤ vastaukset</label>
+            <label index="post_your_message">LÃ¤hetÃ¤ viesti</label>
+            <label index="on_text"></label>
+            <label index="category_title">Luokka</label>
+            <label index="date_format">%x</label>
+            <label index="datetime_format">%c</label>
+            <label index="posted_by">Kirjoittanut</label>
+            <label index="no_user">Tuntemattomuus</label>
+            <label index="captcha_bad">Kirjoita kuvavarmistuksen teksti uudestaan.</label>
+            <label index="textcaptcha_field">Oletko ihminen?</label>
+            <label index="textcaptcha_bad">Sinun tÃ¤ytyy vastata Oletko ihminen? -kysymykseen</label>
+            <label index="too_many_links">Liian monta linkkiÃ¤. LinkkejÃ¤ voi olla korkeintaan </label>
+            <label index="email_none">Ã¤lÃ¤_vastaa@example.com</label>
+            <label index="archive_select">Valitse...</label>
+            <label index="archive_date_format">%B %Y</label>
+            <label index="no_search_results">Ei tuloksia haullesi</label>
+            <label index="search_btn">Etsi</label>
+            <label index="goto_post">Siirry viestiin</label>
+            <label index="no_messages_for_category">Luokkaan ei ole lÃ¤hetetty viestejÃ¤.</label>
+            <label index="viewall_button">NÃ¤ytÃ¤ kaikki viestit</label>
+            <label index="no_links_allowed">LinkkejÃ¤ ei sallita.</label>
+            <label index="more">LisÃ¤Ã¤...</label>
+            <label index="more_bridge">...</label>
+            <label index="preview_bridge">...</label>
+            <label index="add_comments">LisÃ¤Ã¤ kommenttisi</label>
+            <label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;Kirjaudu sisÃ¤Ã¤n lÃ¤hettÃ¤Ã¤ksesi viestin.&lt;/span&gt;</label>
+            <label index="archive_view_all">[NÃ¤ytÃ¤ kaikki]</label>
+            <label index="action_separator">|</label>
+            <label index="mod_approve">HyvÃ¤ksy</label>
+            <label index="mod_delete">Poista</label>
+            <label index="mod_messages">TARKISTA VIESTEJÃ?</label>
+            <label index="mod_subject">AIHE</label>
+            <label index="mod_from">LÃ?HETTÃ?JÃ?</label>
+            <label index="mod_message">VIESTI</label>
+            <label index="mod_approve_all">HyvÃ¤ksy kaikki</label>
+            <label index="mod_delete_all">Poista kaikki</label>
+            <label index="mod_process">KÃ¤sittele</label>
+            <label index="mod_cancel">Peruuta</label>
+            <label index="mod_no_messages">Ei tarkistettavia viestejÃ¤</label>
+            <label index="mod_go_back">Takaisin</label>
+            <label index="header_archive">Arkisto </label>
+            <label index="header_category">luokka</label>
+            <label index="header_tag_start">&lt;h2&gt;</label>
+            <label index="header_tag_end">&lt;/h2&gt;</label>
+            <label index="header_separator"> / </label>
+            <label index="edit_message_class">class=&quot;large&quot;</label>
+            <label index="post_message_class"></label>
+            <label index="viewcommentnum_start">kommentteja </label>
+            <label index="viewcommentnum_end"></label>
+            <label index="viewcommentnum_end_plural"></label>
+            <label index="viewcommentnum_preview_start">(</label>
+            <label index="viewcommentnum_preview_end">)</label>
+            <label index="viewcommentnum_preview_end_plural"></label>
+            <label index="duplicate_entry">TÃ¤mÃ¤ nÃ¤yttÃ¤Ã¤ vahinkolÃ¤hetykseltÃ¤.</label>
+            <label index="errorIncludeStatic">You must include static &quot;WEC Discussion Forum template&quot; for any output</label>
+            <label index="email_subject_multiple">Uusia viestejÃ¤ lÃ¤hetetty</label>
+            <label index="email_msgSeparator">-------------------------------------------------</label>
+            <label index="submit_preview_btn">Esikatsele</label>
+            <label index="submit_reply_btn">LÃ¤hetÃ¤</label>
+            <label index="single_view_title_separator">: </label>
+            <label index="view_single">NÃ¤ytÃ¤</label>
+            <label index="no_category">ei luokkia</label>
+            <label index="select_category">Valitse luokka...</label>
+            <label index="attached_file_type_error">Liitetiedoston tyyppi ei ole sallittu.</label>
+            <label index="attached_image_type_error">Liitetyn kuvan tyyppi ei ole sallittu.</label>
+            <label index="page_name">Sivu #</label>
+            <label index="next_page">Seuraava &gt;</label>
+            <label index="prev_page">&lt; Edellinen</label>
+            <label index="deleteall_confirm">Oletko varma, että haluat poistaa tämän viestin ja siihen liittyvät kommentit?</label>
+            <label index="starttime_format_error">Aloitusaika tulee olla muodossa KK-PP-VV. Sisällytä päiväykseen '-' merkit.</label>
+            <label index="endtime_format_error">Lopetusaika tulee olla muodossa KK-PP-VV. Sisällytä päiväykseen '-'  merkit.</label>
+        </languageKey>
+        <languageKey index="ch" type="array">
+            <label index="archive_date_format">%B %Y</label>
+            <label index="archive_header">&amp;#26087;&amp;#25991;&amp;#26723;</label>
+            <label index="archive_select">&amp;#36873;&amp;#25321;&amp;#12290;&amp;#12290;&amp;#12290;</label>
+            <label index="attached_file">&amp;#38468;&amp;#20214;&amp;#65306;</label>
+            <label index="bad_words">&amp;#24086;&amp;#23376;&amp;#21253;&amp;#21547;&amp;#19981;&amp;#36866;&amp;#21512;&amp;#30340;&amp;#25991;&amp;#23383;&amp;#25152;&amp;#20197;&amp;#24050;&amp;#32463;&amp;#34987;&amp;#21024;&amp;#38500;&amp;#12290;</label>
+            <label index="cancel_btn">&amp;#21462;&amp;#28040;</label>
+            <label index="captcha_bad">&amp;#37325;&amp;#26032;&amp;#36755;&amp;#20837;&amp;#22270;&amp;#29255;&amp;#25991;&amp;#23383;.</label>
+            <label index="category_header">&amp;#31867;:</label>
+            <label index="category_title">&amp;#31867;:</label>
+            <label index="clear_subject">&amp;#28165;&amp;#38500;</label>
+            <label index="comment_btn">&amp;#28155;&amp;#21152;&amp;#35780;&amp;#35770;</label>
+            <label index="date_format">%b %d, %Y</label>
+            <label index="datetime_format">%b %d, %Y %I:%M%p</label>
+            <label index="delete_btn">&amp;#21024;&amp;#38500;</label>
+            <label index="edit_btn">&amp;#20462;&amp;#25913;</label>
+            <label index="email_categoryText">&amp;#31867;:</label>
+            <label index="email_gotolink">&amp;#38142;&amp;#25509;&amp;#21040;:</label>
+            <label index="email_messageText">&amp;#20449;&amp;#24687;:</label>
+            <label index="email_moderateMsg">&amp;#23457;&amp;#26680;&amp;#35770;&amp;#22363;&amp;#20449;&amp;#24687;</label>
+            <label index="email_none">noreply@example.com</label>
+            <label index="email_notify">&amp;#25552;&amp;#37266;:</label>
+            <label index="email_postedbyText">&amp;#21457;&amp;#24067;&amp;#32773;:</label>
+            <label index="email_subject">&amp;#26377;&amp;#26032;&amp;#20449;&amp;#24687;</label>
+            <label index="email_subjectText">&amp;#20027;&amp;#39064;:</label>
+            <label index="email_title">&amp;#35752;&amp;#35770;&amp;#26639;</label>
+            <label index="email_unsubscribeText1">-------------------------------------------</label>
+            <label index="email_unsubscribeText2">&amp;#21462;&amp;#28040;&amp;#35746;&amp;#38405;&amp;#35831;&amp;#28857;&amp;#20987;:</label>
+            <label index="filter_delete">&amp;#24744;&amp;#30340;&amp;#24086;&amp;#23376;&amp;#21253;&amp;#21547;&amp;#19981;&amp;#21512;&amp;#36866;&amp;#30340;&amp;#25991;&amp;#23383;&amp;#25152;&amp;#20197;&amp;#19981;&amp;#33021;&amp;#21457;&amp;#24067;&amp;#65294;</label>
+            <label index="filter_moderate">&amp;#24086;&amp;#23376;&amp;#24050;&amp;#32463;&amp;#21457;&amp;#32473;&amp;#31649;&amp;#29702;&amp;#21592;&amp;#23457;&amp;#26680;&amp;#65294;</label>
+            <label index="form_attachment">&amp;#38468;&amp;#20214;&amp;#65306;</label>
+            <label index="form_category">&amp;#36873;&amp;#25321;&amp;#31867;</label>
+            <label index="form_comment_header">&amp;#35831;&amp;#36755;&amp;#20837;&amp;#35780;&amp;#35770;&amp;#65306;</label>
+            <label index="form_edit_header">&amp;#20462;&amp;#25913;&amp;#27492;&amp;#24086;&amp;#23376;</label>
+            <label index="form_email">&amp;#30005;&amp;#37038;</label>
+            <label index="form_error_header">&amp;#34920;&amp;#21333;&amp;#38169;&amp;#35823;&amp;#65306;&amp;lt;br /&amp;gt;</label>
+            <label index="form_header">&amp;#20449;&amp;#24687;&amp;#20869;&amp;#23481;&amp;#65306;</label>
+            <label index="form_image">&amp;#22270;&amp;#29255;&amp;#65306;</label>
+            <label index="form_invalid_email">&amp;#26080;&amp;#25928;&amp;#30340;&amp;#26684;&amp;#24335;&amp;#65293;&amp;#65293;&amp;#20363;name@example.com</label>
+            <label index="form_message">&amp;#20449;&amp;#24687;</label>
+            <label index="form_name">&amp;#22995;&amp;#21517;</label>
+            <label index="form_required_blank">&amp;#24517;&amp;#22635;&amp;#39033;</label>
+            <label index="form_subject">&amp;#20027;&amp;#39064;</label>
+            <label index="form_toggleOff">&amp;#38544;&amp;#34255;&amp;#35780;&amp;#35770;&amp;#34920;&amp;#21333;</label>
+            <label index="form_toggleOn">&amp;#28155;&amp;#21152;&amp;#34920;&amp;#21333;</label>
+            <label index="goto_post">&amp;#38142;&amp;#25509;&amp;#21040;&amp;#27492;&amp;#20449;&amp;#24687;</label>
+            <label index="moderate_btn">&amp;#23457;&amp;#26680;</label>
+            <label index="no_archive">&amp;#27809;&amp;#26377;&amp;#20037;&amp;#25991;&amp;#26723;&amp;#65294;</label>
+            <label index="no_messages">&amp;#27809;&amp;#26377;&amp;#20449;&amp;#24687;&amp;#65294;</label>
+            <label index="no_messages_for_category">&amp;#27492;&amp;#31867;&amp;#26242;&amp;#26080;&amp;#20449;&amp;#24687;&amp;#65294;</label>
+            <label index="no_search_results">&amp;#26080;&amp;#25628;&amp;#32034;&amp;#32467;&amp;#26524;&amp;#65294;</label>
+            <label index="no_subject"> </label>
+            <label index="no_user">&amp;#26080;&amp;#21517;&amp;#27663;</label>
+            <label index="on_text">&amp;#22312;</label>
+            <label index="pi1_plus_wiz_description">&amp;#28155;&amp;#21152;&amp;#35752;&amp;#35770;&amp;#65294;</label>
+            <label index="pi1_title">WEC&amp;#35770;&amp;#22363;</label>
+            <label index="post_your_message">&amp;#21457;&amp;#24067;&amp;#20449;&amp;#24687;</label>
+            <label index="posted_by">&amp;#21457;&amp;#24067;&amp;#32773;&amp;#65306;</label>
+            <label index="preview_header">&amp;#35770;&amp;#22363;&amp;#35805;&amp;#39064;&amp;#65294;&amp;#65294;&amp;#65294;</label>
+            <label index="preview_link">&amp;#38142;&amp;#25509;&amp;#21040;&amp;#35770;&amp;#22363;</label>
+            <label index="preview_none">&amp;#26080;&amp;#20449;&amp;#24687;&amp;#65294;</label>
+            <label index="reply_btn">&amp;#22238;&amp;#22797;</label>
+            <label index="reply_field">&amp;lt;b&amp;gt;&amp;#22238;&amp;#22797;&amp;lt;/b&amp;gt;</label>
+            <label index="required_text_marker">*</label>
+            <label index="search_btn">&amp;#25628;&amp;#32034;</label>
+            <label index="show_required_text">* =&amp;#24517;&amp;#22635;&amp;#39033;</label>
+            <label index="subject_field">&amp;#20027;&amp;#39064;</label>
+            <label index="submit_btn">&amp;#21457;&amp;#24067;&amp;#20449;&amp;#24687;</label>
+            <label index="submit_comment_btn">&amp;#28155;&amp;#21152;&amp;#35780;&amp;#35770;</label>
+            <label index="submit_edit_btn">&amp;#20462;&amp;#25913;&amp;#20449;&amp;#24687;</label>
+            <label index="subscribe_btn">&amp;#35746;&amp;#38405;</label>
+            <label index="subscribe_error1">&amp;#35831;&amp;#25552;&amp;#20379;&amp;#30005;&amp;#37038;&amp;#22320;&amp;#22336;&amp;#65294;</label>
+            <label index="subscribe_error2">&amp;#35831;&amp;#25552;&amp;#20379;&amp;#27491;&amp;#30830;&amp;#30340;&amp;#30005;&amp;#37038;&amp;#22320;&amp;#22336;&amp;#65294;</label>
+            <label index="subscribe_error3">&amp;#24744;&amp;#24050;&amp;#32463;&amp;#35746;&amp;#38405;&amp;#20102;&amp;#36825;&amp;#20010;&amp;#32452;</label>
+            <label index="subscribe_success">&amp;#35746;&amp;#38405;&amp;#25104;&amp;#21151;&amp;#65294;</label>
+            <label index="subscribeform_cancel">&amp;#21462;&amp;#28040;</label>
+            <label index="subscribeform_email">&amp;#30005;&amp;#37038;</label>
+            <label index="subscribeform_header">&amp;#35746;&amp;#38405;&amp;#65295;&amp;#21462;&amp;#28040;&amp;#35746;&amp;#38405;</label>
+            <label index="subscribeform_name">&amp;#22995;&amp;#21517;</label>
+            <label index="subscribeform_submit_sub">&amp;#35746;&amp;#38405;</label>
+            <label index="subscribeform_submit_unsub">&amp;#21462;&amp;#28040;&amp;#35746;&amp;#38405;</label>
+            <label index="textcaptcha_bad">&amp;#35831;&amp;#36141;&amp;#36873;&amp;#65282;&amp;#26159;&amp;#30495;&amp;#20154;&amp;#21527;&amp;#65311;&amp;#65282;&amp;#39033;</label>
+            <label index="textcaptcha_field">&amp;#26159;&amp;#30495;&amp;#20154;&amp;#21527;&amp;#65311;</label>
+            <label index="too_many_links">&amp;#38142;&amp;#25509;&amp;#22826;&amp;#22810;</label>
+            <label index="unsubscribe_error">&amp;#26080;&amp;#27861;&amp;#25214;&amp;#21040;&amp;#24744;&amp;#30340;&amp;#30005;&amp;#37038;&amp;#65294;</label>
+            <label index="view_comments">&amp;#26597;&amp;#30475;&amp;#35780;&amp;#35770;</label>
+            <label index="viewall_category">&amp;#26597;&amp;#30475;&amp;#25152;&amp;#26377;</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="pi1_title" type="integer">124877153</label>
+            <label index="pi1_plus_wiz_description" type="integer">75317123</label>
+            <label index="submit_btn" type="integer">96783595</label>
+            <label index="submit_comment_btn" type="integer">173051094</label>
+            <label index="submit_edit_btn" type="integer">211601612</label>
+            <label index="subscribe_btn" type="integer">187076981</label>
+            <label index="moderate_btn" type="integer">32209364</label>
+            <label index="bad_words" type="integer">140022075</label>
+            <label index="reply_btn" type="integer">39685622</label>
+            <label index="comment_btn" type="integer">173051094</label>
+            <label index="edit_btn" type="integer">131916066</label>
+            <label index="delete_btn" type="integer">254438473</label>
+            <label index="deleteall_btn" type="integer">41887856</label>
+            <label index="cancel_btn" type="integer">245659783</label>
+            <label index="subject_field" type="integer">209228523</label>
+            <label index="reply_field" type="integer">251937343</label>
+            <label index="category_header" type="integer">111589294</label>
+            <label index="viewall_category" type="integer">87003121</label>
+            <label index="attached_file" type="integer">96698482</label>
+            <label index="archive_header" type="integer">39067239</label>
+            <label index="form_header" type="integer">116113718</label>
+            <label index="form_comment_header" type="integer">55176962</label>
+            <label index="form_edit_header" type="integer">255537745</label>
+            <label index="form_name" type="integer">102027258</label>
+            <label index="form_subject" type="integer">209228523</label>
+            <label index="form_email" type="integer">1398630</label>
+            <label index="form_message" type="integer">79866110</label>
+            <label index="form_category" type="integer">124201363</label>
+            <label index="form_image" type="integer">73502731</label>
+            <label index="form_attachment" type="integer">87448018</label>
+            <label index="form_starttime" type="integer">183111848</label>
+            <label index="form_endtime" type="integer">236664162</label>
+            <label index="form_invalid_email" type="integer">209124651</label>
+            <label index="form_required_blank" type="integer">35093085</label>
+            <label index="form_toggleOn" type="integer">173051094</label>
+            <label index="form_toggleOff" type="integer">183750225</label>
+            <label index="form_error_header" type="integer">89197412</label>
+            <label index="form_error_unknown" type="integer">190727415</label>
+            <label index="subscribe_success" type="integer">128693321</label>
+            <label index="subscribe_error1" type="integer">8895157</label>
+            <label index="subscribe_error2" type="integer">235700558</label>
+            <label index="subscribe_error3" type="integer">176055737</label>
+            <label index="unsubscribe_error" type="integer">186989589</label>
+            <label index="subscribeform_name" type="integer">102027258</label>
+            <label index="subscribeform_email" type="integer">1398630</label>
+            <label index="subscribeform_submit_sub" type="integer">187076981</label>
+            <label index="subscribeform_submit_unsub" type="integer">68693135</label>
+            <label index="subscribeform_cancel" type="integer">245659783</label>
+            <label index="subscribeform_header" type="integer">27149803</label>
+            <label index="filter_delete" type="integer">171197414</label>
+            <label index="filter_moderate" type="integer">170811907</label>
+            <label index="show_required_text" type="integer">52389042</label>
+            <label index="required_text_marker" type="integer">54042030</label>
+            <label index="no_messages" type="integer">180107189</label>
+            <label index="no_subject" type="integer">214401424</label>
+            <label index="preview_none" type="integer">243143171</label>
+            <label index="no_archive" type="integer">104584015</label>
+            <label index="preview_header" type="integer">206894938</label>
+            <label index="preview_link" type="integer">208125882</label>
+            <label index="email_title" type="integer">36055278</label>
+            <label index="email_subject" type="integer">213149151</label>
+            <label index="email_subjectText" type="integer">255613732</label>
+            <label index="email_messageText" type="integer">12232941</label>
+            <label index="email_categoryText" type="integer">215026594</label>
+            <label index="email_postedbyText" type="integer">115402133</label>
+            <label index="email_unsubscribeText1" type="integer">230408256</label>
+            <label index="email_unsubscribeText2" type="integer">107933110</label>
+            <label index="email_unsubscribeText3" type="integer">113844869</label>
+            <label index="email_gotolink" type="integer">240367180</label>
+            <label index="email_moderateMsg" type="integer">222307318</label>
+            <label index="email_notify" type="integer">211859351</label>
+            <label index="clear_subject" type="integer">1820408</label>
+            <label index="view_comments" type="integer">219972137</label>
+            <label index="view_replies" type="integer">30646239</label>
+            <label index="post_your_message" type="integer">14566278</label>
+            <label index="on_text" type="integer">248690112</label>
+            <label index="category_title" type="integer">215026594</label>
+            <label index="date_format" type="integer">214641580</label>
+            <label index="datetime_format" type="integer">250873717</label>
+            <label index="posted_by" type="integer">267956248</label>
+            <label index="no_user" type="integer">117939314</label>
+            <label index="captcha_bad" type="integer">169411510</label>
+            <label index="textcaptcha_field" type="integer">134697118</label>
+            <label index="textcaptcha_bad" type="integer">127481663</label>
+            <label index="too_many_links" type="integer">19091098</label>
+            <label index="email_none" type="integer">121457055</label>
+            <label index="archive_select" type="integer">125257565</label>
+            <label index="archive_date_format" type="integer">109186306</label>
+            <label index="no_search_results" type="integer">2008053</label>
+            <label index="search_btn" type="integer">20138052</label>
+            <label index="goto_post" type="integer">179938826</label>
+            <label index="no_messages_for_category" type="integer">12992515</label>
+            <label index="viewall_button" type="integer">263992576</label>
+            <label index="no_links_allowed" type="integer">4698991</label>
+            <label index="more" type="integer">6655854</label>
+            <label index="more_bridge" type="integer">49560386</label>
+            <label index="preview_bridge" type="integer">49560386</label>
+            <label index="add_comments" type="integer">226188582</label>
+            <label index="login_to_comment" type="integer">162685435</label>
+            <label index="archive_view_all" type="integer">16934195</label>
+            <label index="action_separator" type="integer"></label>
+            <label index="mod_approve" type="integer">116864278</label>
+            <label index="mod_delete" type="integer">254438473</label>
+            <label index="mod_messages" type="integer">148861296</label>
+            <label index="mod_subject" type="integer">24234895</label>
+            <label index="mod_from" type="integer">164308699</label>
+            <label index="mod_message" type="integer">151491053</label>
+            <label index="mod_approve_all" type="integer">99411388</label>
+            <label index="mod_delete_all" type="integer">4525350</label>
+            <label index="mod_process" type="integer">191809451</label>
+            <label index="mod_cancel" type="integer">245659783</label>
+            <label index="mod_no_messages" type="integer">23045311</label>
+            <label index="mod_go_back" type="integer">83031521</label>
+            <label index="header_archive" type="integer">152865335</label>
+            <label index="header_category" type="integer">206500690</label>
+            <label index="header_tag_start" type="integer">177367937</label>
+            <label index="header_tag_end" type="integer">66291436</label>
+            <label index="header_separator" type="integer">195060383</label>
+            <label index="edit_message_class" type="integer">162067670</label>
+            <label index="post_message_class" type="integer">222419149</label>
+            <label index="viewcommentnum_start" type="integer">222419149</label>
+            <label index="viewcommentnum_end" type="integer">140944147</label>
+            <label index="viewcommentnum_end_plural" type="integer">3963914</label>
+            <label index="viewcommentnum_preview_start" type="integer">135610738</label>
+            <label index="viewcommentnum_preview_end" type="integer">16503159</label>
+            <label index="viewcommentnum_preview_end_plural" type="integer">222419149</label>
+            <label index="duplicate_entry" type="integer">176142453</label>
+            <label index="errorIncludeStatic" type="integer">267211481</label>
+            <label index="email_subject_multiple" type="integer">131165361</label>
+            <label index="email_msgSeparator" type="integer">40628171</label>
+            <label index="submit_preview_btn" type="integer">171377348</label>
+            <label index="submit_reply_btn" type="integer">89181020</label>
+            <label index="single_view_title_separator" type="integer">237393042</label>
+            <label index="view_single" type="integer">70589694</label>
+            <label index="no_category" type="integer">8359930</label>
+            <label index="select_category" type="integer">186713394</label>
+            <label index="new_category" type="integer">220562976</label>
+            <label index="attached_file_type_error" type="integer">29118078</label>
+            <label index="attached_image_type_error" type="integer">108072586</label>
+            <label index="page_name" type="integer">125979284</label>
+            <label index="next_page" type="integer">232350798</label>
+            <label index="prev_page" type="integer">222695105</label>
+            <label index="deleteall_confirm" type="integer">40318581</label>
+            <label index="quote_char" type="integer">246825885</label>
+            <label index="starttime_format_error" type="integer">188921762</label>
+            <label index="endtime_format_error" type="integer">213667828</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_invalid_field" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="view_replies" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+            <label index="captcha_bad" type="integer">222419149</label>
+            <label index="textcaptcha_field" type="integer">222419149</label>
+            <label index="textcaptcha_bad" type="integer">222419149</label>
+            <label index="too_many_links" type="integer">222419149</label>
+            <label index="email_none" type="integer">222419149</label>
+            <label index="archive_select" type="integer">222419149</label>
+            <label index="archive_date_format" type="integer">222419149</label>
+            <label index="no_search_results" type="integer">222419149</label>
+            <label index="search_btn" type="integer">222419149</label>
+            <label index="goto_post" type="integer">222419149</label>
+            <label index="no_messages_for_category" type="integer">222419149</label>
+            <label index="viewall_button" type="integer">222419149</label>
+            <label index="no_links_allowed" type="integer">222419149</label>
+            <label index="more" type="integer">222419149</label>
+            <label index="more_bridge" type="integer">222419149</label>
+            <label index="add_comments" type="integer">222419149</label>
+            <label index="login_to_comment" type="integer">222419149</label>
+            <label index="archive_view_all" type="integer">222419149</label>
+            <label index="action_separator" type="integer"></label>
+            <label index="mod_approve" type="integer">222419149</label>
+            <label index="mod_delete" type="integer">222419149</label>
+            <label index="mod_messages" type="integer">222419149</label>
+            <label index="mod_subject" type="integer">222419149</label>
+            <label index="mod_from" type="integer">222419149</label>
+            <label index="mod_message" type="integer">222419149</label>
+            <label index="mod_approve_all" type="integer">222419149</label>
+            <label index="mod_delete_all" type="integer">222419149</label>
+            <label index="mod_process" type="integer">222419149</label>
+            <label index="mod_cancel" type="integer">222419149</label>
+            <label index="mod_no_messages" type="integer">222419149</label>
+            <label index="mod_go_back" type="integer">222419149</label>
+            <label index="header_archive" type="integer">222419149</label>
+            <label index="header_category" type="integer">222419149</label>
+            <label index="header_tag_start" type="integer">222419149</label>
+            <label index="header_tag_end" type="integer">222419149</label>
+            <label index="header_separator" type="integer">222419149</label>
+            <label index="edit_message_class" type="integer">222419149</label>
+            <label index="post_message_class" type="integer">222419149</label>
+            <label index="viewcommentnum_start" type="integer">222419149</label>
+            <label index="viewcommentnum_end" type="integer">222419149</label>
+            <label index="viewcommentnum_end_plural" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_start" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_end" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_end_plural" type="integer">222419149</label>
+            <label index="duplicate_entry" type="integer">222419149</label>
+            <label index="errorIncludeStatic" type="integer">222419149</label>
+            <label index="email_subject_multiple" type="integer">222419149</label>
+            <label index="email_msgSeparator" type="integer">222419149</label>
+            <label index="submit_preview_btn" type="integer">222419149</label>
+            <label index="submit_reply_btn" type="integer">222419149</label>
+            <label index="view_single" type="integer">222419149</label>
+            <label index="no_category" type="integer">222419149</label>
+            <label index="select_category" type="integer">222419149</label>
+            <label index="attached_file_type_error" type="integer">222419149</label>
+            <label index="attached_image_type_error" type="integer">222419149</label>
+            <label index="page_name" type="integer">222419149</label>
+            <label index="next_page" type="integer">222419149</label>
+            <label index="prev_page" type="integer">222419149</label>
+        </languageKey>
+        <languageKey index="no" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="unsubscribe_success" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+        </languageKey>
+        <languageKey index="fr" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+            <label index="captcha_bad" type="integer">222419149</label>
+            <label index="textcaptcha_field" type="integer">222419149</label>
+            <label index="textcaptcha_bad" type="integer">222419149</label>
+            <label index="too_many_links" type="integer">222419149</label>
+            <label index="email_none" type="integer">222419149</label>
+            <label index="archive_select" type="integer">222419149</label>
+            <label index="archive_date_format" type="integer">222419149</label>
+            <label index="no_search_results" type="integer">222419149</label>
+            <label index="search_btn" type="integer">222419149</label>
+            <label index="goto_post" type="integer">222419149</label>
+            <label index="no_messages_for_category" type="integer">222419149</label>
+            <label index="viewall_button" type="integer">222419149</label>
+            <label index="no_links_allowed" type="integer">222419149</label>
+            <label index="more" type="integer">222419149</label>
+        </languageKey>
+        <languageKey index="nl" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+            <label index="add_comments" type="integer">222419149</label>
+            <label index="login_to_comment" type="integer">222419149</label>
+            <label index="archive_view_all" type="integer">222419149</label>
+            <label index="action_separator" type="integer">222419149</label>
+            <label index="mod_approve" type="integer">222419149</label>
+            <label index="mod_delete" type="integer">222419149</label>
+            <label index="mod_messages" type="integer">222419149</label>
+            <label index="mod_subject" type="integer">222419149</label>
+            <label index="mod_from" type="integer">222419149</label>
+            <label index="mod_message" type="integer">222419149</label>
+            <label index="mod_approve_all" type="integer">222419149</label>
+            <label index="mod_delete_all" type="integer">222419149</label>
+            <label index="mod_process" type="integer">222419149</label>
+            <label index="mod_cancel" type="integer">222419149</label>
+            <label index="mod_no_messages" type="integer">222419149</label>
+            <label index="mod_go_back" type="integer">222419149</label>
+        </languageKey>
+        <languageKey index="fi" type="array">
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="form_error_unknown" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="email_unsubscribeText3" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="view_replies" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+            <label index="captcha_bad" type="integer">222419149</label>
+            <label index="textcaptcha_field" type="integer">222419149</label>
+            <label index="textcaptcha_bad" type="integer">222419149</label>
+            <label index="too_many_links" type="integer">222419149</label>
+            <label index="email_none" type="integer">222419149</label>
+            <label index="archive_select" type="integer">222419149</label>
+            <label index="archive_date_format" type="integer">222419149</label>
+            <label index="no_search_results" type="integer">222419149</label>
+            <label index="search_btn" type="integer">222419149</label>
+            <label index="goto_post" type="integer">222419149</label>
+            <label index="no_messages_for_category" type="integer">222419149</label>
+            <label index="viewall_button" type="integer">222419149</label>
+            <label index="no_links_allowed" type="integer">222419149</label>
+            <label index="more" type="integer">222419149</label>
+            <label index="more_bridge" type="integer">222419149</label>
+            <label index="preview_bridge" type="integer">222419149</label>
+            <label index="add_comments" type="integer">222419149</label>
+            <label index="login_to_comment" type="integer">222419149</label>
+            <label index="archive_view_all" type="integer">222419149</label>
+            <label index="action_separator" type="integer">222419149</label>
+            <label index="mod_approve" type="integer">222419149</label>
+            <label index="mod_delete" type="integer">222419149</label>
+            <label index="mod_messages" type="integer">222419149</label>
+            <label index="mod_subject" type="integer">222419149</label>
+            <label index="mod_from" type="integer">222419149</label>
+            <label index="mod_message" type="integer">222419149</label>
+            <label index="mod_approve_all" type="integer">222419149</label>
+            <label index="mod_delete_all" type="integer">222419149</label>
+            <label index="mod_process" type="integer">222419149</label>
+            <label index="mod_cancel" type="integer">222419149</label>
+            <label index="mod_no_messages" type="integer">222419149</label>
+            <label index="mod_go_back" type="integer">222419149</label>
+            <label index="header_archive" type="integer">222419149</label>
+            <label index="header_category" type="integer">222419149</label>
+            <label index="header_tag_start" type="integer">222419149</label>
+            <label index="header_tag_end" type="integer">222419149</label>
+            <label index="header_separator" type="integer">222419149</label>
+            <label index="edit_message_class" type="integer">222419149</label>
+            <label index="post_message_class" type="integer">222419149</label>
+            <label index="viewcommentnum_start" type="integer">222419149</label>
+            <label index="viewcommentnum_end" type="integer">222419149</label>
+            <label index="viewcommentnum_end_plural" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_start" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_end" type="integer">222419149</label>
+            <label index="viewcommentnum_preview_end_plural" type="integer">222419149</label>
+            <label index="duplicate_entry" type="integer">222419149</label>
+            <label index="errorIncludeStatic" type="integer">222419149</label>
+            <label index="email_subject_multiple" type="integer">222419149</label>
+            <label index="email_msgSeparator" type="integer">222419149</label>
+            <label index="submit_preview_btn" type="integer">222419149</label>
+            <label index="submit_reply_btn" type="integer">222419149</label>
+            <label index="single_view_title_separator" type="integer">222419149</label>
+            <label index="view_single" type="integer">222419149</label>
+            <label index="no_category" type="integer">222419149</label>
+            <label index="select_category" type="integer">222419149</label>
+            <label index="attached_file_type_error" type="integer">222419149</label>
+            <label index="attached_image_type_error" type="integer">222419149</label>
+        </languageKey>
+        <languageKey index="ch" type="array">
+            <label index="archive_date_format" type="integer">222419149</label>
+            <label index="archive_header" type="integer">222419149</label>
+            <label index="archive_select" type="integer">222419149</label>
+            <label index="attached_file" type="integer">222419149</label>
+            <label index="bad_words" type="integer">222419149</label>
+            <label index="cancel_btn" type="integer">222419149</label>
+            <label index="captcha_bad" type="integer">222419149</label>
+            <label index="category_header" type="integer">222419149</label>
+            <label index="category_title" type="integer">222419149</label>
+            <label index="clear_subject" type="integer">222419149</label>
+            <label index="comment_btn" type="integer">222419149</label>
+            <label index="date_format" type="integer">222419149</label>
+            <label index="datetime_format" type="integer">222419149</label>
+            <label index="delete_btn" type="integer">222419149</label>
+            <label index="edit_btn" type="integer">222419149</label>
+            <label index="email_categoryText" type="integer">222419149</label>
+            <label index="email_gotolink" type="integer">222419149</label>
+            <label index="email_messageText" type="integer">222419149</label>
+            <label index="email_moderateMsg" type="integer">222419149</label>
+            <label index="email_none" type="integer">222419149</label>
+            <label index="email_notify" type="integer">222419149</label>
+            <label index="email_postedbyText" type="integer">222419149</label>
+            <label index="email_subject" type="integer">222419149</label>
+            <label index="email_subjectText" type="integer">222419149</label>
+            <label index="email_title" type="integer">222419149</label>
+            <label index="email_unsubscribeText1" type="integer">222419149</label>
+            <label index="email_unsubscribeText2" type="integer">222419149</label>
+            <label index="filter_delete" type="integer">222419149</label>
+            <label index="filter_moderate" type="integer">222419149</label>
+            <label index="form_attachment" type="integer">222419149</label>
+            <label index="form_category" type="integer">222419149</label>
+            <label index="form_comment_header" type="integer">222419149</label>
+            <label index="form_edit_header" type="integer">222419149</label>
+            <label index="form_email" type="integer">222419149</label>
+            <label index="form_error_header" type="integer">222419149</label>
+            <label index="form_header" type="integer">222419149</label>
+            <label index="form_image" type="integer">222419149</label>
+            <label index="form_invalid_email" type="integer">222419149</label>
+            <label index="form_message" type="integer">222419149</label>
+            <label index="form_name" type="integer">222419149</label>
+            <label index="form_required_blank" type="integer">222419149</label>
+            <label index="form_subject" type="integer">222419149</label>
+            <label index="form_toggleOff" type="integer">222419149</label>
+            <label index="form_toggleOn" type="integer">222419149</label>
+            <label index="goto_post" type="integer">222419149</label>
+            <label index="moderate_btn" type="integer">222419149</label>
+            <label index="no_archive" type="integer">222419149</label>
+            <label index="no_messages" type="integer">222419149</label>
+            <label index="no_messages_for_category" type="integer">222419149</label>
+            <label index="no_search_results" type="integer">222419149</label>
+            <label index="no_subject" type="integer">222419149</label>
+            <label index="no_user" type="integer">222419149</label>
+            <label index="on_text" type="integer">222419149</label>
+            <label index="pi1_plus_wiz_description" type="integer">222419149</label>
+            <label index="pi1_title" type="integer">222419149</label>
+            <label index="post_your_message" type="integer">222419149</label>
+            <label index="posted_by" type="integer">222419149</label>
+            <label index="preview_header" type="integer">222419149</label>
+            <label index="preview_link" type="integer">222419149</label>
+            <label index="preview_none" type="integer">222419149</label>
+            <label index="reply_btn" type="integer">222419149</label>
+            <label index="reply_field" type="integer">222419149</label>
+            <label index="required_text_marker" type="integer">222419149</label>
+            <label index="search_btn" type="integer">222419149</label>
+            <label index="show_required_text" type="integer">222419149</label>
+            <label index="subject_field" type="integer">222419149</label>
+            <label index="submit_btn" type="integer">222419149</label>
+            <label index="submit_comment_btn" type="integer">222419149</label>
+            <label index="submit_edit_btn" type="integer">222419149</label>
+            <label index="subscribe_btn" type="integer">222419149</label>
+            <label index="subscribe_error1" type="integer">222419149</label>
+            <label index="subscribe_error2" type="integer">222419149</label>
+            <label index="subscribe_error3" type="integer">222419149</label>
+            <label index="subscribe_success" type="integer">222419149</label>
+            <label index="subscribeform_cancel" type="integer">222419149</label>
+            <label index="subscribeform_email" type="integer">222419149</label>
+            <label index="subscribeform_header" type="integer">222419149</label>
+            <label index="subscribeform_name" type="integer">222419149</label>
+            <label index="subscribeform_submit_sub" type="integer">222419149</label>
+            <label index="subscribeform_submit_unsub" type="integer">222419149</label>
+            <label index="textcaptcha_bad" type="integer">222419149</label>
+            <label index="textcaptcha_field" type="integer">222419149</label>
+            <label index="too_many_links" type="integer">222419149</label>
+            <label index="unsubscribe_error" type="integer">222419149</label>
+            <label index="view_comments" type="integer">222419149</label>
+            <label index="viewall_category" type="integer">222419149</label>
+        </languageKey>
+       <languageKey index="se" type="array">
+         	<label index="pi1_title">WEC Discussion Forum</label>
+            <label index="pi1_plus_wiz_description">Lägg till en diskussions forum.</label>
+            <label index="submit_btn">Skapa inlägg</label>
+            <label index="submit_comment_btn">Kommentera</label>
+            <label index="submit_edit_btn">Spara</label>
+            <label index="subscribe_btn">Abonnera</label>
+            <label index="moderate_btn">Kontrollera</label>
+            <label index="bad_words">Inlägget hade fula ord och hamnat i sopkorgen. Prova om!</label>
+            <label index="reply_btn">Svara</label>
+            <label index="comment_btn">Kommentera</label>
+            <label index="edit_btn">Redigera</label>
+            <label index="delete_btn">Ta bort</label>
+            <label index="deleteall_btn">Ta bort alla</label>
+            <label index="cancel_btn">Avbryt</label>
+            <label index="subject_field">Rubrik</label>
+            <label index="reply_field">&lt;b&gt;Svara&lt;/b&gt;</label>
+            <label index="category_header">Kategorier: </label>
+            <label index="viewall_category">[Visa alla]</label>
+            <label index="attached_file">Bifogat fil:</label>
+            <label index="archive_header">Arkiv:</label>
+            <label index="form_header">Skriva inlägg:</label>
+            <label index="form_comment_header">Kommentera:</label>
+            <label index="form_edit_header">Redigera inlägget</label>
+            <label index="form_name">Ditt namn</label>
+            <label index="form_subject">Rubrik</label>
+            <label index="form_email">E-post</label>
+            <label index="form_message">Meddelandet</label>
+            <label index="form_category">Välj kategori</label>
+            <label index="form_image">Bilde:</label>
+            <label index="form_attachment">Bifogat fil:</label>
+            <label index="form_starttime">Start Tid (MM-DD-YY):</label>
+            <label index="form_endtime">Slut Tid (MM-DD-YY):</label>
+            <label index="form_invalid_email">Ogiltig epost format -- t ex namn@exempel.se</label>
+            <label index="form_required_blank">fältet som måste ifyllas</label>
+            <label index="form_toggleOn">kommentera</label>
+            <label index="form_toggleOff">dölj komment form</label>
+            <label index="form_error_header">FEL I FORM:&lt;br/&gt;</label>
+            <label index="form_error_unknown">Det blev något fel i meddelandet</label>
+            <label index="subscribe_success">Du har abonnerat på gruppen.</label>
+            <label index="subscribe_error1">Vg och ange ditt epost adress.</label>
+            <label index="subscribe_error2">Var vänlig ange ett giltig epost adress i formatet namn@exempel.se</label>
+            <label index="subscribe_error3">Du har ju redan ett abonnemang på gruppen.</label>
+            <label index="unsubscribe_error">Vi kunde inte hitta ditt epost adress -- det ser ut som om du har inga abonnemang, tyvärr.</label>
+            <label index="subscribeform_name">Ditt namn</label>
+            <label index="subscribeform_email">Ditt epost</label>
+            <label index="subscribeform_submit_sub">Abonnera</label>
+            <label index="subscribeform_submit_unsub">Avsluta abonnemanget</label>
+            <label index="subscribeform_cancel">Avbryt</label>
+            <label index="subscribeform_header">Abonnera/Avsluta abonnemang</label>
+            <label index="filter_delete">Inlägget hade fula ord i den och kunde ej publiceras.</label>
+            <label index="filter_moderate">Inlägget har skickats till administration.</label>
+            <label index="show_required_text">* = fältet krävs</label>
+            <label index="required_text_marker">*</label>
+            <label index="no_messages">Inga nya meddelanden. </label>
+            <label index="no_subject">&amp;nbsp;</label>
+            <label index="preview_none">Det finns inga nya inlägg.</label>
+            <label index="no_archive">Ingenting!</label>
+            <label index="preview_header">Vad är det som diskuteras i forumet?</label>
+            <label index="preview_link">Klicka här för att komma till forumet</label>
+            <label index="email_title">Diskussions Forum</label>
+            <label index="email_subject">Nytt meddelande finns! </label>
+            <label index="email_subjectText">Rubrik: </label>
+            <label index="email_messageText">Meddelande: </label>
+            <label index="email_categoryText">Kategori: </label>
+            <label index="email_postedbyText">Inlägg av: </label>
+            <label index="email_unsubscribeText1">--------------------------------------------------</label>
+            <label index="email_unsubscribeText2">För att avsluta ditt abonnemang och avbryta epost försändelsen klicka </label>
+            <label index="email_unsubscribeText3">här</label>
+            <label index="email_gotolink">Gå till länk: </label>
+            <label index="email_moderateMsg">Kontrollera Diskussions Meddelanden </label>
+            <label index="email_notify">Obs! :</label>
+            <label index="clear_subject">rensa</label>
+            <label index="view_comments">Visa komment</label>
+            <label index="view_replies">Visa Replik</label>
+            <label index="post_your_message">Posta inlägg</label>
+            <label index="on_text">den</label>
+            <label index="category_title">Kategori: </label>
+            <label index="date_format">%b %d, %Y</label>
+            <label index="datetime_format">%b %d, %Y %I:%M%p</label>
+            <label index="posted_by">av:</label>
+            <label index="no_user">Anonym</label>
+            <label index="captcha_bad">Vg och prova om texten igen.</label>
+            <label index="textcaptcha_field">Är du en människa? </label>
+            <label index="textcaptcha_bad">Du måste fylla i &quot;Är du en människa?&quot; fältet</label>
+            <label index="too_many_links">För många länkar hittat -- tillåtit endast </label>
+            <label index="email_none">ingen@exempel.se</label>
+            <label index="archive_select">Välj...</label>
+            <label index="archive_date_format">%B %Y</label>
+            <label index="no_search_results">Inga result på sökningen.</label>
+            <label index="search_btn">Sök</label>
+            <label index="goto_post">Gå till inlägg</label>
+            <label index="no_messages_for_category">Inga inlägg finns på kategoriet.</label>
+            <label index="viewall_button">Visa Alla Meddelanden</label>
+            <label index="no_links_allowed">Inga länkar tillåtit här.</label>
+            <label index="more">Visa mer...</label>
+            <label index="more_bridge">...</label>
+            <label index="preview_bridge">...</label>
+            <label index="add_comments">Kommentera</label>
+            <label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;You must login to post a message.&lt;/span&gt;</label>
+            <label index="archive_view_all">[Visa aktuella]</label>
+            <label index="action_separator">|</label>
+            <label index="mod_approve">Bevilja</label>
+            <label index="mod_delete">Ta bort</label>
+            <label index="mod_messages">KONTROLLERA MEDDELANDEN</label>
+            <label index="mod_subject">RUBRIK</label>
+            <label index="mod_from">FRÅN</label>
+            <label index="mod_message">MEDDELANDE</label>
+            <label index="mod_approve_all">Bevilja alla</label>
+            <label index="mod_delete_all">Ta bort alla</label>
+            <label index="mod_process">Behandla</label>
+            <label index="mod_cancel">Avbryt</label>
+            <label index="mod_no_messages">Inga inlägg att kontrollera</label>
+            <label index="mod_go_back">Gå tillbaka</label>
+            <label index="header_archive">Arkiv </label>
+            <label index="header_category">kategori</label>
+            <label index="header_tag_start">&lt;h2&gt;</label>
+            <label index="header_tag_end">&lt;/h2&gt;</label>
+            <label index="header_separator"> / </label>
+            <label index="edit_message_class">class=&quot;large&quot;</label>
+            <label index="post_message_class"></label>
+            <label index="viewcommentnum_start"></label>
+            <label index="viewcommentnum_end">komment</label>
+            <label index="viewcommentnum_end_plural">s</label>
+            <label index="viewcommentnum_preview_start">[</label>
+            <label index="viewcommentnum_preview_end">]</label>
+            <label index="viewcommentnum_preview_end_plural"></label>
+            <label index="duplicate_entry">Det här ser ut som dublett.</label>
+            <label index="errorIncludeStatic">You must include static &quot;WEC Discussion Forum template&quot; for any output</label>
+            <label index="email_subject_multiple">Nya meddelanden inlagt</label>
+            <label index="email_msgSeparator">-------------------------------------------------</label>
+            <label index="submit_preview_btn">Förhandsgranska innan inlägget</label>
+            <label index="submit_reply_btn">Skicka</label>
+            <label index="single_view_title_separator">: </label>
+            <label index="view_single">Vy</label>
+            <label index="no_category">finns ej</label>
+            <label index="select_category">Välj kategori...</label>
+            <label index="new_category">Nytt kategori:</label>
+            <label index="attached_file_type_error">Filtyp ej tillåtit.</label>
+            <label index="attached_image_type_error">Bildformat ej tillåtit.</label>
+            <label index="page_name">Sida #</label>
+            <label index="next_page">Nästa &gt;</label>
+            <label index="prev_page">&lt; Förgående</label>
+            <label index="deleteall_confirm">Är helt säkert att du vill ta bort posten och alla kommentar?</label>
+            <label index="quote_char">&amp;quot;</label>
+            <label index="starttime_format_error">Start Tid måste ha format MM-DD-YY. Ink '-' i datumet.</label>
+            <label index="endtime_format_error">Sluttid måste anges i formatet MM-DD-YY. Ink '-' i datumet.</label>
+	    	<label index="date_format_startendtime">%m-%d-%y</label>
+	    	<label index="ip_address_field">IP:</label>
+        </languageKey>
+		<languageKey index="es" type="array"> 
+			<label index="form_name_label">Apellido</label>
+			<label index="form_firstname_label">Nombre</label>
+			<label index="form_position_title_label">PosiciÃ“n TÃ–tulo</label>
+			<label index="form_position_description_label">Campo de actividades</label>
+			<label index="form_telephone_label">TelÃ©fono</label>
+			<label index="form_shortdial_label">Marcada rÃ¡pida</label>
+			<label index="form_email_label">Email</label>
+			<label index="form_location_label">Planta</label>
+			<label index="form_department_label">Departamento</label>
+			<label index="form_team_label">Equipo</label>
+			<label index="form_position_label">Puesto</label>
+			<label index="form_role_label">ActuaciÃ“n</label>
+			<label index="form_start_date_label">Comienzo de la actividad</label>
+			<label index="form_biography_label">BiografÃ–a</label>
+			<label index="form_news_label">Noticias</label>
+			<label index="form_photo_main_label">Foto principal</label>
+			<label index="form_photos_etc_label">Fotos otros</label>
+			<label index="form_cellphone_label">MÃ“vil</label>
+			<label index="form_cellphone_notify_label">(MÃ“vil)</label>
+			<label index="form_misc_label">diversos</label>
+			<label index="form_ges_label">AbreviaciÃ“n</label>
+			<label index="form_ges_notify_label">AbreviaciÃ“n</label>
+			<label index="form_address_label">DirecciÃ“n</label>
+			<label index="form_homework_label">Lugar de trabajo a casa</label>
+			<label index="form_zone_label">Provincia</label>
+			<label index="form_zip_label">C.P.</label>
+			<label index="form_country_label">PaÃ–s</label>
+			<label index="form_room_label">Sala</label>
+			<label index="form_room_notify_label">Sala</label>
+			<label index="form_title_label">TÃ–tulo</label>  <label index="job_header">InformaciÃ“n de trabajo</label>
+			<label index="contact_header">Informaciones de contacto</label>
+			<label index="biography_header">InformaciÃ“n personal</label>
+			<label index="news_header">Ultimas noticias</label>  <label index="sort_by">Ordenar por: </label>
+			<label index="sortmenu1">Apellido</label>
+			<label index="sortmenu2">Departamento</label>
+			<label index="sortmenu3">Comienzo de la actividad</label>
+			<label index="sortmenu4">Nombre</label>
+			<label index="sortmenu5">EstÃ¡ndar</label>
+			<label index="sortmenu6">EstÃ¡ndar</label>
+			<label index="sortmenu7">FunciÃ“n</label>
+			<label index="sortmenu8">PosiciÃ“n</label>  <label index="search_label">Busca: </label>
+			<label index="search_department_label">Departamento: </label>
+			<label index="search_position_label">PosiciÃ“n: </label>
+			<label index="search_role_label">FunciÃ“n: </label>
+			<label index="search_choose">--- todo ---</label>
+			<label index="search_button">Buscar</label>  <label index="edit_btn">editar</label>
+			<label index="delete_btn">borrar</label>
+			<label index="new_btn">Entrada nueva</label>
+			<label index="delete_confirm">Â¿Quiere borrar esta entrada?</label>
+			<label index="save_btn">Guardar</label>
+			<label index="back_btn">Volver a la lista de colaboradores</label>
+			<label index="cancel_btn">Cancelar</label>
+			<label index="select_staff_menu">Elegir colaborador...</label>
+			<label index="updated_staff_page">PÃ¡gina de colaboradores fue actualizado</label>
+			<label index="created_staff_page">PÃ¡gina de colaboradores fue creado</label>
+			<label index="deleted_staff">PÃ¡gina de colaboradores fue borrado</label>
+			<label index="blank_field">&amp;nbsp;</label>
+			<label index="edit_info">Editar colaborador: </label>
+			<label index="add_new_staff">Crear colaborador nuevo</label>  <label index="bad_email_format">Su correo electrÃ“nico no esta valida (email@donde.com)</label>
+			<label index="bad_name">Su nombre tiene que tener al mÃ–nimo dos charcteres</label>
+			<label index="bad_number1">Su </label>
+			<label index="bad_number2"> unicamente puede contener nÃºmeros</label>
+			<label index="bad_editor">No puede editar esta pÃ¡gina</label>
+			<label index="bad_edit_form">Por el momento no puede editar esta pÃ¡gina</label>
+			<label index="bad_delete_id">Demanda de borrar no esta valida</label>
+			<label index="more_link">[mÃ¡s]</label>
+			<label index="date_format">%d-%m-%Y</label> 
+        </languageKey>
+		<languageKey index="dk" type="array">
+			<label index="abuse_email_email_label">Anmelders e-mail</label>
+			<label index="abuse_email_link">Vis besked i forum</label>
+			<label index="abuse_email_message">Anmelders besked:</label>
+			<label index="abuse_email_name_label">Anmelders navn:</label>
+			<label index="abuse_email_unknown">Anmelders navn ikke opgivet</label>
+			<label index="abuse_message_label">Anmelder at:</label>
+			<label index="abuseform_cancel">Fortryd</label>
+			<label index="abuseform_email">E-mail</label>
+			<label index="abuseform_header">Anmeld misbrug</label>
+			<label index="abuseform_instructions">Udfyld venligst denne formular for at anmelde misbrug</label>
+			<label index="abuseform_name">Dit navn</label>
+			<label index="abuseform_submit_abuse">Anmeld</label>
+			<label index="abuseform_text">Kommentarer til indlľgget</label>
+			<label index="add_comments">Tilfżj din kommentar</label>
+			<label index="archive_header">Arkiv:</label>
+			<label index="archive_select">Vľlg...</label>
+			<label index="archive_view_all">[Vis aktuel]</label>
+			<label index="attached_file">Vedhľftet fil:</label>
+			<label index="attached_file_type_error">Det er ikke tilladt at vedhľfte denne type fil.</label>
+			<label index="attached_image_type_error">Den vedhľftede billedtype er ikke tilladt at uploade</label>
+			<label index="bad_words">Dit indlľg indeholder upassende ord og er derfor blevet afvist.</label>
+			<label index="cancel_btn">Fortryd</label>
+			<label index="captcha_bad">Prżv venligst at indtaste teksten fra billedet igen</label>
+			<label index="category_header">Kategorier:</label>
+			<label index="category_title">Kategori:</label>
+			<label index="clear_subject">Ryd</label>
+			<label index="comment_btn">Tilfżj kommmentar</label>
+			<label index="delete_btn">Slet</label>
+			<label index="deleteall_btn">Slet alle</label>
+			<label index="deleteall_confirm">Er du sikker pŚ at du vil slette denne post og alle relaterede kommentarer?</label>
+			<label index="duplicate_entry">Det er tilsyneladende en dobbelt post</label>
+			<label index="edit_btn">Rediger</label>
+			<label index="email_abuseMsgHeader">Anmeldt indlľg pŚ forum:</label>
+			<label index="email_categoryText">Kategori:</label>
+			<label index="email_gotolink">GŚ til link:</label>
+			<label index="email_messageText">Indlľg:</label>
+			<label index="email_moderateMsg">Rediger besked pŚ diskussionforum</label>
+			<label index="email_moderateMsgHeader">Rediger ny indlľg:&quot;</label>
+			<label index="email_notify">Anmeld:</label>
+			<label index="email_postedbyText">Oprettet af:</label>
+			<label index="email_reportAbuseMsg">Anmeld misbrug i forummet</label>
+			<label index="email_subject">Nyt indlľg oprettet</label>
+			<label index="email_subjectText">Emne:</label>
+			<label index="email_subject_author_comment">Dit indlľg er blevet kommenteret</label>
+			<label index="email_subject_multiple">Nyt indlľg oprettet</label>
+			<label index="email_title">Diskussionsforum</label>
+			<label index="email_unsubscribeText2">For at afmelde denne liste og ikke lľngere modtage e-mails som denne, klik venligst</label>
+			<label index="email_unsubscribeText3">her</label>
+			<label index="endtime_format_error">Sluttidspunktet skal angives i dd-mm-ŚŚ. Husk at indsľtte  '-' </label>
+			<label index="errorIncludeStatic">Du skal inkludere den statiske template for at fŚ vist plugin'et i frontend.</label>
+			<label index="filter_delete">Dit indlľg indeholder uacceptable ord og det kunne ikke oprettes.</label>
+			<label index="filter_moderate">Dit indlľg er sendt til administrator.</label>
+			<label index="form_attachment">Vedhľftet fil:</label>
+			<label index="form_category">Vľlg kategori</label>
+			<label index="form_comment_header">Indtast dine kommentarer:</label>
+			<label index="form_edit_header">Rediger denne post</label>
+			<label index="form_email">Din e-mail</label>
+			<label index="form_email_author_replies">Modtag kommentarer pr. e-mail?</label>
+			<label index="form_endtime">Sluttidspunkt:  (DD-MM-YY):</label>
+			<label index="form_error_header">Fejl i formular</label>
+			<label index="form_error_unknown">Der var en fejl i din besked</label>
+			<label index="form_header">Indtast din besked:</label>
+			<label index="form_image">Billede:</label>
+			<label index="form_invalid_email">Forkert e-mail format </label>
+			<label index="form_message">Besked</label>
+			<label index="form_name">Dit navn</label>
+			<label index="form_starttime">Starttidspunkt (DD-MM-YY)</label>
+			<label index="form_subject">Emne</label>
+			<label index="form_toggleOff">Skjult kommentar formular</label>
+			<label index="form_toggleOn">Tilfżj kommentar</label>
+			<label index="goto_post">GŚ til dette indlľg</label>
+			<label index="header_archive">Arkiv for:</label>
+			<label index="header_category">kategori</label>
+			<label index="login_to_comment">&lt;span style=&quot;color:black&quot;&gt;Du mŚ vľre logget ind for at oprette et indlľg.&lt;/span&gt;</label>
+			<label index="mod_approve">Godkend</label>
+			<label index="mod_approve_all">Godkend alle</label>
+			<label index="mod_cancel">Fortryd</label>
+			<label index="mod_delete">Slet</label>
+			<label index="mod_delete_all">Slet alle</label>
+			<label index="mod_from">FRA</label>
+			<label index="mod_go_back">GŚ tilbage</label>
+			<label index="mod_message">BESKED</label>
+			<label index="mod_messages">BEHANDL INDL®G</label>
+			<label index="mod_no_messages">Der er ikke flere indlľg at behandle</label>
+			<label index="mod_process">Behandl</label>
+			<label index="mod_subject">EMNE</label>
+			<label index="moderate_btn">Behandl</label>
+			<label index="more">Mere...</label>
+			<label index="new_category">Ny kategori</label>
+			<label index="next_page">Nľste &gt;</label>
+			<label index="no_archive">Ingen arkiverede</label>
+			<label index="no_category">Der er ingen kategorier</label>
+			<label index="no_links_allowed">Det er ikke tilladt at skive links</label>
+			<label index="no_messages">Der er ingen indlľg oprettet</label>
+			<label index="no_messages_for_category">Der er ikke oprettet indlľg i denne kategori</label>
+			<label index="no_search_results">Ingen resultater af din sżgning</label>
+			<label index="no_user">Anonym</label>
+			<label index="on_text">pŚ</label>
+			<label index="page_name">Side #</label>
+			<label index="pi1_plus_wiz_description">Tilfżj et diskussionsforum</label>
+			<label index="pi1_title">WEC Diskussion Forum</label>
+			<label index="post_your_message">Opret dit indlľg</label>
+			<label index="posted_by">Oprettet af: </label>
+			<label index="prev_page">&lt; Forrige</label>
+			<label index="preview_header">Aktuelle emner i diskussionsforum'et</label>
+			<label index="preview_link">Klik her for at gŚ til forum'et.</label>
+			<label index="preview_none">Der er ikke nogen nye indlľg</label>
+			<label index="reply_btn">Besvar</label>
+			<label index="reply_field">&lt;b&gt;Besvar&lt;/b&gt;</label>
+			<label index="search_btn">Sżg</label>
+			<label index="select_category">Vľlg kategori...</label>
+			<label index="show_required_text">* = skal udfyldes</label>
+			<label index="starttime_format_error">Starttidspunktet skal formatteres som MM-DD-YY . Husk '-' i datoen.</label>
+			<label index="subject_field">Emne</label>
+			<label index="submit_btn">Opret indlľg</label>
+			<label index="submit_comment_btn">Tilfżj kommentar</label>
+			<label index="submit_edit_btn">Gem</label>
+			<label index="submit_preview_btn">Vis kladde </label>
+			<label index="submit_reply_btn">Opret kommentar</label>
+			<label index="subscribe_btn">Abonner</label>
+			<label index="subscribe_error1">Indtast din e-mailadresse</label>
+			<label index="subscribe_error2">Skriv venligst en gyldig e-mailadresse, f.eks navn@eksempel.dk</label>
+			<label index="subscribe_error3">Du abonnere allerede pŚ denne gruppe.</label>
+			<label index="subscribe_success">Du abonnere nu pŚ denne gruppe</label>
+			<label index="subscribeform_cancel">Fortryd</label>
+			<label index="subscribeform_email">Din e-mail</label>
+			<label index="subscribeform_instructions">Indtast din e-mail for at modtage besked nŚr et nyt indlľg er oprettet. Hvis du allerede abonnere, kan du ogsŚ afmelde dig her.</label>
+			<label index="subscribeform_name">Dit navn</label>
+			<label index="subscribeform_submit_sub">Abonner</label>
+			<label index="subscribeform_submit_unsub">Afmeld</label>
+			<label index="textcaptcha_bad">Du skal udfylde feltet &quot;Er du en person?&quot;</label>
+			<label index="textcaptcha_field">Er du en person?</label>
+			<label index="too_many_links">Der er for mange link - der er kun tilladt</label>
+			<label index="unsubscribe_error">Vi kunne ikke finde din e-mail - det lader ikke til at du er abonnent.</label>
+			<label index="view_comments">Vis kommentarer</label>
+			<label index="view_replies">Vis svar</label>
+			<label index="view_single">Vis</label>
+			<label index="viewall_button">Vis alle kommentarer</label>
+			<label index="viewall_category">[Vis allel]</label>
+			<label index="viewcommentnum_end"> kommentar</label>
+			<label index="viewcommentnum_end_plural">er</label>
+		</languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>

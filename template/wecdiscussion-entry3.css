@@ -1,0 +1,41 @@
+.pluginSection .entries {
+	border: 1px solid #ccc;
+}
+.pluginSection .entry  .postHeader {
+	float:	left;
+	margin-bottom:8px;
+	padding:4px;
+	width:98%;
+	font-size: 90%;
+	color: #888;
+}
+
+.pluginSection .entryDate, .pluginSection .showComments, .pluginSection .entryBy, .pluginSection .entryCategory {
+	font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	margin-right: 8px;
+	display: inline-block;
+}
+.pluginSection .entry h3 {
+	float:left;
+	width:100%;
+	background:0;
+	font-size: 150%;
+	line-height:140%;
+	padding:0;
+	margin:6px 0px;
+	font-family: "Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+.entries .message {
+	float:left;
+	padding-left:5px;
+	width:98%
+}
+
+.entries .buttonRow {
+	float:right;
+	margin-bottom:10px;
+}
+.entries .vspacer {
+	border-bottom: 1px solid #ccc;
+}
