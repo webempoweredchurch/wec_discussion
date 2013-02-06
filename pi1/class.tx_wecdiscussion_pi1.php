@@ -1133,7 +1133,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		// handle languages
 		$lang = ($l = $GLOBALS['TSFE']->sys_language_uid) ? $l : '0,-1';
 		$where .= ' AND sys_language_uid IN ('.$lang.') ';
-		if ($single) $where = 'uid = '.$single;
+		if ($single) $where = 'uid = '.intval($single);
 
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($selFields, $this->postTable, $where, '', $order_by, $limit);
 		if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
@@ -2592,7 +2592,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		}
 
 		// if we have a new category and have privileges to add a new category, then add it to db
-		if (($newCat = t3lib_div::_POST('new_category')) && strlen($newCat) && $this->config['can_create_category'] && !$isPreview) {
+		if (($newCat = htmlspecialchars(strip_tags(t3lib_div::_POST('new_category')))) && strlen($newCat) && $this->config['can_create_category'] && !$isPreview) {
 			// check to make sure no other similar categories
 			$catFound = 0;
 			for ($k = 0; $k < count($this->categoryList); $k++) {
@@ -4417,7 +4417,10 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 	}
 
 	function adminConvert() {
-		$output = tx_wecdiscussion_convert::convertTimTab(t3lib_div::_GET('pidfrom'),t3lib_div::_GET('pidto'),t3lib_div::_GET('deldata'));
+		$pidFrom = intval(t3lib_div::_GET('pidfrom'));
+		$pidTo = intval(t3lib_div::_GET('pidto'));
+		$delData = t3lib_div::_GET('deldata');
+		$output = tx_wecdiscussion_convert::convertTimTab($pidFrom, $pidTo, $delData);
 
 		return $output;
 	}
