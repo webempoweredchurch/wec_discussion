@@ -139,7 +139,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		//  $this->pi_USER_INT_obj = 1;   	// configure so caching not expected
 		$this->conf['cache']=1;
 		$GLOBALS['TSFE']->page_cache_reg1 = 416;
-	  	if ((t3lib_div::int_from_ver(TYPO3_version) >= 4003000) && 
+	  	if ((t3lib_div::int_from_ver(TYPO3_version) >= 4003000) &&
 		   	(t3lib_cache::isCachingFrameworkInitialized() && TYPO3_UseCachingFramework)) {
 		    $GLOBALS['TSFE']->addCacheTags(array('wec_discussion'));
 		}
@@ -206,7 +206,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		//------------------
 		// if this is not a preview, RSS or archive, then handle incoming vars
 		//
-		$this->config['type'] = $this->getConfigVal($this, 'type', 's_options');		
+		$this->config['type'] = $this->getConfigVal($this, 'type', 's_options');
 		if (($this->config['type'] != 4) && ($this->config['type'] != 6) && ($this->config['type'] != 7)) {
 			$this->postvars = t3lib_div::_GP('tx_wecdiscussion');
 			// clean up all inputs
@@ -341,8 +341,8 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 					break;
 				}
 			}
-		}		
-		
+		}
+
 		// Determine if a user who can post
 		//-----------------------------------------------------------------------
 		$this->isValidUser = 0;
@@ -1090,7 +1090,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			if (tud = document.getElementById("toplevel_uid_comment"))
 				tud.value = mNum2;
 			return false;
-		}		
+		}
 		function deleteForumMsg(num) {
 			gotoURL = "'.$gotoURL.'tx_wecdiscussion[deleteMsg]="+num;
 			location.href = gotoURL;
@@ -1446,7 +1446,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			if (!$this->conf['showIpAddress']) {
 				$thisTemplateEntry = $this->cObj->substituteSubpart($thisTemplateEntry, '###SHOW_IPADDRESS###', '');
 			}
-			
+
 			if ($msg['attachment']) {
 				$attachFile = 'uploads/tx_wecdiscussion/'.$msg['attachment'];
 				$attachMsg = $this->pi_getLL('attached_file', 'Attached File: ')." <a href=\"".$attachFile."\">".$msg['attachment'].'</a>';
@@ -1682,7 +1682,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			$markerArray['###SHOW_IP_ADDRESS###'] = $msg['ipAddress'];
 			$markerArray['###IP_ADDRESS###'] = $msg['ipAddress'];
 		}
-		
+
 		// Add an edit/delete button if this user is the author or if is admin
 		//------------------------------------------------------------------------
 		if (($GLOBALS['TSFE']->loginUser) && (($msg['useruid'] == $this->userID) || ($this->isAdministrator))) {
@@ -2047,8 +2047,8 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		if ($this->conf['lockInNameEmail'] && $this->userID) {
 			$markerArray['###FORM_FIELD_DISABLED###'] = 'readonly="readonly" style="background:#eee;color:#333;"';
 		}
-		
-		// show ip address message 
+
+		// show ip address message
 		$markerArray['###IP_ADDRESS_RECORDED###'] = $this->pi_getLL('ip_address_recorded', 'Your IP Address will be recorded:') . t3lib_div::getIndpEnv('REMOTE_ADDR');
 		$markerArray['###IP_ADDRESS###'] = t3lib_div::getIndpEnv('REMOTE_ADDR');
 
@@ -2291,7 +2291,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		if (!$isComment && !$replyID && $this->config['email_author_replies'] && $this->userID && !$subpartArray['###SHOW_EMAIL###'] && $GLOBALS['TSFE']->fe_user->user['email']) {
 			$markerArray['###HIDDEN_VARS###'] .= '<input type="hidden" name="tx_wecdiscussion[email]" value="'.$GLOBALS['TSFE']->fe_user->user['email'].'"/>';
 		}
-		
+
 		// Add Front-End htmlArea editing
 		if($this->conf['RTEenabled'] && is_object($this->RTEObj) && $this->RTEObj->isAvailable()) {
 			$this->RTEcounter++;
@@ -3143,7 +3143,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$monthList[(int) strftime('%m', $row['post_datetime'])][(int)strftime('%Y', $row['post_datetime'])]['count']++;
 		}
-		
+
 		$archiveContent = '';
 
 		// if no archive, say so and return
@@ -3155,7 +3155,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		if ($how == 3) {
 			$GLOBALS['TSFE']->additionalHeaderData['wecdiscussion_js'] .= '<script type="text/javascript" src="' . t3lib_extMgm::siteRelPath('wec_discussion') . 'res/wec_discussion.js"></script>';
 		}
-		
+
 		// Show archive by dropdown
 		if ($how == 2) {
 			$archiveContent .= '<select name="archive" id="tx_wecdiscussion_archive" size="1" onchange="if (this.selectedIndex) location.href=this.options[this.selectedIndex].value;">';
@@ -3586,7 +3586,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$msg = $this->pi_getLL('abuse_email_header','This is a report of abuse in a forum message') . '<br/>';
 
 		// grab message
-		$where = ' uid=' . t3lib_div::_GP('msgid');
+		$where = ' uid=' . intval(t3lib_div::_GP('msgid'));
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', '');
 		if (mysql_error()) t3lib_div::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 		$row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
@@ -3807,8 +3807,8 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		else {
 			$fromEmail = $this->pi_getLL('email_none','nobody@nowhere.org');
 		}
-		
-		$origFrom = $fromEmail;	
+
+		$origFrom = $fromEmail;
 		// we must put <> around it for name
 		if (strpos($fromEmail,'<') === FALSE) {
 			$fromEmail = ' <' . $fromEmail . '>';
@@ -3901,7 +3901,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 	* ==================================================================================
 	*
 	* @param	string	$adminUserList comma-separated list of people
-	* @param	string	$adminUserGroups usergroup list 
+	* @param	string	$adminUserGroups usergroup list
 	* @return	array	$saveAdminList	array of name/email of admins.
 	*/
 	function getAdmins($adminUserList,$adminUserGroups) {
@@ -3930,13 +3930,13 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 				$queryStr = 'username IN ';
 			$queryStr .= '(' . $listIn . ") ";
 		}
-		
+
 		// 2. SEE IF IN USERGROUP
 		if ($adminUserGroups) {
 			$adminUGArray = t3lib_div::trimExplode(',', $adminUserGroups);
 			for ($i = 0; $i < count($adminUGArray); $i++) {
 				$inUserGroup .= $GLOBALS['TYPO3_DB']->listQuery('usergroup',$adminUGArray[$i],'fe_users');
-				if ($i < count($adminUGArray) - 1) 
+				if ($i < count($adminUGArray) - 1)
 					$inUserGroup .= ' OR ';
 			}
 			// add the userlist query if defined
@@ -3948,7 +3948,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 				$queryStr = "(" . $inUserGroup . ")";
 			}
 		}
-		
+
 		// make sure not deleted user
 		$queryStr .= ' AND deleted=0';
 
@@ -4202,7 +4202,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			if (strpos($pageURL,"http") === FALSE) {
 				$absURL =  $hostURL . $pageURL;
 			}
-			else { 
+			else {
 				$absURL = $pageURL;
 			}
 		}
@@ -4327,7 +4327,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		// fill in item
 		$item_content = "";
 		$mostRecentMsgDate = 0;
-		
+
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$itemMarker['###ITEM_TITLE###'] = '<title>'.htmlspecialchars(stripslashes($row['subject'])).'</title>';
 			$urlParams = array();
@@ -4347,7 +4347,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			if (($absRefPrefix = $GLOBALS['TSFE']->config['config']['absRefPrefix']) && ($RTEImageStorageDir = $GLOBALS['TYPO3_CONF_VARS']['BE']['RTE_imageStorageDir'])) {
 				$msgText = str_replace('"' .$RTEImageStorageDir, '"' . $absRefPrefix . $RTEImageStorageDir, $msgText);
 			}
-			// fill in item markers			
+			// fill in item markers
 			$itemMarker['###ITEM_DESCRIPTION###'] = '<description>' . htmlspecialchars(stripslashes($msgText)) . '</description>';
 			if ($row['email'])
 				$itemMarker['###ITEM_AUTHOR###'] = '<author>' . htmlspecialchars(stripslashes($row['email'])) . ' ('.htmlspecialchars(stripslashes($row['name'])).')</author>';
@@ -4616,7 +4616,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		   	if (t3lib_cache::isCachingFrameworkInitialized() && TYPO3_UseCachingFramework) {
 		    	$pageCache = $GLOBALS['typo3CacheManager']->getCache('cache_pages');
 		    	$pageCache->flushByTag('wec_discussion');
-		   	} 
+		   	}
 			else {
 		    	$GLOBALS['TYPO3_DB']->exec_DELETEquery('cache_pages', 'reg1=416');
 		   }
