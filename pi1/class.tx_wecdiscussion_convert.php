@@ -56,7 +56,7 @@ class tx_wecdiscussion_convert {
 		$where = 'pid IN('.$fromPageID.')';
 		$where .= ' AND deleted=0';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tt_news_cat', $where, '', '');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), $res));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$oldCategories[$row['uid']] = $row;
 		}
@@ -66,7 +66,7 @@ class tx_wecdiscussion_convert {
 			//_________________________________________________________
 			$where = '1=1';
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tt_news_cat_mm', $where, '', '');
-			if (mysql_error()) t3lib_div::debug(array(mysql_error(), $res));
+			if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 				$oldCatLookup[$row['uid_local']] = $row['uid_foreign'];
 			}
@@ -110,7 +110,7 @@ class tx_wecdiscussion_convert {
 			//________________________________________________________
 			$where = 'pid IN('.$toPageID.') AND deleted=0';
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tx_wecdiscussion_category', $where, '', 'uid');
-			if (mysql_error()) t3lib_div::debug(array(mysql_error(), $res));
+			if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 				$newCat[$row['uid']] = $row;
 			}
@@ -135,7 +135,7 @@ class tx_wecdiscussion_convert {
 		//_________________________________________________________
 		$where = 'pid IN ('.$fromPageID.') AND type=3 AND deleted=0';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tt_news', $where, '','');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(),$res));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(),$res));
 		$oldData = array();
 		if ($GLOBALS['TYPO3_DB']->sql_num_rows($res)) {
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))
@@ -201,7 +201,7 @@ class tx_wecdiscussion_convert {
 		//_________________________________________________________
 		$where = 'pid IN('.$fromPageID.') AND deleted=0';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tx_veguestbook_entries', $where, '','tstamp');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(),$res));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(),$res));
 		$commentData = array();
 		if ($GLOBALS['TYPO3_DB']->sql_num_rows($res)) {
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))
@@ -213,7 +213,7 @@ class tx_wecdiscussion_convert {
 			//_________________________________________________________
 			$where = 'pid IN('.$toPageID.') AND deleted=0';
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', 'tx_wecdiscussion_post', $where, '','tstamp');
-			if (mysql_error()) t3lib_div::debug(array(mysql_error(),$res));
+			if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(),$res));
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 				$newPostData[] = $row;
 			}

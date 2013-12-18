@@ -139,7 +139,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		//  $this->pi_USER_INT_obj = 1;   	// configure so caching not expected
 		$this->conf['cache']=1;
 		$GLOBALS['TSFE']->page_cache_reg1 = 416;
-	  	if ((t3lib_div::int_from_ver(TYPO3_version) >= 4003000) &&
+	  	if ((\TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version) >= 4003000) &&
 		   	(t3lib_cache::isCachingFrameworkInitialized() && TYPO3_UseCachingFramework)) {
 		    $GLOBALS['TSFE']->addCacheTags(array('wec_discussion'));
 		}
@@ -503,7 +503,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$lang = ($l = $GLOBALS['TSFE']->sys_language_uid) ? $l : '0,-1';
 		$where .= ' AND sys_language_uid IN ('.$lang.') ';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->categoryTable, $where, '', 'sort_order');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), $res));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 		$this->categoryCount = 0;
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$this->categoryList[$this->categoryCount]['name'] = $row['name'];
@@ -1136,7 +1136,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		if ($single) $where = 'uid = '.intval($single);
 
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($selFields, $this->postTable, $where, '', $order_by, $limit);
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 		$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 
 		$rootMsgUIDList = '';
@@ -1189,7 +1189,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$limit = '';
 
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($selFields, $this->postTable, $where, '', $order_by, $limit);
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 			$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 
 		// pull out all reply messages and add them appropriately
@@ -1947,7 +1947,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$lang = ($l = $GLOBALS['TSFE']->sys_language_uid) ? $l : '0,-1';
 		$where .= ' AND sys_language_uid IN ('.$lang.') ';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('DISTINCT tx_wecdiscussion_post.*,tx_wecdiscussion_post.*', $this->postTable, $where, '', '');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), $res));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 			$thisTemplateEntry = $templateSearchResults;
 			$subpartArray = array();
@@ -2576,7 +2576,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			if (($postDelayTime = $this->conf['duplicateCheckDelaySeconds']) && $postMsg['message']) {
 				$previousTimeCheck = mktime() - ($postDelayTime * 60);
 				$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, 'post_datetime>='.intval($previousTimeCheck).' AND pid IN('.$this->pid_list.') AND moderationQueue=0', '');
-				if (mysql_error()) t3lib_div::debug(array(mysql_error(), 'MYSQL Check for duplicates error'));
+				if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'MYSQL Check for duplicates error'));
 					$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 				if ($count > 0) {
 					while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
@@ -2650,7 +2650,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			// ADD A NEW RECORD
 			$postMsg['crdate'] = mktime();
 			$res = $GLOBALS['TYPO3_DB']->exec_INSERTquery($this->postTable, $postMsg);
-			if (mysql_error()) t3lib_div::debug(array(mysql_error(), $postMsg));
+			if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $postMsg));
 			$newMsgID = $GLOBALS['TYPO3_DB']->sql_insert_id();
 		} else {
 			// IF EDIT, JUST DO AN UPDATE
@@ -2787,7 +2787,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			$where = 'uid=' . $delMsgID . ' OR toplevel_uid=' . $delMsgID;
 		}
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', "", '');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT * FROM ".$this->postTable.' WHERE '.$where));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), "SELECT * FROM ".$this->postTable.' WHERE '.$where));
 		$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 		if ($count == 0)
 			return false; // no message found, so invalid delete
@@ -2802,7 +2802,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$delMsg['deleted'] = 1; // mark this deleted
 		$res2 = $GLOBALS['TYPO3_DB']->exec_UPDATEquery($this->postTable, $where, $delMsg);
 		if (mysql_error()) {
-			t3lib_div::debug(array(mysql_error(), 'DELETE FROM '.$this->postTable.' WHERE '.$where));
+			\TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'DELETE FROM '.$this->postTable.' WHERE '.$where));
 			return false; // want to return if delete not successful
 		}
 
@@ -2820,7 +2820,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			$where = 'reply_uid IN (' . $curChildList . ')';
 			$where .= $this->cObj->enableFields($this->postTable);
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', '', '');
-			if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT * FROM ".$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by));
+			if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), "SELECT * FROM ".$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by));
 			$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 			if (!$count)
 				break;
@@ -2851,7 +2851,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			$where = 'uid IN (' . $delUIDs . ')';
 			$res2 = $GLOBALS['TYPO3_DB']->exec_UPDATEquery($this->postTable, $where, $delMsg);
 			if (mysql_error()) {
-				t3lib_div::debug(array(mysql_error(), 'DELETE FROM '.$this->postTable.' WHERE '.$where));
+				\TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'DELETE FROM '.$this->postTable.' WHERE '.$where));
 				return false; // want to return if delete not successful
 			}
 		}
@@ -2864,7 +2864,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 			}
 			$where = 'uid IN (' . $childUIDs . ')';
 			$res2 = $GLOBALS['TYPO3_DB']->exec_UPDATEquery($this->postTable, $where, $setVar);
-			if (mysql_error()) { t3lib_div::debug(array(mysql_error(), 'UPDATE '.$this->postTable.' WHERE '.$where)); }
+			if (mysql_error()) { \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'UPDATE '.$this->postTable.' WHERE '.$where)); }
 			// c. if deleted toplevel_uid=0, set any children and sub-children to new toplevel_uid
 			if ($toplevel_uid == 0) {
 				// for each child, set sub-children toplevel_uid to that id
@@ -2884,7 +2884,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 						$setVar2['toplevel_uid'] = $topChild['uid'];
 						$where = 'uid IN (' . $setUIDs . ')';
 						$res3 = $GLOBALS['TYPO3_DB']->exec_UPDATEquery($this->postTable, $where, $setVar2);
-						if (mysql_error()) { t3lib_div::debug(array(mysql_error(), 'UPDATE '.$this->postTable.' WHERE '.$where)); }
+						if (mysql_error()) { \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'UPDATE '.$this->postTable.' WHERE '.$where)); }
 					}
 				}
 			}
@@ -3010,7 +3010,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$where .= ' AND sys_language_uid IN ('.$lang.') ';
 		$limit = $numToPreview;
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', $order_by, $limit);
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 
 		$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 		if ($count == 0) {
@@ -3136,7 +3136,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$order_by = 'post_datetime DESC';
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery($selFields, $this->postTable, $where, '', $order_by, $limit);
 		if (mysql_error())
-			t3lib_div::debug(array(mysql_error(), $res));
+			\TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $res));
 		$count = $GLOBALS['TYPO3_DB']->sql_num_rows($res);
 
 		// Store all the entries by month
@@ -3453,7 +3453,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$insert = $GLOBALS['TYPO3_DB']->exec_INSERTquery($this->groupTable, $saveData);
 
 		if (mysql_error()) {
-			t3lib_div::debug(array(mysql_error(), $insert), 'mySQL Error in group update/insert');
+			\TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), $insert), 'mySQL Error in group update/insert');
 			return false;
 		}
 		$this->submitFormResponse = $this->pi_getLL('subscribe_success', 'You are now subscribed to this group.');
@@ -3549,7 +3549,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 
 		$where = ' uid='.$this->postvars['abs'];
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', '');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 		if ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))
 			$markerArray['###ABUSE_MESSAGE###'] = $this->pi_getLL('abuse_message_label','Message to report:') . '<br/>' . $row['message'];
 
@@ -3588,7 +3588,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		// grab message
 		$where = ' uid=' . intval(t3lib_div::_GP('msgid'));
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', '');
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), 'SELECT "*" FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 		$row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
 
 		// show reporter
@@ -3890,7 +3890,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 				$this->sendoutMessages($entry, $count);
 		}
 		else {
-			t3lib_div::debug('SELECT * FROM '.$this->postTable.' WHERE uid IN ('.$msgUIDList.') NOT FOUND');
+			\TYPO3\CMS\Core\Utility\DebugUtility::debug('SELECT * FROM '.$this->postTable.' WHERE uid IN ('.$msgUIDList.') NOT FOUND');
 		}
 	}
 
@@ -4322,7 +4322,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 		$where .= ' AND sys_language_uid IN ('.$lang.') ';
 		$limit = $this->config['num_previewRSS_items'] ? $this->config['num_previewRSS_items'] : 5;
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*', $this->postTable, $where, '', $order_by, $limit);
-		if (mysql_error()) t3lib_div::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
+		if (mysql_error()) \TYPO3\CMS\Core\Utility\DebugUtility::debug(array(mysql_error(), "SELECT ".$selFields.' FROM '.$this->postTable.' WHERE '.$where.' ORDER BY '.$order_by.' LIMIT '.$limit));
 
 		// fill in item
 		$item_content = "";
@@ -4611,7 +4611,7 @@ class tx_wecdiscussion_pi1 extends tslib_pibase {
 	*==================================================================================
 	*/
 	function clearCache() {
-	  	if (t3lib_div::int_from_ver(TYPO3_version) >= 4003000) {
+	  	if (\TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version) >= 4003000) {
 		  	// only use cachingFramework if initialized and configured in TYPO3
 		   	if (t3lib_cache::isCachingFrameworkInitialized() && TYPO3_UseCachingFramework) {
 		    	$pageCache = $GLOBALS['typo3CacheManager']->getCache('cache_pages');
